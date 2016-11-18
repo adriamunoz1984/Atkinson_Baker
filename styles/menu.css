@@ -6,16 +6,17 @@
     text-align: center;
 }
 
-#menu li
+li
 {
-   padding: 0px;
+   
     display: inline-block;
     margin-right: 0px;
     border-right: 4px solid #005b92;
    
 }
 
-#menu li a
+
+li a
 {
     display: block;
     padding: 0 30px 0 30px;
@@ -28,16 +29,53 @@
     line-height: 50px;
 }
 
-#menu li a:hover
+li:hover a
 {
      background: #005b92;
+    
+}
+
+li:hover ul a
+{
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+li:hover ul a:hover
+{
+    background: #005b92;
+    color:#fff;
+}
+
+li ul
+{
+    display: none;
+    
+  
+}
+
+li ul li
+{
+    display: block;
+    float: none;
+   
+}
+
+li ul li a
+{
+    min-width: 80px;
+    padding: 0 20px;
      
 }
 
-#menu li ul
+
+
+ul li a:hover + .hidden, .hidden:hover
 {
-    display: none;
+    display: block;
 }
+
 .menuBG
 {
     padding: 0;
