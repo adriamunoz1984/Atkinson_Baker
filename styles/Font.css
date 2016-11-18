@@ -1,0 +1,7 @@
+@font-face {
+font-family: 'Swiss 721 Light Condensed BT';
+font-style: bold
+font-stretch: ultra-condensed;
+font-weight: bold;
+src: local('Swiss 721 Light Condensed BT'), url('swiss 721 LT CN BTl.woff') format('woff');
+}

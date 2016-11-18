@@ -1,0 +1,70 @@
+@import "Font.css";
+@import "menu.css";
+.container
+{
+    width: 100%;
+    max-width: 400px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.accordion
+{
+   
+    width: 100%;
+    list-style-type: none;
+}
+
+.accordion-header
+{
+    width: 500px;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #63b3dd;
+    text-align: center;
+    font-family: 'Swiss 721 Light Condensed BT';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    
+    /*photoshop CSS*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(169, 169, 169);
+    border-radius: 10px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    
+}
+
+.accordion-content
+{
+    padding: 0 ;
+    transition: height .25s ease-in,opacity 1s  ease;
+    margin-left: 80px;
+    margin-right: -80px;
+    height: 0;
+    overflow: hidden;
+    background: #b0b0b0;
+    opacity: 0;
+}
+
+.accordion-content p 
+{
+   margin: 0 0 20px 0; 
+    
+  
+}
+
+.accordion-content:target
+{
+    height: 200px;
+    margin-left: 80px;
+    margin-right: -80px;
+    padding: 20px 0 0 0;
+    opacity: 1;
+}
+
+
