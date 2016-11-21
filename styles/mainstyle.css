@@ -1,70 +1,109 @@
 @import "Font.css";
 @import "menu.css";
+
+body
+{
+    padding: 0 0 100px 0;
+    margin: 0;
+    font-family: 'Swiss 721 Light Condensed BT';
+}
 .container
 {
-    width: 100%;
-    max-width: 400px;
-    margin-left:auto;
-    margin-right: auto;
+  padding: 30px;
+  width:1500px;
+  margin: 0 auto;
+  
+  
+  /*Photoshop Background gradient*/
+ 
+  border-radius: 25px;
+  background-image: -moz-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+ 
 }
 
 .accordion
 {
-   
-    width: 100%;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+    text-align: center;
+    display: inline-block;
 }
 
 .accordion-header
 {
-    width: 500px;
+    width: 1500px;
     display: block;
-    padding: 15px 20px;
+    padding: 20px 0 20px 0;
     text-decoration: none;
     color: #63b3dd;
     text-align: center;
-    font-family: 'Swiss 721 Light Condensed BT';
+   
     font-size: 1.5em;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-top: 40px;
     
     /*photoshop CSS*/
     border-style: solid;
     border-width: 1px;
     border-color: rgb(169, 169, 169);
-    border-radius: 10px;
+    border-radius: 25px;
     background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
-    
 }
 
 .accordion-content
 {
-    padding: 0 ;
+    border: 2px solid #ffe2b8;
+    border-top:none;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
     transition: height .25s ease-in,opacity 1s  ease;
-    margin-left: 80px;
-    margin-right: -80px;
+    margin: 0 30px 0px 30px;
     height: 0;
     overflow: hidden;
-    background: #b0b0b0;
-    opacity: 0;
-}
-
-.accordion-content p 
-{
-   margin: 0 0 20px 0; 
-    
-  
+    background: #fff;
+    opacity: 0;  
 }
 
 .accordion-content:target
 {
-    height: 200px;
-    margin-left: 80px;
-    margin-right: -80px;
-    padding: 20px 0 0 0;
+    height: 500px;
+    margin: 0 30px 0 30px;
+    text-align: center;
+    padding: 5px;
     opacity: 1;
+}
+div > div
+{
+   text-align: center;
+    margin-bottom: -40px;
+  
+}
+h2
+{
+    display:inline;
+    padding: 0 20px 0 20px;
+    margin: 0 200px 0 200px;
+    font-size: 30px;
+    
 }
 
 
+.accordion-header img
+{
+    width: 30px;
+    float: left;
+    margin: 5px 25px;
+    transform: rotate(90deg);
+    transition: transform .2s ease-in;
+}
+
+h3
+{
+    padding: 0;
+    margin: 0;
+}
