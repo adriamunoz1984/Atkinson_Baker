@@ -69,7 +69,7 @@ body
     opacity: 0;  
     
 }
-
+/*
 .accordion-content:target
 {
     height: 500px;
@@ -78,6 +78,7 @@ body
     padding: 5px;
     opacity: 1;
 }
+*/
 div > div
 {
    text-align: center;
@@ -132,10 +133,17 @@ input[type=checkbox]
 
 input[type=checkbox]:checked ~ .to-be-changed
 {
-    color: red;
     transform: rotate(180deg);
 }
 
+input[type=checkbox]:checked ~ #first
+{
+    height: 500px;
+    margin: 0 30px 0 30px;
+    text-align: center;
+    padding: 5px;
+    opacity: 1;
+}
 
 
 
