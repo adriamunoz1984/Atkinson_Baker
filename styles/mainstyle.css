@@ -67,6 +67,7 @@ body
     overflow: hidden;
     background: #fff;
     opacity: 0;  
+    
 }
 
 .accordion-content:target
@@ -93,17 +94,62 @@ h2
 }
 
 
-.accordion-header img
-{
-    width: 30px;
-    float: left;
-    margin: 5px 25px;
-    transform: rotate(90deg);
-    transition: transform .2s ease-in;
-}
-
 h3
 {
     padding: 0;
     margin: 0;
 }
+
+.accordion-header img
+{
+    width: 30px;
+    height: 20px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 5px;
+    transform: rotate(90deg);
+    transition: transform .2s ease-in;
+    
+}
+
+/************** Testing other animation techniques **************/
+
+input[type=checkbox]
+{
+ 
+}
+.to-be-changed
+{
+    width: 30px;
+    height: 20px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 5px;
+    transform: rotate(90deg);
+    transition: transform .2s ease-in;
+}
+
+
+input[type=checkbox]:checked ~ .to-be-changed
+{
+    color: red;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
