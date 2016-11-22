@@ -115,11 +115,36 @@ h3
 
 /************** Testing other animation techniques **************/
 
-input[type=checkbox]
+/*** Open All Accordions **/
+#openall
 {
- 
+    float: left;
 }
-.to-be-changed
+#toggle:checked ~ .openArrow
+{
+    transform: rotate(180deg);
+}
+
+#toggle:checked ~ .accordion-content
+{
+    height: 500px;
+    margin: 0 30px 0 30px;
+    text-align: center;
+    padding: 5px;
+    opacity: 1;
+}
+
+/*****************************/
+
+
+
+#toggle1, #toggle2, #toggle3, #toggle
+{
+ position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.openArrow
 {
     width: 30px;
     height: 20px;
@@ -130,13 +155,13 @@ input[type=checkbox]
     transition: transform .2s ease-in;
 }
 
-
-input[type=checkbox]:checked ~ .to-be-changed
+/*** first accordion ***/
+#toggle1:checked ~ .arrow1
 {
     transform: rotate(180deg);
 }
 
-input[type=checkbox]:checked ~ #first
+#toggle1:checked ~ #first
 {
     height: 500px;
     margin: 0 30px 0 30px;
@@ -144,9 +169,40 @@ input[type=checkbox]:checked ~ #first
     padding: 5px;
     opacity: 1;
 }
+/*********************/
 
 
+/*** Second accordion ***/
+#toggle2:checked ~ .arrow2
+{
+    transform: rotate(180deg);
+}
 
+#toggle2:checked ~ #second
+{
+    height: 500px;
+    margin: 0 30px 0 30px;
+    text-align: center;
+    padding: 5px;
+    opacity: 1;
+}
+/*********************/
+
+/*** Third accordion ***/
+#toggle3:checked ~ .arrow3
+{
+    transform: rotate(180deg);
+}
+
+#toggle3:checked ~ #third
+{
+    height: 500px;
+    margin: 0 30px 0 30px;
+    text-align: center;
+    padding: 5px;
+    opacity: 1;
+}
+/*********************/
 
 
 
