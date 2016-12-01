@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>CSS Tutorial</title>
 
@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+    <img src="Atkinsonbaker_logo.png" alt="" id="logo">
     <div class="menuBG">
         <ul id="menu">
             <li><a href="#" >Home</a></li>
@@ -25,7 +25,7 @@
             <li><a href="#">Invoices</a></li>
         </ul>
     </div>
- 
+    <div id="search"><h2>Search box</h2></div>
     <div class="container">
         
         <div><h2>Date</h2><h2>Case</h2><h2>Job No.</h2></div>
@@ -34,11 +34,14 @@
        
         <ul class="accordion" >
             <input type="checkbox" id="toggle">
-            <label for="toggle" id="openall">Open All</label>
+            <label for="toggle" id="openall"><div id="openAll"></div></label>
             
                 <!-- Arrow animation -->
                 <input type="checkbox" id="toggle1">
-                <label for="toggle1" class="accordion-header">
+                <label for="toggle1" class="accordion-header ah1"> 
+                    
+                    <!-- Insert header data here -->
+                    <div><h3>09/07/2016</h3><h3>Lugo v Carono</h3><h3>AA079AF</h3></div>
                 </label><img src="Arrow_IconS.png" alt="Arrow" class="openArrow arrow1"/>
                 <!-- End Arrow Transition -->
             
@@ -54,6 +57,7 @@
                 <!-- Arrow animation -->
                 <input type="checkbox" id="toggle2">
                 <label for="toggle2" class="accordion-header">
+                    <div><h3>09/07/2016</h3><h3>Lugo v Carono</h3><h3>AA079AF</h3></div>
                 </label><img src="Arrow_IconS.png" alt="Arrow" class="openArrow arrow2"/>
                 <!-- End Arrow Transition -->
             
@@ -69,6 +73,7 @@
                 <!-- Arrow animation -->
                 <input type="checkbox" id="toggle3">
                 <label for="toggle3" class="accordion-header">
+                    <div><h3>09/07/2016</h3><h3>Lugo v Carono</h3><h3>AA079AF</h3></div>
                 </label><img src="Arrow_IconS.png" alt="Arrow" class="openArrow arrow3"/>
                 <!-- End Arrow Transition -->
             

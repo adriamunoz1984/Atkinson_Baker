@@ -36,11 +36,11 @@ body
 {
     width: 1500px;
     display: block;
-    padding: 20px 0 20px 0;
+    padding: 35px 0 35px 0;
     text-decoration: none;
     color: #63b3dd;
     text-align: center;
-   
+    position: relative;
     font-size: 1.5em;
     text-transform: uppercase;
     margin-top: 40px;
@@ -69,6 +69,12 @@ body
     opacity: 0;  
     
 }
+
+.container div h2
+{
+     font-size: 2em;
+    color: #63b3dd;
+}
 /*
 .accordion-content:target
 {
@@ -82,7 +88,7 @@ body
 div > div
 {
    text-align: center;
-    margin-bottom: -40px;
+    margin-bottom: -70px;
   
 }
 h2
@@ -100,25 +106,39 @@ h3
     padding: 0;
     margin: 0;
 }
-
-.accordion-header img
+.ah1
 {
-    width: 30px;
-    height: 20px;
-    float: left;
-    margin-left: 25px;
-    margin-top: 5px;
-    transform: rotate(90deg);
-    transition: transform .2s ease-in;
-    
+    margin-top: 0;
 }
+
 
 /************** Testing other animation techniques **************/
 
-/*** Open All Accordions **/
-#openall
+/*** Open All Accordions by converting the headers into invisible checkboxes **/
+
+#openAll
 {
-    float: left;
+    background-image: url("../OpenAll.png");
+    width: 117px;
+    height:88px;
+    transform: scale(.5);
+    margin: 0;
+    padding: 0;
+}
+#openAll:hover
+{
+     background-image: url("../OpenAll_hover.png");
+     width: 117px;
+    height:88px;
+    transform: scale(.5)
+}
+
+#openAll:active
+{
+    background-image: url("../OpenAll_click.png");
+     width: 117px;
+    height:88px;
+    transform: scale(.5)
 }
 #toggle:checked ~ .openArrow
 {
@@ -144,22 +164,26 @@ h3
 	top: -9999px;
 	left: -9999px;
 }
+
+/*** All Arrows stationary ***/
 .openArrow
 {
+    position: absolute;
+    margin-top: -45px;
     width: 30px;
     height: 20px;
-    float: left;
-    margin-left: 25px;
-    margin-top: 5px;
+    margin-left: -725px;
     transform: rotate(90deg);
     transition: transform .2s ease-in;
 }
+/*** END All Arrows stationary ***/
+
 
 /*** first accordion ***/
 #toggle1:checked ~ .arrow1
 {
     transform: rotate(180deg);
-}
+} 
 
 #toggle1:checked ~ #first
 {
@@ -206,13 +230,49 @@ h3
 
 
 
+/************** End of Testing other animation techniques **************/
 
+label div
+{
+    margin-left: 200px;
+}
+/** Accordion Header text **/
+.accordion-header h3
+{
+   position: absolute;
+   
+   margin 0; 
+   line-height: 2px;
+}
 
+.accordion-header h3:nth-child(2)
+{
+    margin-left: 450px;
+}
 
+.accordion-header h3:nth-child(3)
+{
+     margin-left: 1000px;
+}
+/** End of Accordion Header text **/
 
-
-
-
+#search
+{
+    text-align: center;
+    color: gray;
+    width:1200px;
+    height: 300px;
+    border: 2px solid #ffe2b8;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    opacity: 0.5;
+}
+#search h2
+{
+   position: relative;
+   top: 125px;
+}
 
 
 
