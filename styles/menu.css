@@ -147,7 +147,6 @@ nav li:first-child
 nav li ul li
 {
     float: none;
-   
     padding: 0;
     height: 0;
     overflow: hidden;
@@ -169,22 +168,22 @@ nav li:hover ul li
 }
 
 /*Responsiveness**/
-@media screen and (max-width : 1500px )
+@media screen and (max-width : 1000px )
 {
 
     /*make dropdown links appear inline*/
-    #menu
+    nav
     {
         position: static;
        
     }
     /*Create vertical spacing*/
-    #menu li
+    nav li
     {
         margin-bottom: 1px;
     }
     /*make all menu links full width*/
-    #menu li, li a
+    nav li, li a
     {
         width: 100%;
     }
