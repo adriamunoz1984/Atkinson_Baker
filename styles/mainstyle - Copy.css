@@ -6,6 +6,7 @@ body
     padding: 0 0 100px 0;
     margin: 0;
     font-family: 'Swiss 721 Light Condensed BT';
+    width: 100%;
 }
 .container
 {
@@ -34,7 +35,7 @@ body
 
 .accordion-header
 {
-    width: 1500px;
+    width: 100%;
     display: block;
     padding: 35px 0 35px 0;
     text-decoration: none;

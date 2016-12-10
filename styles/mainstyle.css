@@ -1,26 +1,32 @@
 @import "Font.css";
 @import "menu.css";
+
+
 /* CSS FILE */
 
 body
 {
-    padding: 0 0 100px 0;
-    margin: 0;
+    
     font-family: 'Swiss 721 Light Condensed BT';
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 #search
 {
     text-align: center;
     color: gray;
-    width:1200px;
+    width:50%;
     height: 300px;
     border: 2px solid #ffe2b8;
     border-radius: 15px;
-    margin-left: 500px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px 10%;
+   
     opacity: 0.5;
 }
+
 #search h2
 {
    position: relative;
@@ -31,90 +37,73 @@ body
 {
      font-size: 2em;
      color: #63b3dd;
-     margin: 0 200px;
+     margin: 0;
     
      display: inline;
-    
-}
-
-#title
-{
-   margin-left: 100px;
-     
 }
 
 
 #wrapper 
 {
     margin: 50px auto;
-    width:1550px;
+    width:80%;
     padding: 20px 0 20px 0;
-  /*Photoshop Background gradient*/
+  
  
-  border-radius: 20px;
-  background-image: -moz-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+    border-radius: 20px;
+    background-image: -moz-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
 }
 
-h1 
-{
-    font-size: 50px;
-    font-family: helvetica, arial, sans-serif;
-    text-shadow: 0px 2px 3px #333;
-    color: #0aa0d7;
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
-}
 
 h2.accordion 
 {
+    
     padding: 0;
-    margin: 20px auto 0px auto;
     background: #333;
     height: 60px;
     line-height:60px;
-    width: 1500px;
+    width: 98%;
     font-size: 16px;
     font-weight: bold;
     text-align: left;
     border: 1px solid rgb(169, 169, 169);
-
-  border-radius: 15px;
-  background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    margin: 20px auto 0 auto;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     
 }
 
 h2.accordion a 
 {
     text-align: center;
+    margin: 0 auto;
     color: #63b3dd;
     text-decoration: none;
-    margin-left: -100px;
     display: block;
     font-family: myriad pro, helvetica, arial;
-    
+    width: 98%;
     border-radius: 5px;
 }
 
-h2.accordion a h3
+/*h2.accordion a h3
 {
     display: inline;
     font-size: 1.5em;
-     color: #63b3dd;
-     margin: 0 200px;
+    color: #63b3dd;
     
+    padding: 0 150px 0 150px;
+}*/
 
-}
-h2.accordion a:hover 
+
+/*h2.accordion a:hover h3
 {
     color: white;
-    
-    
-}
+}*/
+
 
 .accContainer 
 {
@@ -123,7 +112,7 @@ h2.accordion a:hover
     overflow: hidden;
     font-size: 1.2em;
     color: #666;
-    width: 1475px;
+    width: 97%;
     clear: both;
     background: #f6f6f6;
     border: 2px solid rgb(255, 226, 184);
@@ -137,6 +126,65 @@ h2.accordion a:hover
 
 .accContainer .block 
 {
-    padding: 20px;
+  padding: 20px;
 }
 
+/*.block div
+{
+    
+    margin: 0 auto;
+    width: 30%;
+    height: 200px;
+    background: red;
+    border: 2px dashed black;
+   
+}*/
+
+/*  SECTIONS  */
+.section 
+{
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+/*  COLUMN SETUP  */
+.col 
+{
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+   border: 2px dashed gray;
+}
+.col:first-child 
+{ 
+  margin-left: 0; 
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after 
+  { 
+    content:""; 
+    display:table; 
+  }
+.group:after
+ { 
+  clear:both;
+ }
+.group 
+{ 
+  zoom:1; /* For IE 6/7 */
+ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
