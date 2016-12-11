@@ -89,14 +89,12 @@ h2.accordion a
     border-radius: 5px;
 }
 
-/*h2.accordion a h3
+th,td
 {
-    display: inline;
-    font-size: 1.5em;
     color: #63b3dd;
-    
+    background-color: red;
     padding: 0 150px 0 150px;
-}*/
+}
 
 
 /*h2.accordion a:hover h3
