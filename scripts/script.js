@@ -1,22 +1,22 @@
+//***************************************Accordion Function******************************
+
 $(function()
 {
-	$('.accContainer').hide(); //hide all contents
-	$('.accordion:first').next().slideDown(); //show first instance of contents
-	
-	$('.accordion').click(function()
-		{
-			if( $(this).next().is(':hidden') ) 
-			{
-				$('.accordion').next().slideUp();
-				//triggers the hiding of contents
-				$(this).next().slideDown();
-				//triggers slide down of contents
-			}
-			return false; //prevents browser default
-		});
+    var accordion = $('section');//find what wraps around the accordion
 
-}); //document.ready function
+    accordion.find('.accContainer').hide(); //Hide the content on load
+    accordion.find('.accordion').on('click', function()
+    {
+      $(this).next('.accContainer').slideToggle();  //toggle between open and close on click
+        //Add Arrow Animation Here
+    });
+});//same as document.ready Function
 
+//**************************************End Accordion**********************************
+
+
+
+//****************************************MODAL*****************************************
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -27,19 +27,35 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
+btn.onclick = function() 
+{
     modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function() 
+{
     modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
         modal.style.display = "none";
     }
 }
+//**************************************************END MODAL*******************************
 
+
+
+//*******************************Check Box CheckAll function********************************
+function selectAll(status) 
+  {
+      $('input[name=Exhibit]').each(function()
+      { 
+          $(this).prop('checked', status);
+      });
+  }
+//**********************************End Check All********************************************
