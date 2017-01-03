@@ -104,6 +104,7 @@ ul li a:hover + .hidden, .hidden:hover
     font-family: 'Swiss 721 Light Condensed BT';
     width: 60%;
     margin: 0 auto;
+    margin-right: 10%;
     padding: 0;
    
     list-style-type: none;
@@ -138,7 +139,7 @@ ul li a:hover + .hidden, .hidden:hover
    
 }
 
-#menu li:first-child /* Note this is aso affecting the the list item in the drop down menu because its also a first child*/
+#menu li:first-child /* Note this is a;so affecting the the list item in the drop down menu because its also a first child*/
 {
     border-left: 4px solid #005b92;
 }
