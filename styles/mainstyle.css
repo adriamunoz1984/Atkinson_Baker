@@ -170,8 +170,20 @@ section
 /*************END Accordion Tables************/
 
 /******************Accordion Arrows***************/
+.plus
+{
+    width: 20px;
+    height: 15px;
+    transform: rotate(-90deg);
+    transition: transform 300ms ease-in;
+    margin: 0;
+    padding: 0;
+}
 
-
+.minus
+{
+     transform: rotate(0deg);
+}
 /*******************End Arrows********************/
 
 /****************************END Accordion Content*****************/

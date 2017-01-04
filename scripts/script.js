@@ -8,6 +8,7 @@ $(function()
     accordion.find('.accordion').on('click', function()
     {
       $(this).next('.accContainer').slideToggle();  //toggle between open and close on click
+      $(this).find("img").toggleClass('minus', 20000,'easeInQuart');
         //Add Arrow Animation Here
     });
 });//same as document.ready Function
