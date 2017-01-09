@@ -3,21 +3,23 @@
 $(function()
 {
     var accordion = $('section');//find what wraps around the accordion
+    var openA = $('#openAll');
 
-    accordion.find('.accContainer').hide(); //Hide the content on load
+    accordion.find('.accContainer, .schedContainer').hide(); //Hide the content on load
     accordion.find('.accordion').on('click', function()
     {
-      $(this).next('.accContainer').slideToggle();  //toggle between open and close on click
-      $(this).find("img").toggleClass('minus', 20000,'easeInQuart');
-        //Add Arrow Animation Here
+      $(this).next('.accContainer, .schedContainer').slideToggle();  //toggle between open and close on click
+      $(this).find("img").toggleClass('minus', 20000,'easeInQuart'); //Arrow Animation Here
+       
     });
+    
 });//same as document.ready Function
 
 //**************************************End Accordion**********************************
 
 
 
-//****************************************MODAL*****************************************
+//****************************************MODAL****************************************
 // Get the modal
 var modal = document.getElementById('myModal');
 

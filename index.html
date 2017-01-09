@@ -23,9 +23,9 @@
               <div class="modal-content">
                 <span class="close">&times;</span>
                   <div class="mContent">
-                       <form action="#">
+                    <form action="#">
                       <label><input type="checkbox" id="selectall" onclick="selectAll(this.checked)"/> Check all</label>
-                      <table>
+                      <table class="Mtable">
                         <thead>    
                           <tr>
                             <th colspan="3">Exhibits</th>
@@ -103,7 +103,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Calendar</a></li>
-                <li><a href="#">Schedule</a></li>
+                <li><a href="schedules.html">Schedule</a></li>
                 <li><a href="#">Files</a></li>
                 <li><a href="#">Invoices</a></li>
             </ul>
@@ -113,6 +113,7 @@
 
 
          <div id="wrapper">
+             <img src="img/OpenAll.png" id="openAll">
               <div class="title">
                   <header>
                   <div><h2>Date</h2></div>
@@ -127,14 +128,14 @@
              <section>
               <div class="accordion"> 
                 
-                <div class="h">
+                <div class="head">
                     
-                         <header>
-                             <img class="plus" src="img/ArrowS2.png">
-                            <div>09/07/2016</div>
-                            <div>Lugo v Carono</div>
-                            <div>AA079AF</div>
-                          </header>
+                   <header>
+                       <img class="plus" src="img/ArrowS2.png"><!-- Accordion Arrow -->
+                      <div>09/07/2016</div>
+                      <div>Lugo v Carono</div>
+                      <div>AA079AF</div>
+                    </header>
                 </div>
               </div>
              <!--  End Accordion Header -->
@@ -142,7 +143,7 @@
              <!-- Accordion Body -->
                 <div class="accContainer">
                    <div>
-                      <table>
+                      <table class="filesTable">
                           <thead>
                             <tr class="accTableHeader">
 
@@ -196,7 +197,7 @@
              <section>
               <div class="accordion"> 
                  
-                 <div class="h">
+                 <div class="head">
                      
                          <header>
                              <img class="plus" src="img/ArrowS2.png">
@@ -211,9 +212,9 @@
              <!-- Accordion Body -->
                 <div class="accContainer">
                    <div>
-                      <table>
+                      <table class="filesTable">
                           <thead>
-                            <tr>
+                            <tr class="accTableHeader">
                                 <div>
                                   <th>ASCII Transcripts/Errata</th>
                                   <th>PDF-Transcripts</th>
@@ -265,7 +266,7 @@
               <section>
               <div class="accordion">
                  
-                 <div class="h">
+                 <div class="head">
                     
                          <header>
                               <img class="plus" src="img/ArrowS2.png">
@@ -280,9 +281,9 @@
              <!-- Accordion Body -->
                 <div class="accContainer">
                    <div>
-                      <table>
+                      <table class="filesTable">
                           <thead>
-                            <tr>
+                            <tr class="accTableHeader">
                                 <div>
                                   <th>ASCII Transcripts/Errata</th>
                                   <th>PDF-Transcripts</th>
@@ -333,7 +334,7 @@
              <!-- Accordion 4 header section -->
               <section>
               <div class="accordion">
-                 <div class="h">
+                 <div class="head">
                      
                          <header>
                              <img class="plus" src="img/ArrowS2.png">
@@ -348,9 +349,9 @@
              <!-- Accordion Body -->
                 <div class="accContainer">
                    <div>
-                      <table>
+                      <table class="filesTable">
                           <thead>
-                            <tr>
+                            <tr class="accTableHeader">
                                 <div>
                                   <th>ASCII Transcripts/Errata</th>
                                   <th>PDF-Transcripts</th>
