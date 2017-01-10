@@ -18,7 +18,7 @@
     border: 2px solid gray;
 }
 
-.reqIcon
+.reqIcon /* Required Symbol behind Required field (Red Circle)*/
 {
     width: 25px; 
 }
@@ -27,7 +27,7 @@
 /*******************************General Information**************/
 
 
-.general-body tr:nth-child(2) td:nth-child(2) img  /* calendar image*/
+.general-body tr:nth-child(2) td:nth-child(2) img  /* calendar image icon*/
 {
     width: 25px;
     margin-bottom: -8px;
@@ -127,7 +127,7 @@
 }
 
 /********************************Case*************************************/
-.case-body tr td img:nth-child(2) /* calendar image*/
+.case-body tr td img:nth-child(2) /* calendar image icon*/
 {
     width: 25px;
     margin-bottom: -8px;
@@ -158,6 +158,29 @@
   padding-right: 20px;
     padding-top: 0;
 }
+
+/**************************Billing***************************************/
+
+.billing-body tr td
+{
+    padding: 65px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
+    margin: 0px;
+}
+
+.billing-body tr td:nth-child(2)
+{
+    padding-left: 125px;
+}
+
+.billing-body tr td label:nth-child(3)
+{
+    margin-left: 90px;
+}
+
 /**********************File Uploading************************************/
 .header-title h2 n
 {
