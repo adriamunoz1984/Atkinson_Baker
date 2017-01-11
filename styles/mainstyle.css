@@ -2,6 +2,7 @@
 @import "menu.css";
 @import "schedules.css";
 @import "files.css";
+@import "upcoming.css";
 
 
 /* CSS FILE */
@@ -91,6 +92,7 @@ body
     border-radius: 5px;
     cursor: pointer;
 }
+
 header
 {
     display: table-row;

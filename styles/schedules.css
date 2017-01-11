@@ -158,9 +158,14 @@
   padding-right: 20px;
     padding-top: 0;
 }
-
 /**************************Billing***************************************/
-
+.billing-body tr:nth-child(1) td
+{
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+    padding: 0px;
+}
 .billing-body tr td
 {
     padding: 65px;
@@ -176,13 +181,199 @@
     padding-left: 125px;
 }
 
+
+.billing-body tr td:nth-child(1)
+{
+    padding-left: 25px;
+}
+
 .billing-body tr td label:nth-child(3)
 {
     margin-left: 90px;
 }
 
+.billing-body tr:nth-child(8) td:nth-child(2) img
+{
+    width: 25px;
+    margin-bottom: -8px;
+}
+
+/************************Other Services**********************************/
+.other-body tr td
+{
+    padding: 65px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
+    margin: 0px;
+}
+
+.other-body tr td:nth-child(1)
+{
+    padding-right: 125px;
+}
+.other-body tr td:nth-child(2)
+{
+    padding-left: 100px;
+}
+
+.other-body tr td label:nth-child(3)
+{
+    margin-left: 90px;
+}
+
+/**********************Real Time****************************************/
+.real-body tr td
+{
+    padding: 65px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right:20px;
+    margin: 0px;
+}
+
+.real-body tr td:nth-child(1)
+{
+    padding-right: 75px;
+}
+.real-body tr td:nth-child(2)
+{
+    padding-left: 175px;
+}
+
+.real-body tr td label:nth-child(3)
+{
+    margin-left: 90px;
+}
+/**********************************Delivery******************************/
+.delivery-body tr:nth-child(1) td
+{
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+    padding: 0px;
+}
+
+.delivery-body tr td:nth-child(2)
+{
+/*
+    padding-left: 75px;
+    padding-right: 110px;
+*/
+}
+
+.delivery-body tr td
+{
+    padding: 20px 30px;
+}
+
+.delivery-body tr:nth-child(4) td
+{
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 200px;
+}
+.delivery-body tr:nth-child(3) td
+{
+    padding-bottom: 0;
+}
+
+.delivery-body tr td:nth-child(2)
+{
+    padding-left: 200px;
+    padding-right: 0;
+}
+.delivery-body tr td:nth-child(1)
+{
+    
+    padding-right: 20px;
+    
+}
+
+.delivery-body tr:nth-child(6) td
+{
+    padding-bottom: 2px;
+}
+
+.delivery-body tr:nth-child(7) td
+{
+/*
+  padding-left: 115px;
+  padding-right: 20px;
+    padding-top: 0;
+*/
+}
 /**********************File Uploading************************************/
 .header-title h2 n
 {
    font-size: 15px; 
+}
+
+.upload-body tr
+{
+      border: 2px solid gray;
+}
+.upload-body tr td
+{
+    padding:10px 85px;
+}
+
+.upload-body tr:nth-child(2) td
+{
+    padding-bottom: 500px;
+}
+
+.upload
+{
+    margin-left: 470px;
+    padding-bottom: 10px;
+}
+/****************************Schdule By************************************/
+.by-body tr td
+{
+    padding: 100px;
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+.by-body tr td:nth-child(2)
+{
+    padding-left: 150px;
+    padding-right: 60px
+}
+
+.by-body tr td p
+{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.schedBy-Buttons
+{
+    float: right;
+    padding-bottom: 20px;
+    padding-right:90px;
+}
+
+.schedBy-Buttons button
+{
+
+  border-radius: 8px;
+  border:2px solid rgb(200, 216, 222);
+  
+  background-image: -moz-linear-gradient( 90deg, rgb(220,236,243) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(220,236,243) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(220,236,243) 0%, rgb(255,255,255) 100%);
+ 
+  width: 100px;
+  height: 40px;
+ cursor: pointer;
+}
+
+.schedBy-Buttons button:last-child
+{
+     border:2px solid rgb(204, 0, 0);
 }

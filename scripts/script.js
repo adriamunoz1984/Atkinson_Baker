@@ -12,6 +12,10 @@ $(function()
       $(this).find("img").toggleClass('minus', 20000,'easeInQuart'); //Arrow Animation Here
        
     });
+//    openA.on('click', function() //Stupid non functioning function
+//    {
+//        accordion.find('.accContainer, .schedContainer').slideToggle();
+//    });
     
 });//same as document.ready Function
 
