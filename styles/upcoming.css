@@ -1,8 +1,7 @@
 /****************Accordion Table Styles**************/
 .upcomingWrapper .title div
 {
- width: 400px
-  
+ width: 400px;
 }
 
 .upcomingWrapper .title
@@ -11,7 +10,7 @@
     width: 98%
 }
 
-.upcomingWrapper thead tr
+.filesTable thead tr
 {
     padding: 0;
     margin: 0;
@@ -35,31 +34,37 @@
 }
 
 
-.upcomingWrapper thead tr th:nth-child(2)
+.upcomingWrapper thead tr th:nth-child(2)/* Center Blank Header */
 {
   border:none;  
 }
-.upcomingWrapper tbody tr td
+.upcomingWrapper tbody tr td /* Bottom Rows */
 {
     padding: 100px 0;
 }
 
-.upcomingWrapper tbody tr td:nth-child(2)
+.upcomingWrapper tbody tr td:nth-child(2) /* bottom Center  td */
 {
     border-top:none;
 }
 
-.upcomingWrapper tbody tr td:nth-child(1)
+.upcomingWrapper tbody tr td:nth-child(1) /* bottom left td */
 {
    border-right: 2px solid #d9d9d9; 
 }
 
-.upcomingWrapper tbody tr td:nth-child(3)
+.upcomingWrapper tbody tr td:nth-child(3) /* Bottom right td */
 {
    border-left: 2px solid #d9d9d9; 
 }
+/******************End Table Border Styles*******/
 
-.upcomingWrapper .accordion header div a img
+.upcomingWrapper .accordion header div img/* pdf image */
 {
-/*    width: 100px;*/
+    width: 50px;
+    margin: -8px
+}
+.upcomingWrapper .accordion header div
+{
+ 
 }
