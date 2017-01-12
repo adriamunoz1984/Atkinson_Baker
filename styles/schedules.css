@@ -371,7 +371,7 @@
  
   width: 100px;
   height: 40px;
- cursor: pointer;
+  cursor: pointer;
 }
 
 .schedBy-Buttons button:last-child

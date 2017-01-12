@@ -3,6 +3,7 @@
 @import "schedules.css";
 @import "files.css";
 @import "upcoming.css";
+@import "dashboard.css";
 
 
 /* CSS FILE */
@@ -45,6 +46,11 @@ body
      display: inline;
 }
 
+.header-title h2
+{
+   margin: 0;
+    padding: 0;
+}
 /***********Accordion Background Wrapper**********/
 #wrapper 
 {
@@ -90,11 +96,13 @@ body
     width: 98%;
     border-radius: 5px;
     cursor: pointer;
+    height: 60px;
 }
 
 header
 {
     display: table-row;
+    
 }
 
 header div

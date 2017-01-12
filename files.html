@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>CSS Tutorial</title>
+
+        <!-- Links to an external Style Sheet -->
+        <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="scripts/jquery-ui.css"></script>
+        <script src="scripts/jquery-ui.js"></script>
+    </head>
+    <body>
+
+        <!-- The Modal -->
+                <!-- Modal Trigger is the Exhibits button -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                  <div class="mContent">
+                    <form action="#">
+                      <label><input type="checkbox" id="selectall" onclick="selectAll(this.checked)"/> Check all</label>
+                      <table class="Mtable">
+                        <thead>    
+                          <tr>
+                            <th colspan="3">Exhibits</th>
+                            <th colspan="3">AA0565B</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                              <tr>
+                                  <td>Exhibit - A</td>
+                                  <td><input type="checkbox" name="Exhibit" value="ExhibitA"></td>
+                                  <td>Exhibit - F</td>
+                                  <td><input type="checkbox" name="Exhibit" value="ExhibitF"></td>
+                                  <td>Exhibit - K</td>
+                                  <td><input type="checkbox" name="Exhibit" value="ExhibitK"></td>
+                              </tr>
+                                <tr>
+                                    <td>Exhibit - B</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitB"></td>
+                                    <td>Exhibit - G</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitG"></td>
+                                    <td>Exhibit - L</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitL"></td>
+                              </tr>
+                                <tr>
+                                    <td>Exhibit - C</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitC"></td>
+                                    <td>Exhibit - H</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitH"></td>
+                                    <td>Exhibit - M</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitM"></td>
+                              </tr>
+                                <tr>
+                                    <td>Exhibit - D</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitD"></td>
+                                    <td>Exhibit - I</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitI"></td>
+                                    <td>Exhibit - N</td>
+                                    <td><input type="checkbox" name="Exhibit" value="ExhibitN"></td>
+                              </tr>
+                                <tr>
+                                    <td>Exhibit - E</td>
+                                    <td><input type="checkbox" name="Exhibit" value="Exhibit"></td>
+                                    <td>Exhibit - J</td>
+                                    <td><input type="checkbox" name="Exhibit" value="Exhibit"></td>
+                                    <td>Exhibit - O</td>
+                                    <td><input type="checkbox" name="Exhibit" value="Exhibit"></td>
+                              </tr>
+                        </tbody>
+
+                      </table>
+                    <input type="submit" value="Download" id="sub">
+                    </form>
+
+                  </div>
+              </div>
+
+            </div>
+        <!-- End Modal -->
+
+        <img src="img/Atkinsonbaker_logo.png" alt="" id="logo">
+        <div class="buttons">
+            <div class="topB profile"><a href="#">Profile</a></div>
+            <div class="topB logOut"><a href="#">Log Out</a></div>
+        </div>
+        
+        <!--**************************** Menu ***********************************-->
+         <div class="menuBG">
+            <ul id="menu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="upcoming.html">Upcoming Jobs</a></li>
+                <li><a href="#">Jobs List</a>
+                    <ul>
+                        <li id="details"><a href="jobDetails.html
+                            ">Job Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="schedules.html">Schedule</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Invoices</a></li>
+            </ul>
+        </div>
+        <!--*************************END Menu ************************************-->
+        <div id="search"><h2>Search box</h2></div><!-- Search Box -->
+
+
+         <div id="wrapper">
+             <img src="img/OpenAll.png" id="openAll">
+              <div class="title">
+                  <header>
+                  <div><h2>Date</h2></div>
+                  <div><h2>Case</h2></div>
+                  <div><h2>Job No.</h2></div>
+                  </header>
+              </div>
+
+            <!--*********************************Accordion 1**********************************************-->
+
+             <!-- Accordion 1 header section -->
+             <section>
+              <div class="accordion"> 
+                
+                <div class="head">
+                    
+                   <header>
+                       <img class="plus" src="img/ArrowS2.png"><!-- Accordion Arrow -->
+                      <div>09/07/2016</div>
+                      <div>Lugo v Carono</div>
+                      <div>AA079AF</div>
+                    </header>
+                </div>
+              </div>
+             <!--  End Accordion Header -->
+
+             <!-- Accordion Body -->
+                <div class="accContainer">
+                   <div>
+                      <table class="filesTable">
+                          <thead>
+                            <tr class="accTableHeader">
+
+                                  <th>ASCII Transcripts/Errata</th>
+                                  <th>PDF-Transcripts</th>
+                                  <th>Exhibits</th>
+                                  <th>E-Transcripts</th>
+                                  <th>File Archive</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                              <tr>
+                               <td>
+                                  <a href="#" class="button">Download/View</a>
+
+                               </td>
+
+                               <td>
+                                   <a href="#"><img src="img/pdf.jpg"/></a>
+                               </td>
+
+                                <td>
+                                   <a href="#" class="button" id="myBtn">Exhibits</a> <!-- Trigger Modal -->
+
+                               </td>
+
+                               <td>
+                                    <a href="#" class="button">Transcripts</a>
+
+                               </td>
+
+                                <td>
+                                    <a href="#"><img src="img/Archive.png"/></a>
+                               </td>
+                               </tr>
+
+                           </tbody>
+                      </table>
+                    </div> 
+                </div>
+            </section>
+            <!-- End Accordion Body -->
+
+
+            <!--*********************************END Accordion 1**********************************************-->
+
+             <!--*********************************Accordion 2**********************************************-->
+             <!-- Accordion 2 header section -->
+             <section>
+              <div class="accordion"> 
+                 
+                 <div class="head">
+                     
+                         <header>
+                             <img class="plus" src="img/ArrowS2.png">
+                            <div>09/07/2016</div>
+                            <div>Lugo v Carono</div>
+                            <div>AA079AF</div>
+                          </header>
+                </div>
+              </div>
+             <!--  End Accordion Header -->
+
+             <!-- Accordion Body -->
+                <div class="accContainer">
+                   <div>
+                      <table class="filesTable">
+                          <thead>
+                            <tr class="accTableHeader">
+                                <div>
+                                  <th>ASCII Transcripts/Errata</th>
+                                  <th>PDF-Transcripts</th>
+                                  <th>Exhibits</th>
+                                  <th>E-Transcripts</th>
+                                  <th>File Archive</th>
+                                </div>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                               <td>
+                                  <a href="#" class="button">Download/View</a>
+
+                               </td>
+
+                               <td>
+
+                                   <a href="#"><img src="img/pdf.jpg"/></a>
+
+                               </td>
+
+                                <td>
+                                   <a href="#" class="button">Exhibits</a>
+
+
+                               </td>
+
+                               <td>
+                                    <a href="#" class="button">Transcripts</a>
+
+                               </td>
+
+                                <td>
+
+                                    <a href="#"><img src="img/Archive.png"/></a>
+                               </td>
+                               </tr>
+                           </tbody>
+                      </table>
+                    </div> 
+                </div>
+            </section>
+             <!--*********************************END Accordion 2**********************************************-->
+
+
+             <!--*********************************Accordion 3**********************************************-->
+            <!-- Accordion 3 header section -->
+              <section>
+              <div class="accordion">
+                 
+                 <div class="head">
+                    
+                         <header>
+                              <img class="plus" src="img/ArrowS2.png">
+                            <div>09/07/2016</div>
+                            <div>Lugo v Carono</div>
+                            <div>AA079AF</div>
+                          </header>
+                </div>
+              </div>
+             <!--  End Accordion Header -->
+
+             <!-- Accordion Body -->
+                <div class="accContainer">
+                   <div>
+                      <table class="filesTable">
+                          <thead>
+                            <tr class="accTableHeader">
+                                <div>
+                                  <th>ASCII Transcripts/Errata</th>
+                                  <th>PDF-Transcripts</th>
+                                  <th>Exhibits</th>
+                                  <th>E-Transcripts</th>
+                                  <th>File Archive</th>
+                                </div>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                               <td>
+                                  <a href="#" class="button">Download/View</a>
+
+                               </td>
+
+                               <td>
+
+                                   <a href="#"><img src="img/pdf.jpg"/></a>
+
+                               </td>
+
+                                <td>
+                                   <a href="#" class="button">Exhibits</a>
+
+
+                               </td>
+
+                               <td>
+                                    <a href="#" class="button">Transcripts</a>
+
+                               </td>
+
+                                <td>
+
+                                    <a href="#"><img src="img/Archive.png"/></a>
+                               </td>
+                               </tr>
+                           </tbody>
+                      </table>
+                    </div> 
+                </div>
+            </section>
+             <!--*********************************END Accordion 3**********************************************-->
+
+
+            <!--*********************************Accordion 4**********************************************-->
+             <!-- Accordion 4 header section -->
+              <section>
+              <div class="accordion">
+                 <div class="head">
+                     
+                         <header>
+                             <img class="plus" src="img/ArrowS2.png">
+                            <div>09/07/2016</div>
+                            <div>Lugo v Carono</div>
+                            <div>AA079AF</div>
+                          </header>
+                </div>
+              </div>
+             <!--  End Accordion Header -->
+
+             <!-- Accordion Body -->
+                <div class="accContainer">
+                   <div>
+                      <table class="filesTable">
+                          <thead>
+                            <tr class="accTableHeader">
+                                <div>
+                                  <th>ASCII Transcripts/Errata</th>
+                                  <th>PDF-Transcripts</th>
+                                  <th>Exhibits</th>
+                                  <th>E-Transcripts</th>
+                                  <th>File Archive</th>
+                                </div>
+                            </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                               <td>
+                                  <a href="#" class="button">Download/View</a>
+
+                               </td>
+
+                               <td>
+
+                                   <a href="#"><img src="img/pdf.jpg"/></a>
+
+                               </td>
+
+                                <td>
+                                   <a href="#" class="button">Exhibits</a>
+
+
+                               </td>
+
+                               <td>
+                                    <a href="#" class="button">Transcripts</a>
+
+                               </td>
+
+                                <td>
+
+                                    <a href="#"><img src="img/Archive.png"/></a>
+                               </td>
+                               </tr>
+                           </tbody>
+                      </table>
+                    </div> 
+                </div>
+            </section>
+             <!--*********************************END Accordion 4**********************************************-->
+        </div>
+
+
+        <script src="scripts/script.js"></script>
+        <script>
+    //alert(window.outerWidth+' x '+window.outerHeight);
+    </script>
+    </body>
+    <footer>
+        <p>©1995-2016 Copyright Atkinson-Baker, Inc., Court Reporters. (1.0.10.22.13.1) VS 2015 version Legal Notices | Copyrights | Privacy Policies</p>
+    </footer>
+</html>
