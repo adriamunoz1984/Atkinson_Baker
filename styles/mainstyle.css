@@ -3,7 +3,7 @@
 @import "schedules.css";
 @import "files.css";
 @import "upcoming.css";
-@import "dashboard.css";
+
 
 
 /* CSS FILE */
@@ -110,6 +110,7 @@ header div
     text-align: center;
     width: 800px;
     display: table-cell;
+  
   
 }
 

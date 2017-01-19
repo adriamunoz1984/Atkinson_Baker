@@ -6,8 +6,7 @@
         <title>ACS4</title>
 
         <!-- Links to an external Style Sheet -->
-        <link rel="stylesheet" type="text/css" href="styles/dashboard.css">
-        <link rel="stylesheet" type="text/css" href="styles/menu.css">
+        <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="scripts/jquery-ui.css"></script>
         <script src="scripts/jquery-ui.js"></script>
@@ -41,12 +40,12 @@
 
 
          <div id="wrapper"><!-- Gives the background Gradient -->
-            <table class="dash-table">
+             <div class="boxes table">   <!-- Sorrounds all the boxes-->
+                 <div class="row">
                      <!-- *****************************Upcoming accordions Box*******************************************-->
-                        
+                         <div class="upcoming-box box"> 
 
-                    <tr>
-                        <td rowspan="2" colspan="2">
+
                                  <img src="img/OpenAll.png" id="openAll">
                                   <div class="title">
                                       <header>
@@ -65,7 +64,7 @@
                                     <div class="head">
 
                                        <header>
-                                           <img class="plus" src="img/ArrowS2.png"> <!--Accordion Arrow -->
+                                           <img class="plus" src="img/ArrowS2.png"><!-- Accordion Arrow -->
 
                                           <div>Upcoming Jobs 1</div>
 
@@ -77,36 +76,12 @@
                                  <!-- Accordion Body -->
                                     <div class="accContainer">
                                        <div>
-                                          <table class="dash-table">
+                                          <table class="filesTable">
                                               <thead>
                                                 <tr class="accTableHeader">
 
-                                                    <td>
-                                                        <!-- SUB Accordion 1 header section -->
-                                                         <section class="subAccordion">
-                                                          <div class="accordion"> 
+                                                      <th>ASCII Transcripts/Errata</th>
 
-                                                            <div class="head">
-
-                                                               <header>
-                                                                   
-
-                                                                  <div>Job 1</div>
-
-                                                                </header>
-                                                            </div>
-                                                          </div>
-                                                         <!--  End Accordion Header -->
-
-                                                         <!-- Accordion Body -->
-                                                            <div class="accContainer">
-                                                               <div>
-                                                                  
-                                                                </div> 
-                                                            </div>
-                                                        </section>
-                                                        <!-- End Sub Accordion Body -->
-                                                    </td>
                                                 </tr>
                                               </thead>
                                               <tbody>
@@ -117,21 +92,64 @@
                                     </div>
                                 </section>
                                 <!-- End Accordion Body -->
-                            
-                        </td>
-                        <td><img src="img/multiBarChart.png"></td>
-                        
-                </tr>
-                <tr>
-                    <td><img src="img/2d-scatterplot.gif"></td>
 
-                </tr>
-                 <tr>
-                    <td><img src="img/basic-chart1.png"></td>
-                    <td><img src="img/horizbar-centeredaxis.gif"></td>
-                    <td><img src="img/PieChart.png"></td>
-                </tr>
-             </table>            
+                             <!--************************Accordion 2*******************************-->
+
+                                 <!-- Accordion 1 header section -->
+                                 <section>
+                                  <div class="accordion"> 
+
+                                    <div class="head">
+
+                                       <header>
+                                           <img class="plus" src="img/ArrowS2.png"><!-- Accordion Arrow -->
+
+                                          <div>Upcoming Jobs 2</div>
+
+                                        </header>
+                                    </div>
+                                  </div>
+                                 <!--  End Accordion Header -->
+
+                                 <!-- Accordion Body -->
+                                    <div class="accContainer">
+                                       <div>
+                                          <table class="filesTable">
+                                              <thead>
+                                                <tr class="accTableHeader">
+
+                                                      <th>ASCII Transcripts/Errata</th>
+
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+
+                                               </tbody>
+                                          </table>
+                                        </div> 
+                                    </div>
+                                </section>
+                                <!-- End Accordion Body -->
+                     </div> <!-- Upcoming Body-->
+               
+                 
+                
+                 
+                     <div class="box box2"></div>
+                     <div class="box box3"></div>
+                 </div><!-- row1-->
+                 
+                 <div class="row">
+                     <div class="box box4"></div>
+                     <div class="box box5"></div>
+                     <div class="box box6"></div>
+                 </div>
+                <div class="row">
+                     <div class="box box7"></div>
+                     <div class="box box8"></div>
+                     <div class="box box9"></div>
+                </div>  
+            </div> <!-- Boxes / Table-->
         </div> <!-- Wrapper-->
 
 

@@ -1,40 +1,209 @@
+@import "font.css";
+body
+{
+    
+    font-family: 'Swiss 721 Light Condensed BT';
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
 
-.boxes
+#wrapper 
+{
+    margin: 50px auto;
+    width:80%;
+    padding: 20px 0 20px 0;
+    border-radius: 20px;
+    background-image: -moz-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+}
+
+/*********************Accordion Header********************/
+.accordion 
+{
+    
+    padding: 0;
+    background: #333;
+    height: 40px;
+    line-height:40px;
+    width: 98%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid rgb(169, 169, 169);
+    margin: 20px auto 0 auto;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    
+}
+#wrapper .title div h2
+{
+     font-size: 2em;
+     color: #63b3dd;
+     margin: 0;
+     display: inline;
+}
+
+.header-title h2
+{
+   margin: 0;
+    padding: 0;
+}
+.head 
+{
+    text-align: center;
+    margin: 0 auto;
+    color: #63b3dd;
+    text-decoration: none;
+    display: block;
+    font-family: myriad pro, helvetica, arial;
+    width: 98%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+header
+{
+    display: table-row;
+    margin-left: 40px;
+}
+
+header img
+{
+  position: relative;
+    top: -30px;  
+}
+.head header div
+{
+    text-align: center;
+    width: 400px;
+    display: table-cell;
+    position: relative;
+    top: -30px;
+}
+
+
+.title h2
+{
+  margin:0;
+}
+
+/***********Open All Button*********/
+#openAll
+{
+    width: 50px;
+}
+
+#openAll:hover
+{
+    cursor:pointer;
+}
+
+/**********************Accordion Content******************************/
+.accContainer 
+{
+  margin: 0px auto 5px auto;
+  padding: 0px;
+  overflow: hidden;
+  font-size: 1.2em;
+  color: #666;
+  width: 95%;
+  clear: both;
+  background: #f6f6f6;
+
+  background-image: -moz-linear-gradient( 90deg, rgb(253,253,254) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(253,253,254) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(253,253,254) 0%, rgb(255,255,255) 100%);
+    
+}
+
+/**************Accordion Tables******************/
+section
 {
     margin: 0 auto;
-    width: 95%;
+    display: table;
 }
 
-.box
+.accTableHeader td
 {
-    width: 30%;
-    height:400px;
-    background-color: white;
-    border: 2px solid rgb(255, 226, 184);
-    border-radius:10px ;
+    padding: 15px 0 15px 0;
+   
 }
 
-/***************Upcoming box***********/
-.upcoming-box
+/******************Accordion Arrows***************/
+.plus
+{
+    width: 20px;
+    height: 15px;
+    transform: rotate(-90deg);
+    transition: transform 300ms ease-in;
+    margin-top: 23px;
+}
+
+.minus
+{
+     transform: rotate(0deg);
+}
+
+
+/*******************End Arrows********************/
+
+.dash-table tr td
+{
+    padding: 50px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 226
+        , 184);
+}
+
+.dash-table tr:nth-child(1) td:nth-child(1) td
+{
+    border: none; 
+    padding: 0;
+    position: relative;
+    right: -44px;
+}
+
+
+.dash-table .title header div:nth-child(odd)
+{
+    width: 0;
+}
+
+.dash-table tr:nth-child(1) td:nth-child(2), .dash-table tr:nth-child(2) td:nth-child(1), .dash-table tr:nth-child(3) td
 {
     padding: 20px;
-    width: 50%;
-    height: 500px;
-    border: 2px solid rgb(255, 226, 184);
-    border-radius:10px ;
-    background-color: white;
 }
 
-.upcoming-box > img
+
+.dash-table .title h2
 {
- position: relative;
- left:10px;
+    margin-left: 40px;
 }
 
-/****************************************/
-
-.box1, .box2, .box3, .box4, .box5
+.dash-table
 {
-    position: relative;
-    display: inline-block;
+   border-spacing: 20px; 
+   margin: 0 auto;
+/*    width: 100%;*/
+}
+
+/*****************Sub Accordion*******************/
+
+.subAccordion header div
+{
+   position: relative;
+    top: 4px;
+}
+
+.dash-table tr:nth-child(1) td:last-child img, .dash-table tr:nth-child(2) td img, .dash-table tr:nth-child(3) td img
+{
+    width: 200px;
 }
