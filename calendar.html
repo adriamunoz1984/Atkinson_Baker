@@ -1,0 +1,73 @@
+
+<DOCTYPE HTML>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>ACS4</title>
+
+        <!-- Links to an external Style Sheet -->
+        <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="scripts/jquery-ui.css"></script>
+        <script src="scripts/jquery-ui.js"></script>
+    </head>
+    <body>
+
+        <img src="img/Atkinsonbaker_logo.png" alt="" id="logo">
+        <div class="buttons">
+            <div class="topB profile"><a href="#">Profile</a></div>
+            <div class="topB logOut"><a href="#">Log Out</a></div>
+        </div>
+        
+        <!--**************************** Menu ***********************************-->
+         <div class="menuBG">
+            <ul id="menu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="upcoming.html">Upcoming Jobs</a></li>
+                <li><a href="#">Jobs List</a>
+                    <ul>
+                        <li id="details"><a href="jobDetails.html
+                            ">Job Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="schedules.html">Schedule</a></li>
+                <li><a href="files.html">Files</a></li>
+                <li><a href="#">Invoices</a></li>
+            </ul>
+        </div>
+        <!--*************************END Menu ************************************-->
+
+
+         <div id="wrapper"><!-- Gives the background Gradient -->
+         	<div class="calendar_block">
+   				<div class="calendar"></div>
+		 	</div>
+   		</div>
+
+
+   	  <script>
+       $('.calendar').datepicker({
+          firstDay:1 
+       });
+        
+      </script>
+  	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

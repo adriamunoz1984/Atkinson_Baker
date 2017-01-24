@@ -3,6 +3,8 @@
 @import "schedules.css";
 @import "files.css";
 @import "upcoming.css";
+@import "jobDetails.css";
+@import "calendar.css";
 
 
 
@@ -16,7 +18,7 @@ body
     padding: 0;
     margin: 0;
     padding-top: 50px;
-    overflow-x: hidden;
+    
 }
 
 #search
