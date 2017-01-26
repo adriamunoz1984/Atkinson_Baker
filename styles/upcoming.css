@@ -61,7 +61,9 @@
 
 .upcomingWrapper .accordion header div img/* pdf image */
 {
+    position: relative;
     width: 50px;
-    margin: -8px
+    margin: -8px;
+    top: 10px;
 }
 

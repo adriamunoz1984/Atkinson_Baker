@@ -1,9 +1,6 @@
 /*****************************Full Page Styling********************/
 
-
-/*3 4 4 2 2 */
-
-.gen-body tr input
+.table input
 {
     width: 50px;
     height: 50px;
@@ -46,6 +43,282 @@
 {
     font-weight: bold;
 }
-/*https://www.youtube.com/watch?v=O1L5cPQXv1Q*/
-/*************************Location***************************/
 
+/***************Location******************/
+
+.loc-body > .row .cell
+{
+    text-align: center;
+    padding: 100px 0;
+}
+
+/**************Billing***************/
+
+.billi-body .border:nth-child(3) .row:first-child
+{
+    border-bottom: 4px solid lightgray;
+}
+.billi-body .border:nth-child(3) .row:first-child .cell
+{
+   flex: 2;
+   text-align: center;
+}
+
+.billi-body .row
+{
+    display: flex;
+}
+
+/*******Transcript production *********/
+.trans-body .cell:nth-child(2)
+{
+   text-align: center;
+}
+
+.trans-body .cell:nth-child(2) input
+{
+    position: relative;
+    top: 20px;
+}
+
+/********Shipping**************/
+
+.supp-body .row .cell
+{
+    width: 100px;
+    
+}
+.supp-body .row .cell:first-child
+{
+    width: 200px;
+    
+}
+
+.supp-body .row .cell:nth-child(n+2)
+{
+    width:70px;
+    
+}
+.supp-body .row .cell h3
+{
+     text-align: center;
+    color: #63b3dd;
+}
+.supp-body .row:first-child .cell
+{
+   
+    padding: 0;
+    border-collapse: collapse;
+    background: #333;
+    height: 0px;
+    line-height:0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid rgb(169, 169, 169);
+    margin: 0 auto;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+}
+.supp-body .row:first-child .cell:first-child
+{
+    border-radius: 15px 0 0px 15px;
+     border-right: none; 
+    
+}
+
+.supp-body .row:first-child .cell:last-child
+{
+    border-radius: 0 15px 15px 0;
+    border-left: none;
+        
+}
+
+.supp-body .row:first-child .cell:nth-child(2), 
+.supp-body .row:first-child .cell:nth-child(3)
+{
+    border-radius:0;
+    border-right: none;
+    border-left: none;
+        
+}
+
+.supp-body .row .cell /**All Cells****/
+{
+    border: 3px solid lightgray;
+    border-collapse: collapse;
+}
+
+.supp-body .row:last-child .cell /***last datda row and cells****/
+{
+    border-radius: 15px;
+}
+
+.supp-body .row .cell
+{
+    padding-top:35px;
+    padding-bottom: 35px
+}
+
+.supp-body .row:last-child .cell:first-child
+{
+    border-radius:15px 0 0 15px;
+}
+
+.supp-body .row:last-child .cell:last-child
+{
+    border-radius: 0 15px 15px 0;
+}
+.supp-body .row:last-child .cell:nth-child(2), 
+.supp-body .row:last-child .cell:nth-child(3)
+{
+    border-radius: 0;
+}
+
+.supp-body .row:last-child .cell:nth-child(2)
+{
+  border-left: none;  
+}
+.supp-body .row:last-child .cell:nth-child(3)
+{
+    border-right: none;
+    border-left: none;
+}
+
+.supp-body .row:first-child .cell
+{
+    border: none;
+}
+/************Shipping******************/
+
+.ship-body .row .cell
+{
+    width: 100px;
+    
+}
+/*
+.ship-body .row .cell:first-child
+{
+    width: 200px;
+    
+}
+
+.ship-body .row .cell:nth-child(n+2)
+{
+    width:70px;
+    
+}
+*/
+.ship-body .row .cell h3
+{
+     text-align: center;
+    color: #63b3dd;
+}
+.ship-body .row:first-child .cell
+{
+   
+    padding: 0;
+    border-collapse: collapse;
+    background: #333;
+    height: 0px;
+    line-height:0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid rgb(169, 169, 169);
+    margin: 0 auto;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+}
+.ship-body .row:first-child .cell:first-child
+{
+    border-radius: 15px 0 0px 15px;
+     border-right: none; 
+    
+}
+
+.ship-body .row:first-child .cell:last-child
+{
+    border-radius: 0 15px 15px 0;
+    border-left: none;
+        
+}
+
+.ship-body .row:first-child .cell:nth-child(2), 
+.ship-body .row:first-child .cell:nth-child(3)
+{
+    border-radius:0;
+    border-right: none;
+    border-left: none;
+        
+}
+/***********Job History************/
+
+.jobHistory-body .row .cell
+{
+    width: 100px;
+    
+}
+/*
+.jobHistory-body .row .cell:first-child
+{
+    width: 200px;
+    
+}
+
+.jobHistory-body .row .cell:nth-child(n+2)
+{
+    width:70px;
+    
+}
+*/
+.jobHistory-body .row .cell h3
+{
+     text-align: center;
+    color: #63b3dd;
+}
+.jobHistory-body .row:first-child .cell
+{
+   
+    padding: 0;
+    border-collapse: collapse;
+    background: #333;
+    height: 0px;
+    line-height:0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid rgb(169, 169, 169);
+    margin: 0 auto;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+}
+.jobHistory-body .row:first-child .cell:first-child
+{
+    border-radius: 15px 0 0px 15px;
+     border-right: none; 
+    
+}
+
+.jobHistory-body .row:first-child .cell:last-child
+{
+    border-radius: 0 15px 15px 0;
+    border-left: none;
+        
+}
+
+.jobHistory-body .row:first-child .cell:nth-child(2), 
+.jobHistory-body .row:first-child .cell:nth-child(3),
+.jobHistory-body .row:first-child .cell:nth-child(4)
+{
+    border-radius:0;
+    border-right: none;
+    border-left: none;
+        
+}
