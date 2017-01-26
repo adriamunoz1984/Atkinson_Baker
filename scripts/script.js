@@ -5,10 +5,10 @@ $(function()
     var accordion = $('section');//find what wraps around the accordion
     var openA = $('#openAll');
 
-    accordion.find('.accContainer, .schedContainer').hide(); //Hide the content on load
+    accordion.find('.accContainer').hide(); //Hide the content on load
     accordion.find('.accordion').on('click', function()
     {
-      $(this).next('.accContainer, .schedContainer').slideToggle();  //toggle between open and close on click
+      $(this).next('.accContainer').slideToggle();  //toggle between open and close on click
       $(this).find("img").toggleClass('minus', 20000,'easeInQuart'); //Arrow Animation Here
        
     });
@@ -16,6 +16,21 @@ $(function()
 //    {
 //        accordion.find('.accContainer, .schedContainer').slideToggle();
 //    });
+    
+    openA.on('click', function() //Stupid non functioning function
+   {
+      if ($('.accContainer').is(':visible')) {
+
+          accordion.find('.accContainer').slideUp();
+          accordion.find("img").removeClass('minus', 'true');
+
+      }
+      else {
+          accordion.find('.accContainer').slideDown();
+          accordion.find("img").toggleClass('minus', 20000,'easeInQuart');
+
+     }
+   });
     
 });//same as document.ready Function
 
