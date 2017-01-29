@@ -6,6 +6,8 @@
 @import "jobDetails.css";
 @import "calendar.css";
 @import "jobList.css";
+@import "reports.css";
+@import "invoices.css";
 
 
 /* CSS FILE */
@@ -18,7 +20,7 @@ body
     padding: 0;
     margin: 0;
     padding-top: 50px;
-    
+    overflow-x: hidden;
 }
 
 #search

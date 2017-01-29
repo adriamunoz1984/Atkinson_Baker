@@ -1,4 +1,11 @@
 /********************All Accordion Tables for Schedules Page**************/
+
+/*open/close all button*/
+.openAllSched
+{
+    position: relative;
+    left: 540px;
+}
 .schedTable
 {
    margin:30px auto;

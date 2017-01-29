@@ -1,3 +1,10 @@
+.openAllFiles
+{
+    position: relative;
+    left: 20px;
+    top: 40px;
+}
+
 .filesTable tbody tr td
 {
     text-align: center;

@@ -1,4 +1,6 @@
-.jobList-body
+/****************Invoice table*************/
+/****** general table stuff*******/
+.invoice-body
 {
     width: 95%;
     display: table;
@@ -8,29 +10,28 @@
     border-spacing: none;
 }
 
-.jobList-body .row
+.invoice-body .row
 {
     display: table-row;
     
 }
 
-.jobList-body .row .cell
+.invoice-body .row .cell
 {
     display: table-cell;
     padding: 30px 0;
     font-weight: normal;
     width: 10%;
-    
 }
 
 /*******Borders and cell styleing***/
 
-.jobList-body .row:first-child .cell
+.invoice-body .row:first-child .cell
 { 
     background-color: none;
 }
 
-.jobList-body .row:nth-child(n+2) .cell
+.invoice-body .row:nth-child(n+2) .cell
 { 
   background-color: white;
   border: 4px solid rgb(255, 226, 184);
@@ -38,14 +39,14 @@
     
 }
 /************************Border control second row of table*********/
-.jobList-body .row:nth-child(2) .cell:first-child
+.invoice-body .row:nth-child(2) .cell:first-child
 {
     border-right: none;
     border-radius: 15px 0 0 0;
     border-bottom: none;
 }
 
-.jobList-body .row:nth-child(2) .cell:nth-child(n+2)
+.invoice-body .row:nth-child(2) .cell:nth-child(n+2)
 {
    border-right: none;
     border-left: none;
@@ -53,7 +54,7 @@
     border-radius:0;
 }
 
-.jobList-body .row:nth-child(2) .cell:last-child
+.invoice-body .row:nth-child(2) .cell:last-child
 {
     border-left: none;
     border-right: 4px solid rgb(255, 226, 184);
@@ -63,7 +64,7 @@
 /************************Border control Third and on *********/
 
 
-.jobList-body .row:nth-child(n+3) .cell:nth-child(n+1)
+.invoice-body .row:nth-child(n+3) .cell:nth-child(n+1)
 {
    border-right: none;
     border-left: none;
@@ -71,19 +72,19 @@
     border-bottom: none;
     border-radius:0;
 }
-.jobList-body .row:nth-child(n+3) .cell:first-child
+.invoice-body .row:nth-child(n+3) .cell:first-child
 {
     border-left: 4px solid rgb(255, 226, 184);
 }
 
-.jobList-body .row:nth-child(n+3) .cell:last-child
+.invoice-body .row:nth-child(n+3) .cell:last-child
 {
     border-right: 4px solid rgb(255, 226, 184);
 }
 
 /******************************Last row*****************/
 
-.jobList-body .row:last-child .cell:first-child
+.invoice-body .row:last-child .cell:first-child
 {
     border-top: none;
     border-right: none;
@@ -91,7 +92,7 @@
     border-bottom: 4px solid rgb(255, 226, 184) !important;
 }
 
-.jobList-body .row:last-child .cell:nth-child(n+2)
+.invoice-body .row:last-child .cell:nth-child(n+2)
 {
    border-right: none;
     border-left: none;
@@ -100,7 +101,7 @@
     border-radius:0;
 }
 
-.jobList-body .row:last-child .cell:last-child
+.invoice-body .row:last-child .cell:last-child
 {
     border-top: none;
     border-right: 4px solid rgb(255, 226, 184);
@@ -110,15 +111,37 @@
 
 /************bottom border********/
 
-.jobList-body .row:nth-child(n+2) .cell
+.invoice-body .row:nth-child(n+2) .cell
 { 
   background-color: white;
   border-bottom: 4px solid lightgray !important;
     border-radius: 15px;
     
 }
-
-.jobList-body .row:nth-child(even) .cell
+/************** Search**************************/
+.search
 {
-    background-color: rgb(255, 128, 128);
+    text-align: center;
+    padding: 100px;
+    border: 4px solid rgba(255, 226, 184,0.5);
+    border-radius: 15px;
+    background-color: white;
+    width: 700px;
+    margin: 0 625px;
+   
+    
+}
+
+.search h2
+{
+   font-weight:lighter;
+   color: lightgray;
+}
+
+/********Payment buttons**********/
+.payment
+{
+   float: right;
+   width: 18%;
+   
 }

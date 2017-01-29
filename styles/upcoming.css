@@ -1,4 +1,11 @@
 /****************Accordion Table Styles**************/
+
+.openAllUpcoming
+{
+    position: relative;
+    left: 20px;
+    top: 40px;
+}
 .upcomingWrapper .title div
 {
  width: 400px;

@@ -1,0 +1,41 @@
+.reports-table
+{
+    margin: 0 auto;
+    display: table;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.reports-table .row
+{
+    display: table-row;
+}
+
+.reports-table .row .cell
+{
+    display: table-cell;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 226, 184);
+}
+
+
+.reports-table .row:nth-child(2) .cell,
+.reports-table .row:nth-child(5) .cell
+{
+    padding: 10px 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reports-table .row:nth-child(3) .cell
+{
+   padding: 10px 100px;
+   border: none;
+   background-color: rgba(255,255,255,0.0)
+}
+.reports-table img
+{
+    width:250px;
+}

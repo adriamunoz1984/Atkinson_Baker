@@ -1,5 +1,9 @@
 /*****************************Full Page Styling********************/
-
+.openAllSched
+{
+     position: relative;
+    left: 540px;
+}
 .table input
 {
     width: 50px;
