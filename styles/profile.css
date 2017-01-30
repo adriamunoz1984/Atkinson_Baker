@@ -1,0 +1,56 @@
+.coBill-body
+{
+    display: table;
+    width: 80%;
+}
+
+.coBill-body .row
+{
+    display: table-row;
+    padding: 0;
+}
+.coBill-body .row .cell
+{
+    display: table-cell;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    padding:10px;
+    
+}
+
+.coBill-body .row .cell:nth-child(2)
+{
+   float: left;
+}
+
+/*******Attorneys***************/
+.attorney-body
+{
+    display: table;
+    width: 95%;
+}
+
+.attorney-body .row
+{
+    display: table-row;
+    padding: 0;
+}
+.attorney-body .row .cell
+{
+    display: table-cell;
+    padding-bottom: 5px;
+    font-weight: normal;
+    padding:10px 20px;
+    
+}
+
+.attorney-body .row .cell:nth-child(-n+2)
+{
+  width: 200px;  
+}
+
+.attorney-body .row .cell:nth-child(n+5)
+{
+    width: 20px;
+}

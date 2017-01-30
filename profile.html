@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>ACS4</title>
+
+        <!-- Links to an external Style Sheet -->
+        <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="scripts/jquery-ui.css"></script>
+        <script src="scripts/jquery-ui.js"></script>
+    </head>
+
+    <body>
+
+             
+
+        <img src="img/Atkinsonbaker_logo.png" alt="" id="logo">
+        <div class="buttons">
+            <div class="topB profile"><a href="#">Profile</a></div>
+            <div class="topB logOut"><a href="#">Log Out</a></div>
+        </div>
+        
+        <!--**************************** Menu ***********************************-->
+         <div class="menuBG">
+            <ul id="menu">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="upcoming.html">Upcoming Jobs</a></li>
+                <li><a href="jobList.html">Jobs List</a>
+                    <ul>
+                        <li id="details"><a href="jobDetails.html">Job Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="schedules.html">Schedule</a></li>
+                <li><a href="files.html">Files</a>
+                    <ul>
+                        <li id="reports"><a href="reports.html">Reports</a></li>
+                    </ul>
+                </li>
+                <li><a href="invoices.html">Invoices</a></li>
+            </ul>
+        </div>
+        <!--*************************END Menu ************************************-->
+      
+
+
+         <div id="wrapper">
+         <img src="img/OpenAll.png" id="openAll" class="openAllSched">    
+
+            <!--*********************************Company Billing **********************************************-->
+
+             <!-- Accordion 1 header section -->
+             <form>
+                     <!--20 rows 3 columns, 1, 1, 1, 5,5,5,1,1-->    
+                 <section class="profileSection">
+                  <div class="accordion"> 
+
+                     <div class="head">
+
+                       <header>
+                           <img class="plus" src="img/ArrowS2.png">
+                          <div class="header-title"><h2>Company Billing</h2></div>
+                        </header>
+                    </div>
+                  </div>
+                 <!--  End Accordion Header -->
+
+                 <!-- Accordion Body -->
+                    <div class="accContainer">
+                      
+                          <div class="table coBill-body">
+                              <div class="border">
+                                <div class="row">
+                                    <div class="cell">Phone</div>
+                                    <div class="cell"></div>  
+                                    <div class="cell"><input type="text" name="comBill-phone"></div>
+                                </div>
+                              </div>
+                              <div class="border">
+                                <div class="row">
+                                    <div class="cell">Fax</div>
+                                    <div class="cell"></div>  
+                                    <div class="cell"><input type="text" name="comBill-fax"></div>
+                                </div>
+                              </div>
+                              <div class="border">
+                                <div class="row">
+                                    <div class="cell">Website</div>
+                                    <div class="cell"></div>  
+                                    <div class="cell"><input type="text" name="comBill-web"></div>
+                                </div>
+                              </div>
+                              
+                              <div class="border">
+                                <div class="row">
+                                    <div class="cell">Main Address</div>
+                                    <div class="cell">Name</div>  
+                                    <div class="cell"><input type="text" name="comBill-name"></div>
+                                </div>
+                                  
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">Adress</div>  
+                                    <div class="cell"><input type="text" name="comBill-address"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">Apt/Floor#</div>  
+                                    <div class="cell"><input type="text" name="comBill-apt"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">City</div>  
+                                    <div class="cell"><input type="text" name="comBill-city"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">State / Zip</div>  
+                                    <div class="cell"><input type="text" name="comBill-state"><input type="text" name="comBill-zip"></div>
+                                </div>
+                              </div>
+                               <div class="border">
+                                <div class="row">
+                                    <div class="cell">Billing Address</div>
+                                    <div class="cell">Name</div>  
+                                    <div class="cell"><input type="text" name="comBill-name"></div>
+                                </div>
+                                  
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">Adress</div>  
+                                    <div class="cell"><input type="text" name="comBill-address"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">Apt/Floor#</div>  
+                                    <div class="cell"><input type="text" name="comBill-apt"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">City</div>  
+                                    <div class="cell"><input type="text" name="comBill-city"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">State / Zip</div>  
+                                    <div class="cell"><input type="text" name="comBill-state"><input type="text" name="comBill-zip"></div>
+                                </div>
+                              </div>
+                               <div class="border">
+                                <div class="row">
+                                    <div class="cell">Mailing Address</div>
+                                    <div class="cell">Name</div>  
+                                    <div class="cell"><input type="text" name="comBill-name"></div>
+                                </div>
+                                  
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">Adress</div>  
+                                    <div class="cell"><input type="text" name="comBill-address"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">Apt/Floor#</div>  
+                                    <div class="cell"><input type="text" name="comBill-apt"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">City</div>  
+                                    <div class="cell"><input type="text" name="comBill-city"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell"></div>
+                                    <div class="cell">State / Zip</div>  
+                                    <div class="cell"><input type="text" name="comBill-state"><input type="text" name="comBill-zip"></div>
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="border">
+                                <div class="row">
+                                    <div class="cell">Billing Contact</div>
+                                    <div class="cell"></div>  
+                                    <div class="cell"><input type="text" name="comBill-billCont"></div>
+                                </div>
+                              </div>
+                              <div class="border">
+                                <div class="row">
+                                    <div class="cell">Billing Phone</div>
+                                    <div class="cell"></div>  
+                                    <div class="cell"><input type="text" name="comBill-billPhone"></div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                 </section>
+                               <!-- End Accordion Body -->  
+                 <section class="profileSection">
+                  <div class="accordion"> 
+
+                     <div class="head">
+
+                       <header>
+                           <img class="plus" src="img/ArrowS2.png">
+                          <div class="header-title"><h2>Attorneys</h2></div>
+                        </header>
+                    </div>
+                  </div>
+                 <!--  End Accordion Header -->
+
+                 <!-- Accordion Body -->
+                    <div class="accContainer">
+                      
+                          <div class="table attorney-body">
+                              
+                                <div class="row">
+                                    <div class="cell">Last Name</div>
+                                    <div class="cell">First Name</div>  
+                                    <div class="cell">Phone</div>
+                                    <div class="cell">Email</div>
+                                    <div class="cell">Realtime</div>
+                                    <div class="cell">Rough</div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell">Afram </div>
+                                    <div class="cell">Ranis</div>  
+                                    <div class="cell">818-205-9955</div>
+                                    <div class="cell">rafram@thape-howell.com</div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><button>Delete</button></div>
+                                    <div class="cell"><button>Edit</button></div>
+                                </div>
+                                  <div class="row">
+                                    <div class="cell">Afram </div>
+                                    <div class="cell">Ranis</div>  
+                                    <div class="cell">818-205-9955</div>
+                                    <div class="cell">rafram@thape-howell.com</div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><button>Delete</button></div>
+                                    <div class="cell"><button>Edit</button></div>
+                                </div>
+                                  <div class="row">
+                                    <div class="cell">Afram </div>
+                                    <div class="cell">Ranis</div>  
+                                    <div class="cell">818-205-9955</div>
+                                    <div class="cell">rafram@thape-howell.com</div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><button>Delete</button></div>
+                                    <div class="cell"><button>Edit</button></div>
+                                </div>
+                                  <div class="row">
+                                    <div class="cell">Afram </div>
+                                    <div class="cell">Ranis</div>  
+                                    <div class="cell">818-205-9955</div>
+                                    <div class="cell">rafram@thape-howell.com</div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><button>Delete</button></div>
+                                    <div class="cell"><button>Edit</button></div>
+                                </div>
+                                  <div class="row">
+                                    <div class="cell">Afram </div>
+                                    <div class="cell">Ranis</div>  
+                                    <div class="cell">818-205-9955</div>
+                                    <div class="cell">rafram@thape-howell.com</div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><input type="checkbox"></div>
+                                    <div class="cell"><button>Delete</button></div>
+                                    <div class="cell"><button>Edit</button></div>
+                                </div>
+                             
+                        </div>
+                     </div>
+                 </section>
+            </form>
+        </div>
+        <script src="scripts/script.js"></script>
+        <script>
+    //alert(window.outerWidth+' x '+window.outerHeight);
+    </script>
+    </body>
+    <footer>
+        <p>©1995-2016 Copyright Atkinson-Baker, Inc., Court Reporters. (1.0.10.22.13.1) VS 2015 version Legal Notices | Copyrights | Privacy Policies</p>
+    </footer>
+</html>
