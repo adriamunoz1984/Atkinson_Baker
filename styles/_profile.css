@@ -1,0 +1,113 @@
+/**********************General Accordion styling*************/
+.profileWrap
+{
+    width: 70% !important;
+}
+.profileSection
+{
+    width: 95%;
+    
+}
+.profileSection .accordion
+{
+   width: 100%;
+}
+
+.profileSection .accordion .header-title
+{
+   width: 100%;
+}
+
+.profileSection .accContainer
+{
+   width: 98%; 
+}
+
+/*********Company Billing*************/
+.coBill-body
+{
+    display: table;
+   
+}
+
+.coBill-body .row
+{
+    display: table-row;
+    padding: 0;
+}
+.coBill-body .row .cell
+{
+    display: table-cell;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    padding:10px;
+    
+}
+
+.coBill-body .row .cell:nth-child(2)
+{
+   float: left;
+}
+
+/*******Attorneys***************/
+.attorney-body
+{
+    display: table;
+    
+}
+
+.attorney-body .row
+{
+    display: table-row;
+    padding: 0;
+}
+.attorney-body .row .cell
+{
+    display: table-cell;
+    padding-bottom: 5px;
+    font-weight: normal;
+    padding:10px 20px;
+/*    width: 10%;*/
+}
+
+.attorney-body .row .cell:nth-child(-n+2)
+{
+ 
+}
+
+.attorney-body .row .cell:nth-child(n+5)
+{
+   
+}
+
+/**************Other Personel***************/
+.other-body
+{
+    display: table;
+   
+}
+
+.other-body .row
+{
+    display: table-row;
+    padding: 0;
+}
+.other-body .row .cell
+{
+    display: table-cell;
+    padding-bottom: 5px;
+    font-weight: normal;
+    padding:10px 20px;
+    
+}
+
+.other-body .row .cell:nth-child(-n+2)
+{
+  width: 200px;  
+}
+
+.other-body .row .cell:nth-child(n+5)
+{
+/*    width: 20px;*/
+}

@@ -1,8 +1,19 @@
 .openAllFiles
 {
-    position: relative;
-    left: 20px;
-    top: 40px;
+
+    
+}
+
+.filesHeader div:first-child
+{
+    text-align: center;
+    width: 0px;
+    padding-left: 20px;
+}
+
+.filesHeader div
+{
+/*   width: 675px; */
 }
 
 .filesTable tbody tr td

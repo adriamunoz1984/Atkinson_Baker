@@ -18,7 +18,7 @@
 
         <img src="img/Atkinsonbaker_logo.png" alt="" id="logo">
         <div class="buttons">
-            <div class="topB profile"><a href="#">Profile</a></div>
+            <div class="topB profile"><a href="profile.html">Profile</a></div>
             <div class="topB logOut"><a href="#">Log Out</a></div>
         </div>
         
@@ -46,7 +46,7 @@
       
 
 
-         <div id="wrapper">
+         <div id="wrapper" class="scheduleWrap">
          <img src="img/OpenAll.png" id="openAll" class="openAllSched"> 
 
             <!--*********************************General Information Accordion 1**********************************************-->
@@ -57,7 +57,7 @@
                   <div class="accordion"> 
                     <div class="head"> 
                        <header>
-                           <img class="plus" src="img/ArrowS2.png">
+                          <img class="plus" src="img/ArrowS2.png">
                           <div class="header-title"><h2>General Information</h2></div>
                         </header>
                     </div>
@@ -67,49 +67,49 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
-                              <thead>
-                                <tr>
-                                    <th><img style="width:25px;">Setting firm</th>
-                                    <th>TharpeHowell</th>
-                                </tr>
-                              </thead>
-                              <tbody class="schedBody general-body">
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Attorney/Examiner</td>
-                                    <td><input list="attorneys" name="attorneys" placeholder="Select Attorney">
+                            <div class="schedTable general-body">
+                               
+                                <div class="row">
+                                    <div class="cell"><img style="width:25px;">Setting firm</div>
+                                    <div class="cell">TharpeHowell</div>
+                                </div>
+                               
+                         
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Attorney/Examiner</div>
+                                    <div class="cell"><input list="attorneys" name="attorneys" placeholder="Select Attorney">
                                       <datalist id="attorneys">
                                         <option value="James Patterson"></option>
                                         <option value="Johnny Chochran"></option>
                                         <option value="Kyles Dad"></option>
                                         <option value="Jim Carrey"></option>
                                         <option value="Albert Parada"></option>
-                                      </datalist></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Date/Time</td>
-                                    <td><input type="date" name="GENdateTime" ><img src="img/datetime.png"></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Estimated Duration</td>
-                                    <td> <input type="text" name="GenDuration" placeholder="Select Duration"></td>
-                                  </tr>
+                                      </datalist></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Date/Time</div>
+                                    <div class="cell"><input type="date" name="GENdateTime" ><img src="img/datetime.png"></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Estimated Duration</div>
+                                    <div class="cell"> <input type="text" name="GenDuration" placeholder="Select Duration"></div>
+                                  </div>
                                   
-                                  <tr><td colspan="2"><p>Start Time is based on time zone for job location.</p></td></tr>
+<!--                                  <div class="row"><td colspan="2"><p>Start Time is based on time zone for job location.</p></div></div>-->
                                   
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Proceeding Type</td>
-                                    <td><input list="attorneys" name="attorneys" placeholder="Desposition">
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Proceeding Type</div>
+                                    <div class="cell"><input list="attorneys" name="attorneys" placeholder="Desposition">
                                       <datalist id="proceed">
                                         <option value="James Patterson"></option>
                                         <option value="Johnny Chochran"></option>
                                         <option value="Kyles Dad"></option>
                                         <option value="Jim Carrey"></option>
                                         <option value="Albert Parada"></option>
-                                      </datalist></td>
-                                  </tr>
-                               </tbody>
-                          </table>
+                                      </datalist></div>
+                                  </div>
+                             
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -137,23 +137,23 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
-                             <tbody class="schedBody services-body"> 
-                                <tr>
-                                    <th><img class="reqIcon" src="img/required1.png">Court Reporter</th>
-                                    <td><label for="no">No</label><input type="radio" name="courtReporter"  value="no" checked><label for="yes">Yes</label><input type="radio" name="courtReporter"  value="yes"></td>
-                                 </tr>
-                                <tr>
-                                    <th><img class="reqIcon" src="img/required1.png">Interpreter</th>
-                                    <td><label for="no">No</label><input type="radio" name="interpreter" value="no" checked><label for="yes">Yes</label><input type="radio" name="interpreter"  value="yes"></td>
-                                 </tr>
-                                <tr>
-                                    <th><img class="reqIcon" src="img/required1.png">Videographer</th>
-                                    <td><label for="no">No</label><input type="radio" name="videographer"  value="no" checked><label for="yes">Yes</label><input type="radio" name="videographer"  value="yes"></td>
-                                 </tr>
-                                <tr><th><img class="reqIcon">Language</th><td><input type="text" name="language" placeholder="Enter Language"></td></tr>
-                              </tbody>
-                          </table>
+                        <div class="schedTable services-body">
+                            
+                                <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Court Reporter</div>
+                                    <div class="cell"><label for="no">No</label><input type="radio" name="courtReporter"  value="no" checked><label for="yes">Yes</label><input type="radio" name="courtReporter"  value="yes"></div>
+                                 </div>
+                                <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Interpreter</div>
+                                    <div class="cell"><label for="no">No</label><input type="radio" name="interpreter" value="no" checked><label for="yes">Yes</label><input type="radio" name="interpreter"  value="yes"></div>
+                                 </div>
+                                <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Videographer</div>
+                                    <div class="cell"><label for="no">No</label><input type="radio" name="videographer"  value="no" checked><label for="yes">Yes</label><input type="radio" name="videographer"  value="yes"></div>
+                                 </div>
+                                <div class="row"><div class="cell"><img class="reqIcon">Language</div><div class="cell"><input type="text" name="language" placeholder="Enter Language"></div></div>
+                             
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -178,16 +178,16 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
-                             <tbody class="schedBody location-body"> 
-                                <tr><th><img class="reqIcon" src="img/required1.png">Should Atkinson-Baker Book a<p>conference room for you?</p></th>
-                                    <td>
+                        <div class="schedTable location-body">
+                              
+                                <div class="row"><div class="cell"><img class="reqIcon" src="img/required1.png">Should Atkinson-Baker Book a<p>conference room for you?</p></div>
+                                    <div class="cell">
                                         <label for="no">No</label><input type="radio" value="no" name="location" checked>
                                         <label for="yes">Yes</label><input type="radio" value="yes" name="location">
-                                    </td>
-                                 </tr>
-                              </tbody>
-                          </table>
+                                    </div>
+                                 </div>
+                             
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -208,51 +208,51 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
+                            <div class="schedTable deponent-body">
                               
-                              <tbody class="schedBody deponent-body">
-                                  <tr>
-                                    <td>
+                              
+                                  <div class="row">
+                                    <div class="cell">
                                         <label for="time1">Time</label><br>
                                         1 <input type="text" name="time1" placeholder="Enter Time">
-                                    </td>
-                                    <td>
+                                    </div>
+                                    <div class="cell">
                                         <label for="name1">Name</label><br>
                                         <input type="text" name="name1" placeholder="Enter Name">
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell">
                                         <label for="time2">Time</label><br>
                                         2 <input type="text" name="time2" placeholder="Enter Time">
-                                    </td>
-                                      <td>
+                                    </div>
+                                      <div class="cell">
                                         <label for="name2">Name</label><br>
                                         <input type="text" name="name2" placeholder="Enter Name">
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell">
                                         <label for="time3">Time</label><br>
                                         3 <input type="text" name="time3" placeholder="Enter Time">
-                                    </td>
-                                      <td>
+                                    </div>
+                                      <div class="cell">
                                         <label for="name3">Name</label><br>
                                         <input type="text" name="name3" placeholder="Enter Name">
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell">
                                         <label for="time4">Time</label><br>
                                         4 <input type="text" name="time4" placeholder="Enter Time">
-                                    </td> 
-                                      <td>
+                                    </div> 
+                                      <div class="cell">
                                         <label for="name4">Name</label><br>
                                         <input type="text" name="name4" placeholder="Enter Name">
-                                    </td>
-                                  </tr>
-                               </tbody>
-                          </table>
+                                    </div>
+                                  </div>
+                            
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -272,20 +272,19 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
+                        <div class="schedTable case-body">
                               
-                              <tbody class="schedBody case-body">
-                                 <tr>
-                                    <td><img class="reqIcon" src="img/required1.png"><label for="case-name">Name</label></td> 
-                                    <td><input type="text" name="case-name" placeholder="Enter Name"></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img class="reqIcon"><label for="case-number">Number</label></td>
-                                    <td><input type="text" name="case-number" placeholder="Enter Number"></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png"><label for="states">Case Venue</label></td>
-                                    <td><input list="statelist" name="states" placeholder="Select State">
+                                 <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png"><label for="case-name">Name</label></div> 
+                                    <div class="cell"><input type="text" name="case-name" placeholder="Enter Name"></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon"><label for="case-number">Number</label></div>
+                                    <div class="cell"><input type="text" name="case-number" placeholder="Enter Number"></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png"><label for="states">Case Venue</label></div>
+                                    <div class="cell"><input list="statelist" name="states" placeholder="Select State">
                                       <datalist id="statelist">
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -338,32 +337,34 @@
                                         <option value="WV">West Virginia</option>
                                         <option value="WI">Wisconsin</option>
                                         <option value="WY">Wyoming</option>
-                                      </datalist></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Trial Date</td>
-                                    <td><input type="date" name="CaseDateTime" ><img src="img/datetime.png"></td>
-                                  </tr>
-                                    <tr>
-                                    <td><img class="reqIcon"><label for="caseType">Case Type</label></td>
-                                    <td><input list="case_type" name="cType"  placeholder="Select Case Type"></td>
+                                      </datalist></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Trial Date</div>
+                                    <div class="cell"><input type="date" name="CaseDateTime" ><img src="img/datetime.png"></div>
+                                  </div>
+                                    <div class="row">
+                                    <div class="cell"><img class="reqIcon"><label for="caseType">Case Type</label></div>
+                                    <div class="cell"><input list="case_type" name="cType"  placeholder="Select Case Type"></div>
                                         <datalist id="case_type">
                                             <option value="case1">case1</option>
                                             <option value="case2">case2</option>
                                             <option value="case3">case3</option>
                                         </datalist>
-                                  </tr>
-                                  <tr>
-                                    <td><img class="reqIcon"><label for="caseCaption">Case Caption</label></td>
-                                  </tr>
-                                  <tr>
+                                  </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon"><label for="caseCaption">Case Caption</label></div>
+                                  </div>
+                                  <div class="row">
+<!--
                                     <td colspan="2">
                                         <textarea name="message" rows="10" cols="75">
                                         </textarea>
-                                    </td>
-                                  </tr>
-                               </tbody>
-                          </table>
+                                    </div>
+-->
+                                 
+                               </div>
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -384,30 +385,34 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
+                        <div class="schedTable billing-body">
                               
-                              <tbody class="schedBody billing-body">
-                                 <tr>
+                              
+                                 <div class="row">
+<!--
                                    <td colspan="2"><p>Insurance information, if applicable, must be provided regardless of<br>
-                                     where the job is billed to ensure proper guidelines are followed.</p></td>
+                                     where the job is billed to ensure proper guidelines are followed.</p></div>
+-->
                                   
-                                 </tr>
-                                  <td><img class="reqIcon" src="img/required1.png">Bill Your Firm?</td>
-                                  <td>
+                                 </div>
+                                 <div class="row">
+                                  <div class="cell"><img class="reqIcon" src="img/required1.png">Bill Your Firm?</div>
+                                  <div class="cell">
                                      <label for="no">No</label><input type="radio" value="no" name="billing1" checked>
                                      <label for="yes">Yes</label><input type="radio" value="yes" name="billing1">
-                                  </td>
-                                 <tr>
-                                  <td><img class="reqIcon"><label for="billing-company">Company</label></td>
-                                  <td><input type="text" name="billing-company" placeholder="Enter Name"></td>
-                                 </tr>
-                                 <tr>
-                                    <td><img class="reqIcon"><label for="billing-company">City</label></td>
-                                  <td><input type="text" name="billing-city" placeholder="Enter City"></td>
-                                 </tr>
-                                 <tr>
-                                     <td><img class="reqIcon">State</td>
-                                  <td><input list="statelist2" name="states2" placeholder="Select State">
+                                  </div>
+                                 </div>
+                                 <div class="row">
+                                  <div class="cell"><img class="reqIcon"><label for="billing-company">Company</label></div>
+                                  <div class="cell"><input type="text" name="billing-company" placeholder="Enter Name"></div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="cell"><img class="reqIcon"><label for="billing-company">City</label></div>
+                                  <div class="cell"><input type="text" name="billing-city" placeholder="Enter City"></div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="cell"><img class="reqIcon">State</div>
+                                  <div class="cell"><input list="statelist2" name="states2" placeholder="Select State">
                                       <datalist id="statelist2">
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -460,43 +465,43 @@
                                         <option value="WV">West Virginia</option>
                                         <option value="WI">Wisconsin</option>
                                         <option value="WY">Wyoming</option>
-                                      </datalist></td>
-                                 </tr>
-                                 <tr>
-                                     <td><img class="reqIcon" src="img/required1.png">Is this a Nationwide Company?</td>
-                                     <td>
+                                      </datalist></div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="cell"><img class="reqIcon" src="img/required1.png">Is this a Nationwide Company?</div>
+                                     <div class="cell">
                                          <label for="no">No</label><input type="radio" value="no" name="nationCo" checked>
                                          <label for="yes">Yes</label><input type="radio" value="yes" name="nationCo">
-                                     </td>
-                                 </tr>
-                                 <tr>
-                                  <td><img class="reqIcon">File or Claim No.</td>
-                                  <td><input type="text" name="billing-company" placeholder="Enter Name"></td>
-                                 </tr>
-                                 <tr>
-                                  <td><img class="reqIcon">Date of Loss</td>
-                                  <td><input type="date" name="BillingDateTime" ><img src="img/datetime.png"></td>
-                                 </tr>
-                                 <tr>
-                                  <td><img class="reqIcon">Adjuster Name</td>
-                                  <td><input type="text" name="billing-company" placeholder="Enter Name"></td>
-                                 </tr>
-                                 <tr>
-                                     <td><img class="reqIcon">Insured</td>
-                                     <td><input type="text" name="billing-company" placeholder="Enter Name"></td>
-                                 </tr>
-                                 <tr>
-                                     <td><img class="reqIcon">Client's Reference #1</td>
-                                     <td><input type="text" name="billing-company" placeholder="Enter Name"></td>
-                                 </tr>
-                                 <tr>
-                                     <td><img class="reqIcon">Client's Reference #2</td>
-                                  <td><input type="text" name="billing-company" placeholder="Enter Name"></td>
-                                 </tr>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                  <div class="cell"><img class="reqIcon">File or Claim No.</div>
+                                  <div class="cell"><input type="text" name="billing-company" placeholder="Enter Name"></div>
+                                 </div>
+                                 <div class="row">
+                                  <div class="cell"><img class="reqIcon">Date of Loss</div>
+                                  <div class="cell"><input type="date" name="BillingDateTime" ><img src="img/datetime.png"></div>
+                                 </div>
+                                 <div class="row">
+                                  <div class="cell"><img class="reqIcon">Adjuster Name</div>
+                                  <div class="cell"><input type="text" name="billing-company" placeholder="Enter Name"></div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="cell"><img class="reqIcon">Insured</div>
+                                     <div class="cell"><input type="text" name="billing-company" placeholder="Enter Name"></div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="cell"><img class="reqIcon">Client's Reference #1</div>
+                                     <div class="cell"><input type="text" name="billing-company" placeholder="Enter Name"></div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="cell"><img class="reqIcon">Client's Reference #2</div>
+                                  <div class="cell"><input type="text" name="billing-company" placeholder="Enter Name"></div>
+                                 </div>
                                 
                                     
-                               </tbody>
-                          </table>
+                            
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -518,18 +523,15 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
-                              
-                              <tbody class="schedBody other-body">
-                                 <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Video Conferencing?</td>
-                                    <td>
+                        <div class="schedTable">  
+                                 <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Video Conferencing?</div>
+                                    <div class="cell">
                                         <label for="no">No</label><input type="radio" value="no" name="oServices" checked>
                                         <label for="yes">Yes</label><input type="radio" value="yes" name="oServices">
-                                    </td> 
-                                 </tr>
-                               </tbody>
-                          </table>
+                                    </div> 
+                                 </div>
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -551,36 +553,34 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
-                              
-                              <tbody class="schedBody real-body">
-                                 <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">RealTime Hookup</td>
-                                    <td>
+                        <div class="schedTable real-body">
+                                 <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">RealTime Hookup</div>
+                                    <div class="cell">
                                         <label for="no">No</label><input type="radio" value="no" name="rTimeHookup" checked>
                                         <label for="yes">Yes</label><input type="radio" value="yes" name="rTimeHookup">
-                                    </td> 
-                                 </tr>
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Rough Transcript</td>
-                                    <td>
+                                    </div> 
+                                 </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Rough Transcript</div>
+                                    <div class="cell">
                                         <label for="no">No</label><input type="radio" value="no" name="rTranscripts" checked>
                                         <label for="yes">Yes</label><input type="radio" value="yes" name="rTranscripts">
-                                    </td> 
-                                 </tr>
-                                  <tr>
-                                    <td><img class="reqIcon" src="img/required1.png">Live Desposition</td>
-                                    <td><input list="desposition" name="desposition" placeholder="No">
+                                    </div> 
+                                 </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Live Desposition</div>
+                                    <div class="cell"><input list="desposition" name="desposition" placeholder="No">
                                       <datalist id="desposition">
                                         <option value="James Patterson"></option>
                                         <option value="Johnny Chochran"></option>
                                         <option value="Kyles Dad"></option>
                                         <option value="Jim Carrey"></option>
                                         <option value="Albert Parada"></option>
-                                      </datalist></td>
-                                  </tr>
-                               </tbody>
-                          </table>
+                                      </datalist></div>
+                                  </div>
+                             
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -602,28 +602,32 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
+                            <div class="schedTable delivery-body">
                               
-                              <tbody class="schedBody delivery-body">
-                                 <tr>
+                              
+                                 <div class="row">
+<!--
                                    <td colspan="2"><p>Insurance information, if applicable, must be provided regardless of<br>
-                                     where the job is billed to ensure proper guidelines are followed.</p></td>
-                                 </tr>
-                                  <tr>
-                                     <td><img class="reqIcon">Transcript Needed By</td>
-                                  <td><input type="text" name="delivery-transcript" placeholder="Enter Name"></td>
-                                 </tr>
-                                  <tr>
-                                    <td><img class="reqIcon"><label for="specialIntructions">Special Instructions</label></td>
-                                  </tr>
-                                  <tr>
+                                     where the job is billed to ensure proper guidelines are followed.</p></div>
+-->
+                                 </div>
+                                  <div class="row">
+                                     <div class="cell"><img class="reqIcon">Transcript Needed By</div>
+                                  <div class="cell"><input type="text" name="delivery-transcript" placeholder="Enter Name"></div>
+                                 </div>
+                                  <div class="row">
+                                    <div class="cell"><img class="reqIcon"><label for="specialIntructions">Special Instructions</label></div>
+                                  </div>
+                                  <div class="row">
+<!--
                                     <td colspan="2">
                                         <textarea name="specialIntructions" rows="10" cols="75">
                                         </textarea>
-                                    </td>
-                                  </tr>
-                               </tbody>
-                          </table>
+                                    </div>
+-->
+                                  </div>
+                             
+                          </div>
                         </div> 
                     </div>
                 </section>
@@ -645,21 +649,21 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
+                            <div class="schedTable upload-body">
                               
-                              <tbody class="schedBody upload-body">
-                                  <tr>
-                                    <td>File Name</td>
-                                    <td>File Type</td>
-                                    <td>File Description</td>
-                                  </tr> 
-                                  <tr>
-                                      <td></td>
-                                      <td></td>
-                                      <td></td>
-                                  </tr>
-                               </tbody>
-                          </table>
+                             
+                                  <div class="row">
+                                    <div class="cell">File Name</div>
+                                    <div class="cell">File Type</div>
+                                    <div class="cell">File Description</div>
+                                  </div> 
+                                  <div class="row">
+                                      <div class="cell"></div>
+                                      <div class="cell"></div>
+                                      <div class="cell"></div>
+                                  </div>
+                             
+                           </div>
                            <div class="upload">
                                <input  type="file" name="pic" accept="image/*">
                                <input  type="submit">
@@ -685,26 +689,21 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                          <table class="schedTable">
-                              
-                              <tbody class="schedBody by-body">
-                                 <tr>
-                                   <td><img class="reqIcon" src="img/required1.png">Name</td>
-                                   <td><input type="text" name="-transcript" placeholder="Enter Name"></td>
-                                 </tr>
+                        <div class="schedTable by-body">
+                                 <div class="row">
+                                   <div class="cell"><img class="reqIcon" src="img/required1.png">Name</div>
+                                   <div class="cell"><input type="text" name="-transcript" placeholder="Enter Name"></div>
+                                 </div>
                                   
-                                  <tr>
-                                   <td><img class="reqIcon" src="img/required1.png">Email Address</td>
-                                   <td><input type="text" name="delivery-transcript" placeholder="Enter Email"></td>
-                                 </tr>
-                                  <tr>
-                                    <td colspan="2"><p>Click Next to review the information before sending your request</p></td>
-                                  </tr>
-                               </tbody>
-                          </table>
-                           
+                                  <div class="row">
+                                   <div class="cell"><img class="reqIcon" src="img/required1.png">Email Address</div>
+                                   <div class="cell"><input type="text" name="delivery-transcript" placeholder="Enter Email"></div>
+                                 </div>
+                                  <div class="row">
+<!--                                    <td colspan="2"><p>Click Next to review the information before sending your request</p></div>-->
+                                  </div>
+                          </div>
                         </div> 
-                    
                     </div>
                 </section>
                 <!-- End Accordion Body -->

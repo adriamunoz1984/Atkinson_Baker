@@ -1,4 +1,10 @@
 @import "font.css";
+
+
+.dashWrap
+{
+    width: 40% !important;
+}
 body
 {
     

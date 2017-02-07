@@ -13,6 +13,10 @@
 
 /* CSS FILE */
 
+html
+{
+    overflow-y: scroll;
+}
 body
 {
     
@@ -55,6 +59,7 @@ body
 {
    margin: 0;
     padding: 0;
+   
 }
 /***********Accordion Background Wrapper**********/
 #wrapper 

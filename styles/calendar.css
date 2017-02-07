@@ -5,6 +5,7 @@
             background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
             background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
 /*            float: left;*/
+            padding:300px;
         }
         
         .calendar
