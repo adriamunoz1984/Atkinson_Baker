@@ -1,0 +1,40 @@
+.profileWrap
+{
+     width: 40% !important;
+}
+.profileTable
+{
+    margin: 0 auto;
+    display: table;
+    width: 75%;
+}
+
+.profileTable .row
+{
+    display: table-row;
+}
+
+.profileTable .cell
+{
+    display: table-cell;
+    width:20%;
+    padding: 20px 5px;
+}
+
+.profileTable .cell:first-child
+{
+    font-weight: bold;
+    
+}
+.profileTable input
+{
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.profileTable .border
+{
+    border: 4px solid lightgray;
+    border-radius: 15px;
+}
