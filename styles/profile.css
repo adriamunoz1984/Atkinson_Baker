@@ -1,12 +1,21 @@
+.profileSection
+{
+    width: 100%
+}
+.profileSection header h2
+{
+   margin: 0 auto !important;
+    
+}
 .profileWrap
 {
-     width: 40% !important;
+     width:80% !important;
 }
 .profileTable
 {
     margin: 0 auto;
     display: table;
-    width: 75%;
+    width: 95%;
 }
 
 .profileTable .row
@@ -24,8 +33,8 @@
 .profileTable .cell:first-child
 {
     font-weight: bold;
-    
 }
+
 .profileTable input
 {
     padding: 5px 0;
@@ -37,4 +46,50 @@
 {
     border: 4px solid lightgray;
     border-radius: 15px;
+    margin:20px 0;
+}
+
+/*********Company Billing*********/
+
+.coBill-body
+{
+    width: 60%;
+}
+/*************Attorneys and Other Peronel**********/
+
+.attorney-body .row .cell, .other-body .row .cell
+{
+    font-weight: normal;
+    border-bottom: 2px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.attorney-body .row:last-child  .cell, .other-body .row:last-child .cell
+{
+    border-bottom: none;
+}
+
+.attorney-body .row:nth-child(1) .cell, .other-body .row:nth-child(1) .cell
+{
+    font-weight: bold;
+    text-align: center;
+    color: #63b3dd;
+}
+
+.attorney-body, .other-body
+{
+    width: 100%;
+}
+
+/*************Attorneys***************/
+.attorney-body .row .cell:nth-child(5), .attorney-body .row .cell:nth-child(6) 
+{
+    text-align: center;
+}
+
+.attorney-body input
+{
+    width: 20px;
+    height: 20px;
 }

@@ -32,13 +32,10 @@
     border: 2px solid gray;
 }
 
-/* calendar image icon*/
-/*
-.general-body .row:nth-child(3) .cell:last-child img,
-.case-body .row:nth-child(4) .cell:last-child img,
-.billing-body .row:nth-child(8) .cell:last-child img
+.loc-body .border
 {
-    width: 25px;
-    margin-bottom: -8px;
+    border: 4px solid lightgray;
+    border-radius: 15px;
+    margin:20px 0; 
 }
-*/
+

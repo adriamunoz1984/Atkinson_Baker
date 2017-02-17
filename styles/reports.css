@@ -14,12 +14,14 @@
 .reports-table .row
 {
     display: table-row;
+    text-align: center;
 }
 
 .reports-table .row .cell
 {
     display: table-cell;
-    padding: 30px;
+    padding: 30px 0;
+    width: 10%;
     background-color: white;
     border-radius: 10px;
     border: 4px solid rgb(255, 226, 184);
@@ -29,18 +31,18 @@
 .reports-table .row:nth-child(2) .cell,
 .reports-table .row:nth-child(5) .cell
 {
-    padding: 10px 100px;
+    padding: 10px 0;
     text-align: center;
     font-weight: bold;
 }
 
 .reports-table .row:nth-child(3) .cell
 {
-   padding: 10px 100px;
+   padding: 10px 0;
    border: none;
    background-color: rgba(255,255,255,0.0)
 }
 .reports-table img
 {
-    width:250px;
+    width:75%;
 }
