@@ -42,6 +42,11 @@
     border: 2px solid gray;
 }
 
+.profForm
+{
+    margin: 0 auto;
+    width: 80%;
+}
 .profileTable .border
 {
     border: 4px solid lightgray;
@@ -57,7 +62,8 @@
 }
 /*************Attorneys and Other Peronel**********/
 
-.attorney-body .row .cell, .other-body .row .cell
+.attorney-body .row .cell, 
+.other-body .row .cell
 {
     font-weight: normal;
     border-bottom: 2px solid gray;
@@ -65,25 +71,29 @@
     padding-right: 10px;
 }
 
-.attorney-body .row:last-child  .cell, .other-body .row:last-child .cell
+.attorney-body .row:last-child  .cell, 
+.other-body .row:last-child .cell
 {
     border-bottom: none;
 }
 
-.attorney-body .row:nth-child(1) .cell, .other-body .row:nth-child(1) .cell
+.attorney-body .row:nth-child(1) .cell, 
+.other-body .row:nth-child(1) .cell
 {
     font-weight: bold;
     text-align: center;
     color: #63b3dd;
 }
 
-.attorney-body, .other-body
+.attorney-body, 
+.other-body
 {
     width: 100%;
 }
 
 /*************Attorneys***************/
-.attorney-body .row .cell:nth-child(5), .attorney-body .row .cell:nth-child(6) 
+.attorney-body .row .cell:nth-child(5), 
+.attorney-body .row .cell:nth-child(6) 
 {
     text-align: center;
 }
@@ -92,4 +102,8 @@
 {
     width: 20px;
     height: 20px;
+}
+.openAllProf
+{
+    margin-left: 15px;
 }

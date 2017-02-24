@@ -9,6 +9,7 @@
 @import "reports.css";
 @import "invoices.css";
 @import "profile.css";
+@import "login.css";
 
 
 /* CSS FILE */
@@ -120,7 +121,7 @@ header div
     text-align: center;
     width: 800px;
     display: table-cell;
-  
+    
   
 }
 
@@ -134,7 +135,6 @@ header div
 #openAll
 {
     width: 50px;
-    float: left;
 }
 
 #openAll:hover

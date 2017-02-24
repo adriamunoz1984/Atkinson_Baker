@@ -40,3 +40,14 @@
     width: 25px;
     margin-bottom: -8px;
 }
+
+.openAllSched
+{
+    float: none !important;
+    margin-left: 5px;
+}
+.schedForm
+{
+  margin: 0 auto;
+  width: 80%; 
+}

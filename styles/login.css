@@ -1,0 +1,144 @@
+
+.login
+{
+    background-image: url(../img/LoginBG.png);
+    padding: 200px 0;
+    
+}
+.container
+{
+  text-align: center;
+   margin: 0 auto;
+   width: 30%;
+}
+.container > div
+{
+    background-color: skyblue;
+    width:100%;
+    height:400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0,0.5);
+    padding: 40px;
+    
+    background-image: -moz-linear-gradient( 90deg, rgb(0,121,194) 0%, rgb(133,171,194) 58%, rgb(255,255,255) 98%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,121,194) 0%, rgb(133,171,194) 58%, rgb(255,255,255) 98%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,121,194) 0%, rgb(133,171,194) 58%, rgb(255,255,255) 98%);
+  
+}
+
+.date
+{
+   width: 35px; 
+}
+.container a
+{
+   text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+.container input[type="text"],input[type="password"]
+{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border-style:solid;
+    border: none;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.container input[type="submit"]
+{
+    width: 25%;
+    height: 35px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 4%;
+    border-radius: 5px;
+     background-color: rgb(255, 226, 184);
+    color: white;
+    border-style:solid;
+    border: none;
+    font-size: 25px
+}
+
+.container label
+{
+    float: left;
+    margin-left: 4%;
+    font-size: 25px
+}
+
+.container form div:nth-child(2) label
+{
+  margin-bottom: 10px;  
+}
+.container form div:nth-child(3) label
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.container form div:nth-child(7) img
+{
+ float: left;
+ margin-top: -10px;
+ margin-left: 4%;
+ width: 20px   
+}
+.container form div:nth-child(7) h6
+{
+  text-align: left;
+  margin-left: 50px;
+/*    margin-top: 20px;*/
+}
+
+.container form div:nth-child(6)
+{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 15px;  
+}
+
+
+.container form div:nth-child(5) label
+{
+    float: right;
+    font-size: 15px;
+    margin-right: 5%;
+    margin-top: 20px; 
+    padding: 0;
+}
+
+.container form div:nth-child(5) input
+{
+   margin-top: 18px; 
+   margin-right: -38%;
+    padding: 0;
+    border-style:solid;
+    border: none;
+    width: 5%;
+    height: 20px;
+    
+}
+.container form > img
+{
+    width: 60%;
+}
+
+.container > div
+{
+    float: left;
+}
+
+.container
+{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
