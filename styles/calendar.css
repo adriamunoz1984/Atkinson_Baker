@@ -6,8 +6,213 @@
 {
    text-align: center;
 }
-img
+.cal-wrapp img
 {
     
     width: 50%;
 }
+
+.cal-wrapp .tb
+{
+    display: table;
+   width: 55%; 
+   margin: 0 auto;
+    border-spacing: 5px;
+}
+.cal-wrapp .tr
+{
+    display: table-row;
+}
+.cal-wrapp .tr .td
+{
+    width: 5%;
+    display: table-cell;
+    height: 150px;
+    background-color:bisque;
+    border-radius: 10px;
+    border: 2px solid burlywood;
+}
+
+.cal-wrapp .tr .td:hover
+{
+    cursor: pointer;
+    background-color:burlywood;
+}
+
+.cal-wrapp .tr:first-child .td
+{
+    height: 50px;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+}
+
+/*********************************************************************Calendar Modal****************************************/
+.cModal1 table
+{
+    color: gray;
+}
+.cBorder
+{
+    border: 4px solid lightgray;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.cModal1
+{
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+
+    .cModal1:target 
+{
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .cModal1 > div /*Main Modal Box*/
+{
+        width: 50%;
+        height: 700px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        border: 4px solid rgb(255, 226, 184);
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #f2f2f2);
+        background: -webkit-linear-gradient(#fff, #f2f2f2);
+        background: -o-linear-gradient(#fff, #f2f2f2);
+    }
+
+
+    .close 
+{
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+
+.cModal1 table
+{
+   
+    display: table;
+    width: 100.1%;
+    border-collapse: collapse;
+}
+
+.cModal1 table td
+{
+    display: table-cell;
+    width: 5%;
+    height: 100px;
+    padding: 0 10px;
+}
+
+
+/*Individual row Styling*/
+.cModal1 table tr:nth-child(-n+2) td, 
+.cModal1 table tr:nth-child(4) td, 
+.cModal1 table tr:nth-child(6) td,
+.cModal1 table tr:nth-child(7) td
+{
+    text-align: center;
+    height: 40px;
+}
+
+.cModal1 table tr:first-child td
+{
+    font-size: 30px;
+    color: #63b3dd;
+    border-bottom: 4px solid lightgray;
+    font-weight: bold;
+}
+
+.cModal1 table tr:nth-child(2) td, 
+.cModal1 table tr:nth-child(4) td
+{
+  font-size: 25px;
+    color: gray;
+    font-weight: bold;  
+}
+
+.cModal1 table tr:nth-child(6) td
+{
+    color: #63b3dd;
+  border-bottom: 4px solid lightgray;
+    font-weight: bold;
+}
+
+.cModal1 table tr:nth-child(3) td,
+.cModal1 table tr:nth-child(5) td
+{
+  border-bottom: 4px solid lightgray;  
+}
+
+/********Imbedded upcoming info*************/
+
+ .calborder
+{
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid lightgray;
+    height: 225px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.centering-div div
+{
+    width: 30%;
+    height: 220px;
+    display: inline-block;
+}
+
+.centering-div
+{
+    text-align: center;
+    width: 100%;
+}
+
+.centering-div div:nth-child(1),
+.centering-div div:nth-child(3)
+{
+    text-align: left;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+.centering-div div:nth-child(2) /*** google Map****/
+{
+    background-image: url("../img/googleMap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*********************************************************************END Calendar Modal****************************************/

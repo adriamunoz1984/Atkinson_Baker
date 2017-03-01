@@ -22,7 +22,7 @@
     
 }
 /*******************************Login Styles***********************/
-.container /*contains all of login info*/
+.Logcontainer /*contains all of login info*/
 {
     text-align: center;
     margin: 0 auto;
@@ -43,12 +43,12 @@
   
 }
 
-.container form > img /*Atkinson Baker logo*/
+.Logcontainer form > img /*Atkinson Baker logo*/
 {
     width: 70%;
 }
 
-.container input[type="text"],input[type="password"] /*user input and password*/
+.Logcontainer input[type="text"],input[type="password"] /*user input and password*/
 {
     width: 90%;
     height: 40px;
@@ -59,7 +59,7 @@
     padding-left: 10px;
 }
 
-.container input[type="submit"] /*Submit button*/
+.Logcontainer input[type="submit"] /*Submit button*/
 {
     width: 25%;
     height: 35px;
@@ -75,31 +75,31 @@
     cursor: pointer;
 }
 
-.container label /*all Labels*/
+.Logcontainer label /*all Labels*/
 {
     float: left;
     margin-left: 4%;
     font-size: 25px
 }
 
-.container form div:nth-child(2) label /*User label specifically*/
+.Logcontainer form div:nth-child(2) label /*User label specifically*/
 {
   margin-bottom: 10px;  
 }
-.container form div:nth-child(3) label /*Password label specifically*/
+.Logcontainer form div:nth-child(3) label /*Password label specifically*/
 {
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
-.container form div:nth-child(7) img /*datime image icon*/
+.Logcontainer form div:nth-child(7) img /*datime image icon*/
 {
  float: left;
  margin-top: -5px;
  margin-left: 4%;
  width: 20px   
 }
-.container form div:nth-child(7) h6 /*datetime Label*/
+.Logcontainer form div:nth-child(7) h6 /*datetime Label*/
 {
   text-align: left;
   margin-left: 50px;
@@ -107,14 +107,14 @@
 }
 
 /**Request account | Can't access account*/
-.container form div:nth-child(6) 
+.Logcontainer form div:nth-child(6) 
 {
     text-align: center;
     margin-top: 30px;
     font-size: 15px;  
 }
-.container a:nth-child(1),
-.container a:nth-child(2) /*First 2 links*/
+.Logcontainer a:nth-child(1),
+.Logcontainer a:nth-child(2) /*First 2 links*/
 {
    text-decoration: none;
     color: white;
@@ -124,7 +124,7 @@
 /*****************************************/
 
 
-.container form div:nth-child(5) label /*keep me logged in Label*/
+.Logcontainer form div:nth-child(5) label /*keep me logged in Label*/
 {
     float: right;
     font-size: 15px;
@@ -133,7 +133,7 @@
     padding: 0;
 }
 
-.container form div:nth-child(5) input /*Keep me logged in Checkbox*/
+.Logcontainer form div:nth-child(5) input /*Keep me logged in Checkbox*/
 {
    margin-top: 18px; 
    margin-right: -38%;
@@ -145,7 +145,10 @@
     
 }
 
-
+.Logcontainer form div:nth-child(4) a
+{
+    width: 20%;
+}
 
 
 

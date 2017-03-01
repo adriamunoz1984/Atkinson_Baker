@@ -78,13 +78,44 @@
 /*    z-index: 2;*/
 }
 
-/*
-.accFunction
+.modalFunc3, .modalFunc2, .modalFunc1
 {
-   width: 86.5%;
-    height: 60px;
-    position: relative;
-    top:-60px;
-    left: 20px;
+  position: absolute;
+    width: 40px;
+    height: 50px;
+    left: 80.5%; 
+    z-index: 2;
 }
-*/
+
+.modalFunc3
+{
+    top: 710px;
+}
+
+.modalFunc2
+{ 
+    top: 627px;
+}
+
+.modalFunc1
+{
+    top: 545px;
+    
+}
+
+.upcomingWrapper .accContainer tbody tr td:nth-child(odd)
+{
+    padding: 15px;
+    text-align: left;
+}
+
+.upcomingWrapper .accContainer tbody tr td:first-child h4
+{
+    margin-top: -9%;
+    text-align: center;
+}
+
+.upcomingWrapper .accContainer tbody tr td:first-child
+{
+  font-size: 100%;
+}
