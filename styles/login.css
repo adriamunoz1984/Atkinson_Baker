@@ -1,24 +1,40 @@
+/**************Background Styling *****************/
+.loginScreen/*Html element with a class as to not affect the other pages*/
+{
+    overflow-y: hidden !important; /****removing the Scrollbar*/
+}
 
-.login
+.login/********Body element with a class as to not affect the other pages*/
+{
+    padding: 0;
+    margin: 0;
+}
+.BG/*Backgroud Wrapper*/
 {
     background-image: url(../img/LoginBG.png);
-    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:1800px;
+    padding: 0;
+    padding-top: 200px;
+    margin: 0;
     
 }
-.container
+/*******************************Login Styles***********************/
+.container /*contains all of login info*/
 {
-  text-align: center;
-   margin: 0 auto;
-   width: 30%;
-}
-.container > div
-{
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
     background-color: skyblue;
-    width:100%;
     height:400px;
     margin: 0 auto;
     border-radius: 5px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0,0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0,0.7);
     padding: 40px;
     
     background-image: -moz-linear-gradient( 90deg, rgb(0,121,194) 0%, rgb(133,171,194) 58%, rgb(255,255,255) 98%);
@@ -27,17 +43,12 @@
   
 }
 
-.date
+.container form > img /*Atkinson Baker logo*/
 {
-   width: 35px; 
+    width: 70%;
 }
-.container a
-{
-   text-decoration: none;
-    color: white;
-    margin: 0 20px;
-}
-.container input[type="text"],input[type="password"]
+
+.container input[type="text"],input[type="password"] /*user input and password*/
 {
     width: 90%;
     height: 40px;
@@ -48,7 +59,7 @@
     padding-left: 10px;
 }
 
-.container input[type="submit"]
+.container input[type="submit"] /*Submit button*/
 {
     width: 25%;
     height: 35px;
@@ -60,49 +71,60 @@
     color: white;
     border-style:solid;
     border: none;
-    font-size: 25px
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.container label
+.container label /*all Labels*/
 {
     float: left;
     margin-left: 4%;
     font-size: 25px
 }
 
-.container form div:nth-child(2) label
+.container form div:nth-child(2) label /*User label specifically*/
 {
   margin-bottom: 10px;  
 }
-.container form div:nth-child(3) label
+.container form div:nth-child(3) label /*Password label specifically*/
 {
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
-.container form div:nth-child(7) img
+.container form div:nth-child(7) img /*datime image icon*/
 {
  float: left;
- margin-top: -10px;
+ margin-top: -5px;
  margin-left: 4%;
  width: 20px   
 }
-.container form div:nth-child(7) h6
+.container form div:nth-child(7) h6 /*datetime Label*/
 {
   text-align: left;
   margin-left: 50px;
-/*    margin-top: 20px;*/
+    margin-top: 20px;
 }
 
-.container form div:nth-child(6)
+/**Request account | Can't access account*/
+.container form div:nth-child(6) 
 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 15px;  
 }
+.container a:nth-child(1),
+.container a:nth-child(2) /*First 2 links*/
+{
+   text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    
+}
+/*****************************************/
 
 
-.container form div:nth-child(5) label
+.container form div:nth-child(5) label /*keep me logged in Label*/
 {
     float: right;
     font-size: 15px;
@@ -111,7 +133,7 @@
     padding: 0;
 }
 
-.container form div:nth-child(5) input
+.container form div:nth-child(5) input /*Keep me logged in Checkbox*/
 {
    margin-top: 18px; 
    margin-right: -38%;
@@ -122,22 +144,8 @@
     height: 20px;
     
 }
-.container form > img
-{
-    width: 60%;
-}
 
-.container > div
-{
-    float: left;
-}
 
-.container
-{
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-}
 
 
 

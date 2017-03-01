@@ -39,7 +39,6 @@
     border-right: none;
 }
 
-
 .upcomingWrapper thead tr th:nth-child(2)/* Center Blank Header */
 {
   border:none;  
@@ -76,5 +75,16 @@
     width: 50px;
     margin: -8px;
     top: 10px;
+/*    z-index: 2;*/
 }
 
+/*
+.accFunction
+{
+   width: 86.5%;
+    height: 60px;
+    position: relative;
+    top:-60px;
+    left: 20px;
+}
+*/

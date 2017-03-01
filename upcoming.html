@@ -7,14 +7,39 @@
 
         <!-- Links to an external Style Sheet -->
         <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
+        <link rel="stylesheet" type="text/css" href="styles/ucModal.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="scripts/jquery-ui.css"></script>
         <script src="scripts/jquery-ui.js"></script>
     </head>
 
     <body>
+        <!--*****************************************Modal Stuff******************************-->
 
+        <div id="openModal1" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Modal Box 1</h2>
+                <p>This is a sample modal box that can be created using the powers of CSS3.    </p>
+                <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            </div>
+        </div>
+       
 
+        <div id="openModal2" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Modal Box 2</h2>
+                <p><strong>Box 2</strong></p>
+                <p>yadda yadda</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!--*****************************************END Modal Stuff******************************-->
         <a href="index.html"><img src="img/Atkinsonbaker_logo.png" alt="" id="logo"></a>
         <div class="buttons">
             <div class="topB profile"><a href="profile.html">Profile</a></div>
@@ -60,20 +85,22 @@
 
              <!-- Accordion 1 header section -->
              <section>
+              
               <div class="accordion"> 
                 
                 <div class="head hUpcoming">
                     
                    <header>
-                      <img class="plus" src="img/ArrowS2.png"><!-- Accordion Arrow -->
+                      <img class="plus" src="img/ArrowS2.png"> <!--Accordion Arrow -->
                       <div>09/07/2016 10:00 AM</div>
                       <div>Mann VS American</div>
                       <div>Sherman Oaks</div>
                       <div>A90DDDC</div>
-                      <div><img src="img/pdf.png"/></div>
+                      <div><a href="#openModal1"><img src="img/pdf.png"/></a></div>
                     </header>
                 </div>
               </div>
+             
              <!--  End Accordion Header -->
 
              <!-- Accordion Body -->
@@ -101,8 +128,6 @@
             </section>
             <!-- End Accordion Body -->
 
-
-            <!--*********************************END Accordion 1**********************************************-->
               <!--*********************************Accordion 2**********************************************-->
 
              <!-- Accordion 1 header section -->
@@ -117,10 +142,11 @@
                       <div>Mann VS American</div>
                       <div>Sherman Oaks</div>
                       <div>A90DDDC</div>
-                      <div><a href="#"><img src="img/pdf.png"/></a></div>
+                      <div> <a href="#openModal2"><img src="img/pdf.png"/></a></div>
                     </header>
                 </div>
               </div>
+             
              <!--  End Accordion Header -->
 
              <!-- Accordion Body -->
@@ -147,9 +173,6 @@
                 </div>
             </section>
             <!-- End Accordion Body -->
-
-
-            <!--*********************************END Accordion 2**********************************************-->
               <!--*********************************Accordion 3**********************************************-->
 
              <!-- Accordion 1 header section -->
@@ -159,6 +182,7 @@
                 <div class="head">
                     
                    <header>
+                       
                       <img class="plus" src="img/ArrowS2.png"><!-- Accordion Arrow -->
                       <div>09/07/2016 10:00 AM</div>
                       <div>Mann VS American</div>
@@ -168,6 +192,7 @@
                     </header>
                 </div>
               </div>
+             
              <!--  End Accordion Header -->
 
              <!-- Accordion Body -->
