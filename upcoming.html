@@ -16,12 +16,40 @@
     <body>
         <!--*****************************************Modal Stuff******************************-->
 
-        <div id="openModal1" class="modalDialog">
+        <!-- The Modal -->
+        <div id="openModal1" class="up-modalDialog">
             <div>
-                <a href="#close" title="Close" class="close">X</a>
-                <h2>Modal Box 1</h2>
-                <p>This is a sample modal box that can be created using the powers of CSS3.    </p>
-                <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+                
+                <div class="modal-content">
+                    <a href="#close" title="Close" class="mclose">X</a>
+                  <div class="mContent">
+                    
+                    <form action="#">
+                      <label><input type="checkbox" id="selectall" onclick="selectAll(this.checked)"/> Check all</label>
+                      <table class="Mtable">
+                        <thead>    
+                          <tr>
+                            <th colspan="6">File Type</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                              <tr>
+                                  <td>PDF</td>
+                                  <td><input type="checkbox" name="Exhibit" value="PDF"></td>
+                                  <td>Excel</td>
+                                  <td><input type="checkbox" name="Exhibit" value="EXCEL"></td>
+                                  <td>ASCII</td>
+                                  <td><input type="checkbox" name="Exhibit" value="ASCII"></td>
+                              </tr>
+                              
+                        </tbody>
+
+                      </table>
+                    <input type="submit" value="Download" id="sub">
+                    </form>
+                  </div>
+              </div>
             </div>
         </div>
        

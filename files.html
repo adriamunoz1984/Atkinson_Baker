@@ -14,13 +14,13 @@
     <body>
 
         <!-- The Modal -->
-                <!-- Modal Trigger is the Exhibits button -->
-            <div id="myModal" class="modal">
-
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
+        <div id="openModal1" class="modalDialog">
+            <div>
+                
+                <div class="modal-content">
+                    <a href="#close" title="Close" class="mclose">X</a>
                   <div class="mContent">
+                    
                     <form action="#">
                       <label><input type="checkbox" id="selectall" onclick="selectAll(this.checked)"/> Check all</label>
                       <table class="Mtable">
@@ -77,11 +77,33 @@
                       </table>
                     <input type="submit" value="Download" id="sub">
                     </form>
-
                   </div>
               </div>
-
             </div>
+        </div>
+       
+
+        <div id="openModal2" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <!--Enter modal 2 information-->
+            </div>
+        </div>
+        
+        <div id="openModal3" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <!--Enter modal 3 information-->
+            </div>
+        </div>
+        
+        <div id="openModal4" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <!--Enter modal 4 information-->
+            </div>
+        </div>
+        
         <!-- End Modal -->
 
         <a href="index.html"><img src="img/Atkinsonbaker_logo.png" alt="" id="logo"></a>
@@ -130,6 +152,7 @@
 
              <!-- Accordion 1 header section -->
              <section>
+      
               <div class="accordion"> 
                 
                 <div class="head hFiles">
@@ -172,7 +195,7 @@
                                </td>
 
                                 <td>
-                                   <a href="#" class="button" id="myBtn">Exhibits</a> <!-- Trigger Modal -->
+                                   <a href="#openModal1" class="button">Exhibits</a> <!-- Trigger Modal -->
 
                                </td>
 
@@ -199,6 +222,7 @@
              <!--*********************************Accordion 2**********************************************-->
              <!-- Accordion 2 header section -->
              <section>
+              
               <div class="accordion"> 
                  
                  <div class="head">
@@ -242,7 +266,7 @@
                                </td>
 
                                 <td>
-                                   <a href="#" class="button" id="myBtn">Exhibits</a> <!-- Trigger Modal -->
+                                   <a href="#openModal1" class="button">Exhibits</a> <!-- Trigger Modal -->
 
 
                                </td>
@@ -268,6 +292,7 @@
              <!--*********************************Accordion 3**********************************************-->
             <!-- Accordion 3 header section -->
               <section>
+              <a href="#openModal3" class="modalFunc3"></a>
               <div class="accordion">
                  
                  <div class="head">
@@ -311,7 +336,7 @@
                                </td>
 
                                 <td>
-                                   <a href="#" class="button" id="myBtn">Exhibits</a> <!-- Trigger Modal -->
+                                   <a href="#openModal1" class="button">Exhibits</a> <!-- Trigger Modal -->
 
 
                                </td>
@@ -337,6 +362,7 @@
             <!--*********************************Accordion 4**********************************************-->
              <!-- Accordion 4 header section -->
               <section>
+              <a href="#openModal4" class="modalFunc4"></a>
               <div class="accordion">
                  <div class="head">
                      
@@ -379,7 +405,7 @@
                                </td>
 
                                 <td>
-                                   <a href="#" class="button" id="myBtn">Exhibits</a> <!-- Trigger Modal -->
+                                   <a href="#openModal1" class="button">Exhibits</a> <!-- Trigger Modal -->
 
 
                                </td>

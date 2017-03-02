@@ -45,22 +45,28 @@
     border-radius: 20px;
 }
 /*********************************************************************Exhibits Modal****************************************/
-/* The Modal (background) */
-.modal 
+.modalDialog 
 {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
-/* Modal Content/Box */
+.modalDialog:target 
+{
+    opacity:1;
+    pointer-events: auto;
+}
 .modal-content 
 {
     overflow-y: hidden;
@@ -118,12 +124,13 @@ table, .Mtable
 .mContent table tbody tr td
 {
     margin: 0 auto;
-    padding: 20px;
+/*    padding: 20px;*/
     
     text-align: center;
     vertical-align: middle;
 /*    border: 2px solid #cccccc;*/
     width: 2%;
+    height: 60px;
    
 }
 .mContent table tbody tr td input
@@ -158,4 +165,31 @@ table, .Mtable
     border: none;
     border: 1px solid gray;
 }
+
+
+.mclose 
+{
+    background: #606061;
+    float: right;
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    margin-top: -20px;
+    margin-right: -15px;
+}
+
+.mclose:hover 
+{
+    background: #00d9ff; 
+}
 /*********************************************************************END Exhibits Modal****************************************/
+
