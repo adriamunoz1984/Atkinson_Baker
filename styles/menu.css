@@ -94,7 +94,74 @@
      box-shadow: 1px 10px 10px rgba(0, 0, 0,0.5)
 }
 
+
+.buttons
+{
+    left: 80%;
+    position: relative;
+    
+}
+
+.topB
+{
+    
+    display: inline-block;
+    background: rgb(14,121,191);
+    padding:5px 10px;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.topB a
+{
+    text-decoration: none;
+    color: white;
+}
+
 /****************************************Media Queries***********************************/
+@media screen and (max-width: 880px)
+{
+    .burger-nav
+    {
+        display: block;
+/*        height: 0px;*/
+        width: 100%;
+        background: url("../img/rMenu_icon.png") no-repeat 98% center;
+        cursor: pointer;
+        padding-top: 100px;
+    }
+    
+    #menu
+    {
+        width: 100%;
+     overflow: hidden;
+/*        height: 0;*/
+    }
+    
+    #menu.open
+    {
+        height: auto;
+    }
+    
+    #menu li
+    {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #menu li a
+    {
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        display: block;
+        margin: 0;
+    }
+}
+
+/*
 @media only screen and (max-width: 2360px) 
 {
     #menu li a
@@ -152,29 +219,7 @@
 
     }
 }
-
-.buttons
-{
-    left: 80%;
-    position: relative;
-    
-}
-
-.topB
-{
-    
-    display: inline-block;
-    background: rgb(14,121,191);
-    padding:5px 10px;
-    border-radius: 5px;
-    margin: 10px 10px;
-}
-
-.topB a
-{
-    text-decoration: none;
-    color: white;
-}
+*/
 
 
 

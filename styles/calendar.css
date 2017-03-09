@@ -30,7 +30,7 @@
     width: 5%;
     display: table-cell;
     height: 200px;
-    background-color:bisque;
+    background-color:white;
     border-radius: 10px;
     border: 2px solid burlywood;
 }
@@ -38,7 +38,7 @@
 .cal-wrapp .tr .td:hover
 {
     cursor: pointer;
-    background-color:burlywood;
+    background-color: skyblue;
 }
 
 .cal-wrapp .tr:first-child .td
