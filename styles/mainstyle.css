@@ -13,10 +13,12 @@
 
 
 /* CSS FILE */
-
+/**************************************General html page info****************/
 html
 {
     overflow-y: scroll;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 body
@@ -26,8 +28,35 @@ body
     padding: 0;
     margin: 0;
     padding-top: 50px;
+    padding-bottom: 60px;
+    min-height: 100%;
     overflow-x: hidden;
+    position: relative;
 }
+
+
+footer
+{
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(14, 121, 191);
+    width: 100%;
+    height: 60px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+footer p
+{
+    
+  color: white;
+  font-size: 20px;
+}
+/************************************** END General html page info****************/
 
 #search
 {
@@ -65,13 +94,14 @@ body
 /***********Accordion Background Wrapper**********/
 #wrapper 
 {
-    margin: 50px auto;
-    width:80%;
+    margin: 0 auto;
+    width:70%;
     padding: 20px 0 20px 0;
     border-radius: 20px;
     background-image: -moz-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
+    margin-bottom: 50px;
 }
 
 /***************************************************************************Accordions***************************************************/
@@ -86,7 +116,6 @@ body
     width: 98%;
     font-size: 16px;
     font-weight: bold;
-    text-align: left;
     border: 1px solid rgb(169, 169, 169);
     margin: 20px auto 0 auto;
     border-radius: 15px;
@@ -98,11 +127,9 @@ body
 
 .head 
 {
-    text-align: center;
     margin: 0 auto;
     color: #63b3dd;
     text-decoration: none;
-    display: block;
     font-family: myriad pro, helvetica, arial;
     width: 98%;
     border-radius: 5px;
@@ -110,19 +137,33 @@ body
     height: 60px;
 }
 
-header
+/*****Upcoming Accordion Header styles***********/
+.upcomingWrapper header, 
+.file-wrapp header
 {
     display: table-row;
-    
+    width: 100%;    
 }
 
-header div
+.upcomingWrapper header div, 
+.file-wrapp header div
 {
     text-align: center;
     width: 800px;
     display: table-cell;
-    
-  
+}
+/*******************************************/
+header div
+{
+    text-align: center;
+    width: 100%;
+    display: table-cell;
+}
+
+header
+{
+    display: table-row;
+    width: 100%;  
 }
 
 .title h2
@@ -166,7 +207,6 @@ header div
 section
 {
     margin: 0 auto;
-    display: table;
 }
 
 .accTableHeader th
@@ -218,20 +258,5 @@ section
 /***************************************************************END Modal*****************************************************/
 
 
-footer
-{
-  text-align: center;
-  background-color: rgb(14, 121, 191);
-  width: 100%;
-  height: 50px;
-/*  margin: 100px 0 50px 0;*/
-}
-
-footer p
-{
-  padding-top: 12.5px;
-  color: white;
-  font-size: 20px;
-}
 
 /* Insert Media Query for width size of 1099 */

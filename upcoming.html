@@ -25,7 +25,8 @@
                   <div class="mContent">
                     
                     <form action="#">
-                      <label><input type="checkbox" id="selectall" onclick="selectAll(this.checked)"/> Check all</label>
+                        <input type="checkbox" id="checkall" onclick="selectAll(this.checked)" name="f-checkAll"/>
+                        <label for="checkall"><span></span>Check All</label>
                       <table class="Mtable">
                         <thead>    
                           <tr>
@@ -35,12 +36,12 @@
 
                         <tbody>
                               <tr>
-                                  <td>PDF</td>
-                                  <td><input type="checkbox" name="Exhibit" value="PDF"></td>
-                                  <td>Excel</td>
-                                  <td><input type="checkbox" name="Exhibit" value="EXCEL"></td>
-                                  <td>ASCII</td>
-                                  <td><input type="checkbox" name="Exhibit" value="ASCII"></td>
+                                  <td><img src="img/pdf.png"></td>
+                                  <td><input type="checkbox" name="format" value="PDF"></td>
+                                  <td><img src="img/xcel.png"></td>
+                                  <td><input type="checkbox" name="format" value="EXCEL"></td>
+                                  <td><img src="img/ascii_icon.png"></td>
+                                  <td><input type="checkbox" name="format" value="ASCII"></td>
                               </tr>
                               
                         </tbody>
@@ -122,7 +123,7 @@
 
              <!-- Accordion 1 header section -->
              <section>
-                 <a href="#openModal1" class="modalFunc1"></a>
+                 <a href="#openModal1" class="modalFunc1"></a> <!--PDF Modal activation-->
               <div class="accordion"> 
                 
                 <div class="head hUpcoming">
@@ -208,7 +209,7 @@
 
              <!-- Accordion 1 header section -->
              <section>
-              <a href="#openModal2" class="modalFunc2"></a>
+              <a href="#openModal1" class="modalFunc2"></a>
               <div class="accordion"> 
                 
                 <div class="head">
@@ -291,7 +292,7 @@
 
              <!-- Accordion 1 header section -->
              <section>
-              <a href="#openModal3" class="modalFunc3"></a>
+              <a href="#openModal1" class="modalFunc3"></a>
               <div class="accordion"> 
                 
                 <div class="head">
@@ -383,8 +384,9 @@
         <script>
     //alert(window.outerWidth+' x '+window.outerHeight);
     </script>
+        <footer>
+            <p>©1995-2016 Copyright Atkinson-Baker, Inc., Court Reporters. (1.0.10.22.13.1) VS 2015 version Legal Notices | Copyrights | Privacy Policies</p>
+        </footer>
     </body>
-    <footer>
-        <p>©1995-2016 Copyright Atkinson-Baker, Inc., Court Reporters. (1.0.10.22.13.1) VS 2015 version Legal Notices | Copyrights | Privacy Policies</p>
-    </footer>
+   
 </html>

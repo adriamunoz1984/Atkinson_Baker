@@ -7,7 +7,7 @@
 
         <!-- Links to an external Style Sheet -->
         <link rel="stylesheet" type="text/css" href="styles/dashboard.css">
-        <link rel="stylesheet" type="text/css" href="styles/menu.css">
+        <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="scripts/jquery-ui.css"></script>
         <script src="scripts/jquery-ui.js"></script>
@@ -42,24 +42,23 @@
 
 
          <div id="wrapper" class="dashWrap"><!-- Gives the background Gradient -->
-            <table class="dash-table">
+            <table class="dash-table" cellspacing="10">
         <!-- *****************************Upcoming accordions Box*******************************************-->
                         
 
                     <tr>
                         <td rowspan="2" colspan="2">
-                                 <img src="img/OpenAll.png" id="openAll">
-                                  <div class="title">
-                                      <header>
-                                      <div></div>
-                                      <div><h2>Upcoming Jobs</h2></div>
-                                      <div></div>
-                                      </header>
+                            <div>
+                                  <div class="title-uc">
+                                      <div class="uc-row">
+                                          <div class="cell"><img src="img/OpenAll.png" id="openAll"></div>
+                                          <div class="cell"><h2>Upcoming Jobs</h2></div>
+                                      </div>
                                   </div>
 
                                 <!--************************Accordion 1************************-->
 
-                                 <!-- Accordion 1 header section -->
+                                 <!-- Accordion 1  -->
                                  <section>
                                   <div class="accordion"> 
 
@@ -77,13 +76,26 @@
 
                                  <!-- Sub Accordion Body -->
                                     <div class="accContainer">
-                                       <div class="subAcc">
+                                       <div class="subAcc">  <!-- Sub Accordion-->
+                                           <div>Job Details 1</div>
+                                       </div>
+                                   
+                                     
+                                     
+                                       <div class="subAcc"> <!-- Sub Accordion-->
+                                           <div>Job Details 2</div>
+                                       </div>
+                                  
+                                     
+                                     
+                                       <div class="subAcc"> <!-- Sub Accordion-->
+                                           <div>Job Details 3</div>
                                        </div>
                                     </div>
                                 </section>
                                 <!-- End Accordion Body -->
                             
-                                 <!-- Accordion 1 header section -->
+                                 <!--****************************** Accordion 2 ******************** -->
                                  <section>
                                   <div class="accordion"> 
 
@@ -99,15 +111,74 @@
                                   </div>
                                  <!--  End Accordion Header -->
 
-                                 <!-- Sub Accordion Body -->
+                                 <!-- Accordion Body -->
                                     <div class="accContainer">
-                                       <div class="subAcc">
+                                       <div class="subAcc"> <!-- Sub Accordion-->
+                                           <div>Job Details 1</div>
+                                       </div>
+                                   
+                                     
+                                       <div class="subAcc"> <!-- Sub Accordion-->
+                                           <div>Job Details 2</div>
                                        </div>
                                     </div>
                                 </section>
                                 <!-- End Accordion Body -->
+                            
+                            <!--******************************** Accordion 3************************  -->
+                                 <section>
+                                  <div class="accordion"> 
+
+                                    <div class="head">
+
+                                       <header>
+                                           <img class="plus" src="img/ArrowS2.png"> <!--Accordion Arrow -->
+
+                                           <div>Upcoming Jobs 3</div>
+
+                                        </header>
+                                    </div>
+                                  </div>
+                                 <!--  End Accordion Header -->
+
+                                 <!-- Sub Accordion Body -->
+                                    <div class="accContainer">
+                                       <div class="subAcc"> <!-- Sub Accordion-->
+                                           <div>Job Details 1</div>
+                                       </div>
+                                    </div>
+                                </section>
+                                <!-- End Accordion Body -->
+                            
+                            <!--***************************** Accordion 4  *****************************-->
+                                 <section>
+                                  <div class="accordion"> 
+
+                                    <div class="head">
+
+                                       <header>
+                                           <img class="plus" src="img/ArrowS2.png"> <!--Accordion Arrow -->
+
+                                           <div>Upcoming Jobs 4</div>
+
+                                        </header>
+                                    </div>
+                                  </div>
+                                 <!--  End Accordion Header -->
+
+                                 <!-- Sub Accordion Body -->
+                                    <div class="accContainer">
+                                       <div class="subAcc"> <!-- Sub Accordion-->
+                                           <div>Job Details 1</div>
+                                       </div>
+                                    </div>
+                                </section>
+                                <!-- End Accordion Body -->
+                            </div>
                         </td>
-                        <td><img src="img/multiBarChart.png" class="chart"></td>
+                        <td>
+                            <a href="calendar.html"><img src="img/Calendar2_HD.png" class="chart"></a>
+                        </td>
                         
                 </tr>
                 <tr>

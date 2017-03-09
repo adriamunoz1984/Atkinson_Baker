@@ -356,16 +356,8 @@
                                   <div class="row">
                                     <div class="cell"><img class="reqIcon"><label for="caseCaption">Case Caption</label></div>
                                   </div>
-                                  <div class="row">
-<!--
-                                    <td colspan="2">
-                                        <textarea name="message" rows="10" cols="75">
-                                        </textarea>
-                                    </div>
--->
-                                 
-                               </div>
                           </div>
+                          <textarea name="specialIntructions" rows="10" cols="75" class="schedTxt"></textarea>
                         </div> 
                     </div>
                 </section>
@@ -386,16 +378,11 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
-                        <div class="schedTable billing-body">
-                              
-                              
-                                 <div class="row">
-<!--
-                                   <td colspan="2"><p>Insurance information, if applicable, must be provided regardless of<br>
-                                     where the job is billed to ensure proper guidelines are followed.</p></div>
--->
-                                  
-                                 </div>
+                           <div class="sched-notes">Insurance information, if applicable, must be provided regardless of<br>
+                                     where the job is billed to ensure proper guidelines are followed.</div>
+                        <div class="schedTable billing-body">                        
+                                <div class="row">
+                                </div>
                                  <div class="row">
                                   <div class="cell"><img class="reqIcon" src="img/required1.png">Bill Your Firm?</div>
                                   <div class="cell">
@@ -603,14 +590,10 @@
                  <!-- Accordion Body -->
                     <div class="accContainer">
                        <div>
+                           <div class="sched-notes">Insurance information, if applicable, must be provided regardless of<br>
+                                     where the job is billed to ensure proper guidelines are followed.</div>
                             <div class="schedTable delivery-body">
-                              
-                              
                                  <div class="row">
-<!--
-                                   <td colspan="2"><p>Insurance information, if applicable, must be provided regardless of<br>
-                                     where the job is billed to ensure proper guidelines are followed.</p></div>
--->
                                  </div>
                                   <div class="row">
                                      <div class="cell"><img class="reqIcon">Transcript Needed By</div>
@@ -619,16 +602,9 @@
                                   <div class="row">
                                     <div class="cell"><img class="reqIcon"><label for="specialIntructions">Special Instructions</label></div>
                                   </div>
-                                  <div class="row">
-<!--
-                                    <td colspan="2">
-                                        <textarea name="specialIntructions" rows="10" cols="75">
-                                        </textarea>
-                                    </div>
--->
-                                  </div>
-                             
+                                                           
                           </div>
+                           <textarea name="specialIntructions" rows="10" cols="75" class="schedTxt"></textarea>         
                         </div> 
                     </div>
                 </section>
@@ -666,7 +642,9 @@
                              
                            </div>
                            <div class="upload">
-                               <input  type="file" name="pic" accept="image/*">
+                               <label class="fileContainer">
+                                <input  type="file" name="pic" accept="image/*">
+                               </label>
                                <input  type="submit">
                            </div>
                         </div> 
@@ -699,18 +677,19 @@
                                   <div class="row">
                                    <div class="cell"><img class="reqIcon" src="img/required1.png">Email Address</div>
                                    <div class="cell"><input type="text" name="delivery-transcript" placeholder="Enter Email"></div>
-                                 </div>
-                                  <div class="row">
-<!--                                    <td colspan="2"><p>Click Next to review the information before sending your request</p></div>-->
-                                  </div>
+                                 </div>                            
                           </div>
+                          <div class="sched-notes">Click Next to review the information before sending your request</div>
+                           <div class="shed-bttns">
+                               <input type="button" value="Next">
+                               <input type="button" value="Cancel">
+                            </div>
                         </div> 
                     </div>
                 </section>
                 <!-- End Accordion Body -->
                  <!--*****************************************************************-->
-                 
-                 
+                   
             </form>
         </div>
 
@@ -720,8 +699,8 @@
         <script>
     //alert(window.outerWidth+' x '+window.outerHeight);
     </script>
-    </body>
-    <footer>
+        <footer>
         <p>©1995-2016 Copyright Atkinson-Baker, Inc., Court Reporters. (1.0.10.22.13.1) VS 2015 version Legal Notices | Copyrights | Privacy Policies</p>
     </footer>
+    </body>
 </html>

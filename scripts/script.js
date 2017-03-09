@@ -109,5 +109,10 @@ function selectAll(status)
       { 
           $(this).prop('checked', status);
       });
+      
+      $('input[name=format]').each(function()
+      { 
+          $(this).prop('checked', status);
+      });
   }
 //**********************************End Check All********************************************

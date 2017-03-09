@@ -1,41 +1,7 @@
-@import "font.css";
-.title
-{
-    padding: 0;
-    margin: 0;
-}
-.dashWrap section
-{
-  padding: 0 !important;
-    margin: 0;
-}
-.dashWrap
-{
-    width: 65% !important;
-}
-body
-{
-    font-family: 'Swiss 721 Light Condensed BT';
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    padding-top: 50px;
-    overflow-x: hidden;
-}
-
-#wrapper 
-{
-    margin: 50px auto;
-    width:80%;
-    padding: 20px 0 20px 0;
-    border-radius: 20px;
-    background-image: -moz-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
-}
 
 /*********************Accordion Header********************/
-.accordion 
+
+.dashWrap .accordion 
 {
     
     padding: 0;
@@ -54,20 +20,24 @@ body
     background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     
 }
-#wrapper .title div h2
+
+.dash-table .accContainer
 {
-     font-size: 2em;
-     color: #63b3dd;
-     margin: 0;
-     display: inline;
+    border: none;
 }
 
-.header-title h2
+.dash-table tr:first-child td:first-child > div
 {
-   margin: 0;
-    padding: 0;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-.head 
+.uc-row h2
+{
+     color: #63b3dd;
+    font-size: 35px;
+}
+.dashWrap .head 
 {
     text-align: center;
     margin: 0 auto;
@@ -81,95 +51,61 @@ body
     height: 40px;
 }
 
-header
+.title-uc
 {
-    display: table-row;
-    margin-left: 40px;
+   display: table;
+   width: 100%;
 }
 
-header img
+.title-uc div
 {
-  position: relative;
-    top: -30px;  
-}
-.head header div
-{
-    text-align: center;
-    width: 400px;
-    display: table-cell;
-    position: relative;
-    top: -30px;
+   display: table-row;
 }
 
-
-.title h2
+.title-uc .cell
 {
-  margin:0;
-}
-
-/***********Open All Button*********/
-#openAll
-{
-    width: 50px;
-}
-
-#openAll:hover
-{
-    cursor:pointer;
-}
-
-/**********************Accordion Content******************************/
-.accContainer 
-{
-  margin: 0px auto 5px auto;
-  padding: 0px;
-  overflow: hidden;
-  font-size: 1.2em;
-  color: #666;
-  width: 95%;
-  clear: both;
-  background: #f6f6f6;
-
-  background-image: -moz-linear-gradient( 90deg, rgb(253,253,254) 0%, rgb(255,255,255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(253,253,254) 0%, rgb(255,255,255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(253,253,254) 0%, rgb(255,255,255) 100%);
+   display: table-cell;
+    vertical-align: middle;
     
 }
 
-/**************Accordion Tables******************/
-
-.accTableHeader td
+.title-uc .cell:first-child
 {
-    padding: 15px 0 15px 0;
-   
+   padding-left: 10px;
+   width: 5%;
 }
 
-/******************Accordion Arrows***************/
-.plus
+.title-uc .cell:last-child
 {
-    width: 20px;
-    height: 15px;
-    transform: rotate(-90deg);
-    transition: transform 300ms ease-in;
-    margin-top: 23px;
+   text-align: center;
+   padding-right: 30px;
 }
 
-.minus
+.dashWrap header img
 {
-     transform: rotate(0deg);
+  position: relative;
+  top: -10px;
 }
 
+.dashWrap header div
+{
+    text-align: center;
+    width: 100%;
+    display: table-cell;
+    position: relative;
+    top: -10px;
+}
 
-/*******************End Arrows********************/
 
 .dash-table tr td
 {
     padding: 20px;
     background-color: white;
     border-radius: 15px;
-    border: 2px solid rgb(255, 226
-        , 184);
+    border: 2px solid gray;
+    
 }
+
 
 .dash-table tr:nth-child(1) td:nth-child(2), .dash-table tr:nth-child(2) td:nth-child(1), .dash-table tr:nth-child(3) td
 {
@@ -188,7 +124,7 @@ header img
 {
    border-spacing: 20px; 
    margin: 0 auto;
-/*    width: 100%;*/
+   margin: 20px;
 }
 
 .dash-table tr:first-child td:first-child
@@ -200,21 +136,27 @@ header img
 
 .subAcc
 {
-    float: right;
-    padding: 0;
+    float: right; 
     background: #333;
     height: 35px;
-    line-height:60px;
     width: 75%;
     font-size: 16px;
     font-weight: bold;
-    text-align: left;
     border: 1px solid rgb(169, 169, 169);
     margin: 20px auto 0 auto;
     border-radius: 15px;
     background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    cursor: pointer;
+}
+
+.subAcc div
+{
+    padding-top: 8px;
+    text-align: center;
+    height: 30px;
+    
 }
 
 .dash-table tr:nth-child(1) td:last-child img, .dash-table tr:nth-child(2) td img, .dash-table tr:nth-child(3) td img
@@ -230,6 +172,7 @@ footer
   width: 100%;
   height: 50px;
   margin: 100px 0 50px 0;
+    
 }
 
 footer p

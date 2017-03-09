@@ -1,7 +1,9 @@
+/*
 .reportsWrap
 {
     width: 55% !important;
 }
+*/
 
 .reports-table
 {
@@ -9,6 +11,7 @@
     display: table;
     border-spacing: 10px;
     border-collapse: separate;
+     width: 100%;
 }
 
 .reports-table .row

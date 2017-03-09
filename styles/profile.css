@@ -1,16 +1,10 @@
-.profileSection
-{
-    width: 100%
-}
+
 .profileSection header h2
 {
    margin: 0 auto !important;
     
 }
-.profileWrap
-{
-     width:80% !important;
-}
+
 .profileTable
 {
     margin: 0 auto;
@@ -45,7 +39,7 @@
 .profForm
 {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 .profileTable .border
 {
@@ -65,6 +59,7 @@
 .attorney-body .row .cell, 
 .other-body .row .cell
 {
+    text-align: center;
     font-weight: normal;
     border-bottom: 2px solid gray;
     padding-left: 10px;
@@ -91,6 +86,11 @@
     width: 100%;
 }
 
+.attorney-body .row .cell:nth-child(8), 
+.other-body .row .cell:nth-child(7) 
+{
+    padding-right: 20px;
+}
 /*************Attorneys***************/
 .attorney-body .row .cell:nth-child(5), 
 .attorney-body .row .cell:nth-child(6) 

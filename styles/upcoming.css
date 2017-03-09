@@ -77,13 +77,13 @@
     top: 10px;
 /*    z-index: 2;*/
 }
-
+/*********Modal Activation divs************/
 .modalFunc3, .modalFunc2, .modalFunc1
 {
   position: absolute;
     width: 40px;
     height: 50px;
-    left: 80.5%; 
+    left: 76.70%; 
     z-index: 2;
 }
 
@@ -102,11 +102,16 @@
     top: 545px;
     
 }
+/*********End Modal Activation divs************/
 
 .upcomingWrapper .accContainer tbody tr td:nth-child(odd)
 {
     padding: 15px;
     text-align: left;
+}
+
+.upcomingWrapper .accContainer tbody tr:first-child td:nth-child(odd)
+{
 }
 
 .upcomingWrapper .accContainer tbody tr td:first-child h4
@@ -186,6 +191,7 @@
    
     text-align: center;
     width: 200px;
+    border-radius: 0 !important;
 }
 
 up-modalDialog table, .Mtable
@@ -237,9 +243,12 @@ up-modalDialog table, .Mtable
     padding: 0;
     width: 200px;
     height: 50px;
-    border-radius: 10px;
-    border: none;
-    border: 1px solid gray;
+    display: inline-block;
+    background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%);
+    border-style:solid;
+    border: 2 px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer; 
 }
 
 
@@ -266,4 +275,9 @@ up-modalDialog table, .Mtable
 .up-modalDialog .mclose:hover 
 {
     background: #00d9ff; 
+}
+
+.mContent tbody tr td img
+{
+    width: 50px;
 }
