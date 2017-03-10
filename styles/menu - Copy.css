@@ -1,9 +1,5 @@
 
 /** Background and Logo **/
-.show
-{
-    display: block;
-}
 .menuBG
 {
     width: 100%;
@@ -24,12 +20,27 @@
 #menu
 {
     font-family: 'Swiss 721 Light Condensed BT';
-    width: 1500px;
+    width: 60%;
     margin: 0 auto;
+   
     padding: 0;
+   
     list-style-type: none;
 }
 
+#menu li a
+{
+    margin-top: -15px;
+   
+    padding: 35px 5px 5px 5px; 
+    background-color: rgb(14,121,191);
+    text-decoration: none;
+    height: 60px;
+    color: white;
+    display: block;
+    transition: box-shadow .3s ease-in, background-color .25s ease-in;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
+}
 
 #menu li
 {
@@ -42,24 +53,11 @@
     font-size: 1.75em;
     text-align: center;
     border-right:  4px solid #005b92;
+    
+   
 }
 
-#menu li a
-{
-    margin-top: -15px;
-    padding: 35px 5px 5px 5px; 
-    background-color: rgb(14,121,191);
-    text-decoration: none;
-    color: white;
-    display: block;
-    transition: box-shadow .3s ease-in, background-color .25s ease-in;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
-    height: 60px;
-}
-
-
-
-#menu > li:first-child /* Note this is a;so affecting the the list item in the drop down menu because its also a first child*/
+#menu li:first-child /* Note this is a;so affecting the the list item in the drop down menu because its also a first child*/
 {
     border-left: 4px solid #005b92;
 }
@@ -74,12 +72,12 @@
 {
     
     float: none;
-    
     margin: -90px 0 0 -40px;
     padding-top: 5px;
     width: 125%;
     overflow: hidden;
     transition:  margin .15s ease-in, box-shadow .3s ease-in, opacity .4s ease-in,height .25s ease;
+    border: none;
     opacity: 0;
     box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
 }
@@ -88,28 +86,14 @@
 { 
     font-size: 25px;
     padding: 10px 25px;
-    border: none;
 }
 #menu li:hover ul li
 {
      margin: 0 0 0 -40px;
      opacity: 1;
+     box-shadow: 1px 10px 10px rgba(0, 0, 0,0.5)
 }
 
-#details, #reports
-{
-   border-right: none !important; 
-}
-
-#details a, #reports a
-{
-  margin-top: -3px !important;
-}
-
-#details:hover
-{
-  box-shadow: 0px 0px 0px rgba(0, 0, 0,0);  
-}
 
 .buttons
 {
@@ -134,37 +118,9 @@
     color: white;
 }
 
-
-
 /****************************************Media Queries***********************************/
-@media screen and (max-width: 1300px)
-{
-    #menu
-    {
-        font-family: 'Swiss 721 Light Condensed BT';
-        width: 1000px;
-        margin: 0 auto;
-        font-size: 12px;
-        padding: 0;
-        
-        list-style-type: none;
-    } 
-    #menu li
-    {
-        width: 13%;
-    }
-  
-}
-
-
 @media screen and (max-width: 880px)
 {
-    #menu > li:first-child
-    {
-        border: none;
-        margin-top: 4px;
-    }
-    
     .burger-nav
     {
         display: block;
@@ -178,8 +134,8 @@
     #menu
     {
         width: 100%;
-        overflow: hidden;
-/*        display: none;*/
+     overflow: hidden;
+/*        height: 0;*/
     }
     
     #menu.open
@@ -190,34 +146,84 @@
     #menu li
     {
         float: none;
-        text-align: center;
+        text-align: left;
         width: 100%;
         margin: 0;
-        outline: 2px solid white;
-    }
-    
-     #menu li ul li
-    {
-/*        float: none;*/
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        margin-top: 10px
-            
     }
     
     #menu li a
     {
         color: #fff;
-/*        padding: 10px;*/
+        padding: 10px;
         border-bottom: 1px solid black;
         display: block;
-        margin: 0; 
-        line-height: 75px;
-        width: 100%;
+        margin: 0;
+    }
+}
+
+/*
+@media only screen and (max-width: 2360px) 
+{
+    #menu li a
+    {
+       
+        font-size: 0.75em;
     }
     
+    #menu li ul li a
+    { 
+        font-size: 15px;
+
+    }
 }
+
+@media only screen and (max-width: 1812px) 
+{
+    #menu
+    {
+        width: 70%;
+    }
+    #menu li a
+    {
+        padding: 40px 5px 0px 5px; 
+        font-size: 1.1vw;
+    }
+    
+    #menu li ul li a
+    { 
+        font-size: 12px;
+
+    }
+}
+
+@media only screen and (max-width: 1030px) 
+{
+    #menu
+    {
+        width: 100%;
+    }
+    #menu li
+    {
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+    #menu li a
+    {
+        padding: 40px 5px 0px 5px; 
+        font-size: 2.5vw;
+    }
+    
+    #menu li ul li a
+    { 
+        font-size: 12px;
+
+    }
+}
+*/
+
+
+
+
 
 
 
