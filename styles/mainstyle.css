@@ -1,18 +1,41 @@
-@import "Font.css";
-@import "menu.css";
-@import "schedules.css";
-@import "files.css";
-@import "upcoming.css";
-@import "jobDetails.css";
-@import "calendar.css";
-@import "jobList.css";
-@import "reports.css";
-@import "invoices.css";
-@import "profile.css";
-@import "login.css";
+/*@import "Font.css";*/
+/*@import "menu.css";*/
+/*@import "schedules.css";*/
+/*@import "files.css";*/
+/*@import "upcoming.css";*/
+/*@import "jobDetails.css";*/
+/*@import "calendar.css";*/
+/*@import "jobList.css";*/
+/*@import "reports.css";*/
+/*@import "invoices.css";*/
+/*@import "profile.css";*/
+/*@import "login.css";*/
 
 
 /* CSS FILE */
+
+/******************Contents************/
+/*
+    Page                    Line#
+_____________________________________
+   * General styling        37
+        - Gradient Wrapper  106
+        - Accordions        120
+    *Upcoming Jobs          260
+    *Job List               559
+    *Job Details            698
+    *Calendar               1108
+    *Schedule               1277
+    *Files                  1405
+    *Reports                1644
+    *Invoices               1692
+    *Profile                1880
+    *LogIn                  2005
+    *Menu                   2658
+    *Font                   2354
+    *Upcoming Modal         2363
+    
+*/
 /**************************************General html page info****************/
 html
 {
@@ -237,7 +260,7 @@ section
 /****************************END Accordion Content*****************/
 /**************************************************************END Accordions*******************************************/
 
-/*******************************************************************Modal***********************************************/
+/*****************************************Modal***********************************************/
 
 /* The Close Button */
 .close 
@@ -255,8 +278,2181 @@ section
   text-decoration: none;
   cursor: pointer;
 }
-/***************************************************************END Modal*****************************************************/
+/******************************************END Modal*****************************************************/
+
+/****************************************************************Upcoming Jobs********************************************/
+/****************Accordion Table Styles**************/
+
+.openAllUpcoming
+{
+    position: relative;
+    top: 40px;
+}
+.upcomingWrapper .title div
+{
+ width: 400px;
+}
+
+.upcomingWrapper .title
+{
+    margin: 0 auto;
+    width: 98%
+}
+
+.filesTable thead tr
+{
+    padding: 0;
+    margin: 0;
+}
+
+/************************* Table Border Styles**********/
+.upcomingWrapper thead tr th:nth-child(odd)
+{
+   border: 2px solid #d9d9d9; 
+   border-top: none;
+}
+
+.upcomingWrapper thead tr th:nth-child(1)/* Address header*/
+{
+    border-left: none;
+}
+
+.upcomingWrapper thead tr th:nth-child(3)/* Notes Header*/
+{
+    border-right: none;
+}
+
+.upcomingWrapper thead tr th:nth-child(2)/* Center Blank Header */
+{
+  border:none;  
+}
+.upcomingWrapper tbody tr td /* Bottom Rows */
+{
+    padding: 0;
+}
+
+.upcomingWrapper tbody tr td:nth-child(2) /* bottom Center  td */
+{
+    border-top:none;
+}
+
+.upcomingWrapper tbody tr td:nth-child(2) img
+{
+   width: 100%; 
+}
+
+.upcomingWrapper tbody tr td:nth-child(1) /* bottom left td */
+{
+   border-right: 2px solid #d9d9d9; 
+}
+
+.upcomingWrapper tbody tr td:nth-child(3) /* Bottom right td */
+{
+   border-left: 2px solid #d9d9d9; 
+}
+/******************End Table Border Styles*******/
+
+.upcomingWrapper .accordion header div img/* pdf image */
+{
+    position: relative;
+    width: 50px;
+    margin: -8px;
+    top: 10px;
+/*    z-index: 2;*/
+}
+/*********Modal Activation divs************/
+.modalFunc3, .modalFunc2, .modalFunc1
+{
+  position: absolute;
+    width: 40px;
+    height: 50px;
+    left: 76.70%; 
+    z-index: 2;
+}
+
+.modalFunc3
+{
+    top: 710px;
+}
+
+.modalFunc2
+{ 
+    top: 627px;
+}
+
+.modalFunc1
+{
+    top: 545px;
+    
+}
+/*********End Modal Activation divs************/
+
+.upcomingWrapper .accContainer tbody tr td:nth-child(odd)
+{
+    padding: 15px;
+    text-align: left;
+}
+
+.upcomingWrapper .accContainer tbody tr:first-child td:nth-child(odd)
+{
+}
+
+.upcomingWrapper .accContainer tbody tr td:first-child h4
+{
+    margin-top: -9%;
+    text-align: center;
+}
+
+.upcomingWrapper .accContainer tbody tr td:first-child
+{
+  font-size: 100%;
+}
+
+/*************************************Modal Styling************************/
+.up-modalDialog 
+{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.up-modalDialog:target 
+{
+    opacity:1;
+    pointer-events: auto;
+}
+.up-modalDialog .modal-content 
+{
+    overflow-y: hidden;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid rgb(255, 226, 184);
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 15px 30px 50px rgba(0, 0, 0,0.7);
+}
+
+.up-modalDialog .mContent
+{
+    margin: 0 auto;
+    width: 100%;
+    height: 235px;
+    margin-top: 30px;
+   
+}
+.colum
+{
+    width: 100%;
+    height: 200px;
+    border: 2px solid gray;
+}
+
+.up-modalDialog .mContent thead tr
+{
+    font-size: 2em;
+    height: 60px;
+    margin: 0 auto;
+    background-image: -moz-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(242,242,242) 47%, rgb(234,234,234) 99%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(242,242,242) 47%, rgb(234,234,234) 99%);
+    background-image: -ms-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(242,242,242) 47%, rgb(234,234,234) 99%);
+}
+
+.up-modalDialog .mContent thead tr th
+{
+   
+    text-align: center;
+    width: 200px;
+    border-radius: 0 !important;
+}
+
+up-modalDialog table, .Mtable
+{
+    border-collapse:collapse;
+}
+.up-modalDialog .mContent table tbody tr
+{
+    border: 2px solid #cccccc;
+}
+
+.up-modalDialog .mContent table tbody tr td
+{
+    margin: 0 auto;
+/*    padding: 20px;*/
+    
+    text-align: center;
+    vertical-align: middle;
+/*    border: 2px solid #cccccc;*/
+    width: 2%;
+    height: 60px;
+   
+}
+.up-modalDialog .mContent table tbody tr td input
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.up-modalDialog .mContent table tbody tr td:nth-child(even) /* All td's containing inputs, chose even to select every 'td' to the right*/
+{
+    border-right: 2px solid #cccccc;
+}
+
+.up-modalDialog. Mtable tr td input[type=checkbox]
+{
+    margin-left: 100px;
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 10px;
+}
+
+#sub /***Submit Button or Download Button*************/
+{
+  
+    float: right;
+    margin: 20px 25px 0 ;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%);
+    border-style:solid;
+    border: 2 px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+
+.up-modalDialog .mclose 
+{
+    background: #606061;
+    float: right;
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    margin-top: -20px;
+    margin-right: -15px;
+}
+
+.up-modalDialog .mclose:hover 
+{
+    background: #00d9ff; 
+}
+
+.mContent tbody tr td img
+{
+    width: 50px;
+}
+
+
+/************************************************Job List******************************************/
+/*************General Table Styling ****/
+.jobList-body
+{
+    width: 98.5%;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: none;
+}
+
+.jobList-body .row
+{
+    display: table-row;   
+}
+
+.jobList-body .row .cell
+{
+    display: table-cell;
+    padding: 10px 0;
+    font-weight: normal;
+    width: 10%;
+}
+
+/*******Borders and cell styleing***/
+
+.jobList-body .row:first-child .cell
+{ 
+    background-color: none;
+}
+
+.jobList-body .row:nth-child(n+2) .cell
+{ 
+  background-color: white;
+  border: 4px solid rgb(255, 226, 184);
+    border-radius: 15px;
+    
+}
+/************************Border control second row of table, begining of list items*********/
+.jobList-body .row:nth-child(2) .cell:first-child
+{
+    border-right: none;
+    border-radius: 15px 0 0 0;
+    border-bottom: none;
+}
+
+.jobList-body .row:nth-child(2) .cell:nth-child(n+2)
+{
+   border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius:0;
+}
+
+.jobList-body .row:nth-child(2) .cell:last-child
+{
+    border-left: none;
+    border-right: 4px solid rgb(255, 226, 184);
+    border-radius: 0 15px 0 0;
+    border-bottom: none;
+}
+/************************Border control Third row and on *********/
+
+
+.jobList-body .row:nth-child(n+3) .cell:nth-child(n+1)
+{
+   border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius:0;
+}
+.jobList-body .row:nth-child(n+3) .cell:first-child
+{
+    border-left: 4px solid rgb(255, 226, 184);
+}
+
+.jobList-body .row:nth-child(n+3) .cell:last-child
+{
+    border-right: 4px solid rgb(255, 226, 184);
+}
+
+/******************************Last row*****************/
+
+.jobList-body .row:last-child .cell:first-child
+{
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 15px;
+    border-bottom: 4px solid rgb(255, 226, 184) !important;
+}
+
+.jobList-body .row:last-child .cell:nth-child(n+2)
+{
+   border-right: none;
+    border-left: none;
+    border-bottom: 4px solid rgb(255, 226, 184) !important;
+    border-top: none;
+    border-radius:0;
+}
+
+.jobList-body .row:last-child .cell:last-child
+{
+    border-top: none;
+    border-right: 4px solid rgb(255, 226, 184);
+    border-radius: 0 0 15px 0;
+   
+}
+
+/************bottom border (line seperator) ********/
+
+.jobList-body .row:nth-child(n+2) .cell
+{ 
+  background-color: white;
+  border-bottom: 4px solid lightgray !important;
+    border-radius: 15px;
+    
+}
+
+.jobList-body .row:nth-child(even) .cell
+{
+    background-color: rgb(255, 128, 128);
+}
+
+/*************button styling****/
+.jobList-body button
+{
+    background: white;
+    background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%);
+    border-style:solid;
+    border: 2 px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+   
+    
+}
+
+/***********************************************Job Details**********************************************/
+
+.jobDetail-table
+{
+    margin: 0 auto;
+    display: table;
+    width: 70%;
+}
+
+.jobDetail-table .row
+{
+    display: table-row;
+}
+
+.jobDetail-table .cell
+{
+    width: 600px;
+    display: table-cell;
+    padding: 20px;
+}
+
+.map
+{
+  display: flex !important;
+  flex-flow: wrap;
+}
+
+.map .cell:first-child
+{
+    text-align: center;
+    background-image: url("../img/googleMap.png");
+    height: 400px; 
+    background-size:cover;
+    
+}
+
+.colspan2
+{
+    flex: 2;
+}
+
+
+.jobDetail-table input
+{
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.border
+{
+    border: 4px solid lightgray;
+    border-radius: 15px;
+    margin:20px; 
+}
+
+.loc-body .border:nth-child(2)
+{
+   border: white; 
+}
+
+.formDetails
+{
+    margin: 0 auto;
+     width: 100;
+}
+
+.openAllDetails
+{
+    margin-left: 15px !important;
+}
+
+.jobDetail-table input[type="checkbox"]
+{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+/*****************Trascripts****************/
+.trans-body input[type="checkbox"]
+{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+    
+}
+
+.trans-body .row .border
+{
+  width: 75%; 
+}
+
+/**********************Supporting Files**************/
+.supp-body
+{
+   width: 90%;
+   margin-top: 20px;
+   margin-bottom: 0px;
+}
+
+.supp-body .row:first-child
+{
+  line-height: 0;  
+}
+.supp-body .row:first-child .cell
+{
+  padding: 0;
+  text-align: center;
+  background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  border: 1px solid rgb(169, 169, 169);
+}
+
+/****header-border control****/
+
+.supp-body .row:first-child .cell:first-child
+{
+  border-right: none; 
+  border-radius: 15px 0 0 15px ;
+}
+
+.supp-body .row:first-child .cell:nth-child(n+2)
+{
+   border-right: none;
+   border-left: none; 
+}
+.supp-body .row:first-child .cell:last-child
+{
+  border-left: none; 
+    border-right: 1px solid rgb(169, 169, 169);
+  border-radius: 0 15px 15px 0;
+}
+
+/******cell styling******/
+.supp-body .row:nth-child(n+2) .cell
+{
+    text-align: center;
+  border: 2px solid gray;  
+}
+.supp-body .row:nth-child(n+2) .cell:first-child
+{
+  border-right: none;
+  border-bottom: none;
+}
+.supp-body .row:nth-child(n+2) .cell:nth-child(n+2)
+{
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.supp-body .row:nth-child(n+2) .cell:last-child
+{
+  border-right: 2px solid gray;
+  border-left: none;
+  border-bottom: none;
+}
+/*bottom row (replace cell with a div and streched it accross)*/
+.table-wrapper
+{
+   margin: 0 auto;
+   width: 100%; 
+   
+}
+
+.pag img
+{
+    width: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.pag
+{
+    margin: 0 auto;
+    width: 89.75%;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold; 
+}
+
+.pag span
+{
+  vertical-align: middle;
+}
+/*buttons*/
+.sup-btn
+{
+    text-align: center;
+}
+.sup-btn button
+{
+   height: 30px;
+   width: 100px;
+   display: inline-block;
+   background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%);
+    border-style:solid;
+    border: 2 px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sup-btn button:nth-child(2)
+{
+   border: 2px solid rgb(204, 0, 0); 
+}
+/*************************Shipping*************************/
+.ship-body
+{
+   width: 90%;
+   margin-top: 20px;
+   margin-bottom: 0px;
+}
+
+.ship-body .row:first-child
+{
+  line-height: 0;  
+}
+.ship-body .row:first-child .cell
+{
+  padding: 0;
+  text-align: center;
+  background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  border: 1px solid rgb(169, 169, 169);
+}
+
+/****header-border control****/
+
+.ship-body .row:first-child .cell:first-child
+{
+   border-right: none; 
+   border-radius: 15px 0 0 15px ;
+}
+
+.ship-body .row:first-child .cell:nth-child(n+2)
+{
+   border-right: none;
+   border-left: none; 
+}
+.ship-body .row:first-child .cell:last-child
+{
+   border-left: none; 
+   border-right: 1px solid rgb(169, 169, 169);
+   border-radius: 0 15px 15px 0;
+}
+/****border styling***/
+.ship-body .row:nth-child(n+2) .cell
+{
+    text-align: center;
+  border: 2px solid gray;  
+}
+.ship-body .row:nth-child(n+2) .cell:first-child
+{
+  border-right: none;
+  border-bottom: none;
+}
+.ship-body .row:nth-child(n+2) .cell:nth-child(n+2)
+{
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.ship-body .row:nth-child(n+2) .cell:last-child
+{
+  border-right: 2px solid gray;
+  border-left: none;
+  border-bottom: none;
+}
+/*bottom row (replace cell with a div and streched it accross)*/
+.table-wrapper
+{
+   margin: 0 auto;
+   width: 100%; 
+}
+
+/*************************job History*************************/
+.jobHistory-body
+{
+   width: 90%;
+   margin-top: 20px;
+   margin-bottom: 0px;
+}
+
+.jobHistory-body .row:first-child
+{
+  line-height: 0;  
+}
+.jobHistory-body .row:first-child .cell
+{
+  padding: 0;
+  text-align: center;
+  background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+  border: 1px solid rgb(169, 169, 169);
+}
+
+/****header-border control****/
+
+.jobHistory-body .row:first-child .cell:first-child
+{
+   border-right: none; 
+   border-radius: 15px 0 0 15px ;
+}
+
+.jobHistory-body .row:first-child .cell:nth-child(n+2)
+{
+   border-right: none;
+   border-left: none; 
+}
+.jobHistory-body .row:first-child .cell:last-child
+{
+   border-left: none; 
+   border-right: 1px solid rgb(169, 169, 169);
+   border-radius: 0 15px 15px 0;
+}
+
+/****border styling***/
+.jobHistory-body .row:nth-child(n+2) .cell
+{
+    text-align: center;
+  border: 2px solid gray;  
+}
+.jobHistory-body .row:nth-child(n+2) .cell:first-child
+{
+  border-right: none;
+  border-bottom: none;
+}
+.jobHistory-body .row:nth-child(n+2) .cell:nth-child(n+2)
+{
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.jobHistory-body .row:nth-child(n+2) .cell:last-child
+{
+  border-right: 2px solid gray;
+  border-left: none;
+  border-bottom: none;
+}
+/*bottom row (replace cell with a div and streched it accross)*/
+.table-wrapper
+{
+   margin: 0 auto;
+   width: 100%; 
+}
+
+/***********************************************Calendar*************************************************/
+
+/*
+.cal-wrapp
+{
+    width: 50%;
+}
+*/
+.cal-wrapp div
+{
+   text-align: center;
+}
+.cal-wrapp img
+{
+    
+    width: 50%;
+}
+
+.cal-wrapp .tb
+{
+    display: table;
+    width: 98.5%; 
+   margin: 0 auto;
+    border-spacing: 5px;
+}
+.cal-wrapp .tr
+{
+    display: table-row;
+}
+.cal-wrapp .tr .td
+{
+    width: 5%;
+    display: table-cell;
+    height: 200px;
+    background-color:white;
+    border-radius: 10px;
+    border: 2px solid burlywood;
+}
+
+.cal-wrapp .tr .td:hover
+{
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+.cal-wrapp .tr:first-child .td
+{
+    height: 50px;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+}
+
+/*********************************************************************Calendar Modal****************************************/
+
+.cBorder
+{
+    border: 4px solid lightgray;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.cModal1 /* Entire modal including dark background*/
+{
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+
+    .cModal1:target 
+{
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .cModal1 > div /*Main Modal Box*/
+{
+        width: 50%;
+        height: 700px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        border: 4px solid rgb(255, 226, 184);
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #f2f2f2);
+        background: -webkit-linear-gradient(#fff, #f2f2f2);
+        background: -o-linear-gradient(#fff, #f2f2f2);
+    }
+
+
+    .close 
+{
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+
+.cModal1 table /* Full Table*/
+{
+   
+    display: table;
+    width: 100.1%;
+    border-collapse: collapse;
+    color: gray;
+}
+
+.cModal1 table td /*All Cells*/
+{
+    display: table-cell;
+    width: 5%;
+    height: 100px;
+    padding: 0 10px;
+}
+
+
+/*Individual row Styling*/
+.cModal1 table tr:nth-child(-n+2) td,  /* Cells whis height has been shortend*/
+.cModal1 table tr:nth-child(4) td, 
+.cModal1 table tr:nth-child(6) td,
+.cModal1 table tr:nth-child(7) td
+{
+    text-align: center;
+    height: 40px;
+}
+
+.cModal1 table tr:first-child td /* Date Cell*/
+{
+    font-size: 30px;
+    color: #63b3dd;
+    border-bottom: 4px solid lightgray;
+    font-weight: bold;
+}
+
+.cModal1 table tr:nth-child(2) td, /*Hour cells*/
+.cModal1 table tr:nth-child(4) td
+{
+  font-size: 25px;
+    color: gray;
+    font-weight: bold;  
+}
+
+.cModal1 table tr:nth-child(6) td /* Date Case location Title Cells*/
+{
+    color: #63b3dd;
+  border-bottom: 4px solid lightgray;
+    font-weight: bold;
+}
+
+.cModal1 table tr:nth-child(3) td, /* Written content Cells*/
+.cModal1 table tr:nth-child(5) td
+{
+  border-bottom: 4px solid lightgray;  
+}
+
+/********Imbedded upcoming info*************/
+
+ .calborder
+{
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid lightgray;
+    height: 225px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.centering-div div
+{
+    width: 30%;
+    height: 220px;
+    display: inline-block;
+}
+
+.centering-div
+{
+    text-align: center;
+    width: 100%;
+}
+
+.centering-div div:nth-child(1),
+.centering-div div:nth-child(3)
+{
+    text-align: left;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+.centering-div div:nth-child(2) /*** google Map****/
+{
+    background-image: url("../img/googleMap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/******************************************END Calendar Modal*******************************/
+
+/***************************************************************Schedule************************************************/
+
+.schedTable
+{
+    margin: 0 auto;
+    display: table;
+}
+
+.schedTable .row
+{
+    display: table-row;
+}
+
+.schedTable .cell
+{
+    display: table-cell;
+    width:5%px;
+    padding: 20px 50px;
+}
+
+.reqIcon /* Required Symbol behind Required field (Red Circle)*/
+{
+    width: 25px; 
+}
+
+.schedTable input
+{
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+/* calendar image icon*/
+.general-body .row:nth-child(3) .cell:last-child img,
+.case-body .row:nth-child(4) .cell:last-child img,
+.billing-body .row:nth-child(8) .cell:last-child img
+{
+    width: 25px;
+    margin-bottom: -8px;
+}
+
+.openAllSched
+{
+    float: none !important;
+    margin-left: 5px;
+}
+.schedForm
+{
+  margin: 0 auto;
+  width: 100%; 
+}
+
+.scheduleWrap section:nth-child(11) .accContainer .upload
+{
+   float: right;
+    margin: 10px;
+}
+
+.scheduleWrap section:nth-child(11) .accContainer .upload > input
+{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%);
+    border-style:solid;
+    border: 2 px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.scheduleWrap section:nth-child(11) .accContainer .upload label input
+{
+    border-style: solid;
+     border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.upload-body
+{
+    margin-top: 20px;
+    width: 90%;
+    border: 2px solid lightgray;
+}
+
+n
+{
+    font-size: 15px;
+}
+
+.sched-notes
+{
+    font-size: 15px;
+    text-align: center;
+    color: lightgray;
+    margin: 10px 0;
+}
+
+.schedTxt
+{
+   margin-left: 10%;
+   width: 80%; 
+}
+.shed-bttns
+{
+    float: right;
+    margin: 20px;
+    margin-right: 18%;
+}
+.shed-bttns input
+{
+    font-weight: bold;
+    color: gray;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px solid lightgray;
+    background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%); 
+    cursor: pointer;
+}
+
+.shed-bttns input:last-child
+{
+  border: 2px solid rgb(204, 0, 0);  
+}
+
+/******************************************************Files*********************************************/
+
+
+.filesHeader div:first-child
+{
+    text-align: center;
+    width: 0px;
+    padding-left: 20px;
+}
+
+.filesHeader div
+{
+/*   width: 675px; */
+}
+
+.filesTable tbody tr td
+{
+    text-align: center;
+    width: 2%;
+    padding: 20px;
+}
+.filesTable tbody tr
+{
+    
+    margin: 0 auto;
+}
+
+.filesTable td img
+{
+    width: 100px;
+}
+
+.button 
+{
+    background-image: -moz-linear-gradient( 90deg, rgb(220,236,243) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(220,236,243) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(220,236,243) 0%, rgb(255,255,255) 100%);
+    border: 1px solid #e6e6e6;
+    color: gray;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/*********************************************************************Exhibits Modal****************************************/
+.modalDialog 
+{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target 
+{
+    opacity:1;
+    pointer-events: auto;
+}
+.modal-content 
+{
+    overflow-y: hidden;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid rgb(255, 226, 184);
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 15px 30px 50px rgba(0, 0, 0,0.7);
+}
+
+.mContent
+{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+   
+}
+/*
+.colum
+{
+    width: 100%;
+    height: 200px;
+    border: 2px solid gray;
+}
+*/
+
+.mContent thead tr
+{
+    font-size: 2em;
+    height: 60px;
+    background-image: -moz-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(242,242,242) 47%, rgb(234,234,234) 99%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(242,242,242) 47%, rgb(234,234,234) 99%);
+    background-image: -ms-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(242,242,242) 47%, rgb(234,234,234) 99%);
+}
+
+.mContent thead tr th
+{
+    color: gray;
+    text-align: center;
+}
+
+table, .Mtable
+{
+   
+    border-collapse:collapse;
+}
+/*****************************Sorrounding table border**********/
+/****td border radius*****/
+.Mtable
+{
+ width: 100%;   
+}
+.Mtable tr:first-child th:first-child
+{
+   border-radius: 10px 0 0 0; 
+}
+
+.Mtable tr:first-child th:last-child
+{
+   border-radius: 0 10px 0 0; 
+}
+.Mtable tr:last-child td:first-child
+{
+   border-radius: 0 0 0 10px;  
+}
+
+.Mtable tr:last-child td:last-child
+{
+   border-radius: 0 0 10px 0;  
+}
+/****End td border radius*****/
+
+.fBorder
+{
+ border: 2px solid gray;
+ border-radius: 12px;
+ padding: 0;
+ margin: 0;
+}
+/*****************************END Sorrounding table border**********/
+.mContent table tbody tr td
+{   
+    text-align: center;
+    vertical-align: middle;
+    height: 62px;
+}
+
+
+.mContent table tbody tr td:nth-child(even) /* All td's containing inputs, chose even to select every 'td' to the right*/
+{
+    border-right: 2px solid #cccccc;
+}
+
+.mContent table tbody tr td:last-child/* remove the last column border*/
+{
+   border: none; 
+}
+
+.Mtable tr td input[type=checkbox]
+{
+    
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 10px;
+}
+
+#sub /***Submit Button or Download Button*************/
+{
+    cursor: pointer;
+    float: right;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid gray;
+}
+
+
+.mclose 
+{
+    background: #606061;
+    float: right;
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    margin-top: -20px;
+    margin-right: -20px;
+}
+
+.mclose:hover 
+{
+    background: #00d9ff; 
+}
+/**************************************END Exhibits Modal******************************/
+.mContent form > input[type=checkbox]
+{
+  display:none;  
+}
+
+.mContent form > input[type=checkbox] + label span
+{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:0 5px 5px 0;;
+    vertical-align:middle;
+    background-image:url("../img/checkAll_Icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor:pointer;
+}
+
+.mContent form > input[type=checkbox] + label
+{
+    color: lightgray;
+}
+/***********************************************************Reports*****************************************************/
+
+.reports-table
+{
+    margin: 0 auto;
+    display: table;
+    border-spacing: 10px;
+    border-collapse: separate;
+     width: 100%;
+}
+
+.reports-table .row
+{
+    display: table-row;
+    text-align: center;
+}
+
+.reports-table .row .cell
+{
+    display: table-cell;
+    padding: 30px 0;
+    width: 10%;
+    background-color: white;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 226, 184);
+}
+
+
+.reports-table .row:nth-child(2) .cell,
+.reports-table .row:nth-child(5) .cell
+{
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reports-table .row:nth-child(3) .cell
+{
+   padding: 10px 0;
+   border: none;
+   background-color: rgba(255,255,255,0.0)
+}
+.reports-table img
+{
+    width:75%;
+}
+
+/**************************************************Invoices*********************************************/
+/****************Invoice table*************/
+/****** general table stuff*******/
+.invoice-content
+{
+    padding-bottom: 50px !important;
+}
+.invoice-body
+{
+    width: 95%;
+    display: table;
+    margin: 0 auto;
+/*    border-collapse: collapse;*/
+    text-align: center;
+    border-spacing: none;
+}
+
+.invoice-body .row
+{
+    display: table-row;
+    
+}
+
+.invoice-body .row .cell
+{
+    display: table-cell;
+    padding: 20px 0;
+    font-weight: normal;
+    width: 10%;
+    vertical-align:middle;
+}
+
+/*******Borders and cell styleing***/
+
+.invoice-body .row:first-child .cell
+{ 
+    background-color: none;
+}
+
+.invoice-body .row:nth-child(n+2) .cell
+{ 
+  background-color: white;
+  border: 4px solid rgb(255, 226, 184);
+    border-radius: 15px;
+    
+}
+/************************Border control second row of table*********/
+.invoice-body .row:nth-child(2) .cell:first-child
+{
+    border-right: none;
+    border-radius: 15px 0 0 0;
+    border-bottom: none;
+}
+
+.invoice-body .row:nth-child(2) .cell:nth-child(n+2)
+{
+   border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius:0;
+}
+
+.invoice-body .row:nth-child(2) .cell:last-child
+{
+    border-left: none;
+    border-right: 4px solid rgb(255, 226, 184);
+    border-radius: 0 15px 0 0;
+    border-bottom: none;
+}
+/************************Border control Third and on *********/
+
+
+.invoice-body .row:nth-child(n+3) .cell:nth-child(n+1)
+{
+   border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius:0;
+}
+.invoice-body .row:nth-child(n+3) .cell:first-child
+{
+    border-left: 4px solid rgb(255, 226, 184);
+}
+
+.invoice-body .row:nth-child(n+3) .cell:last-child
+{
+    border-right: 4px solid rgb(255, 226, 184);
+}
+
+/******************************Last row*****************/
+
+.invoice-body .row:last-child .cell:first-child
+{
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 15px;
+    border-bottom: 4px solid rgb(255, 226, 184) !important;
+}
+
+.invoice-body .row:last-child .cell:nth-child(n+2)
+{
+   border-right: none;
+    border-left: none;
+    border-bottom: 4px solid rgb(255, 226, 184) !important;
+    border-top: none;
+    border-radius:0;
+}
+
+.invoice-body .row:last-child .cell:last-child
+{
+    border-top: none;
+    border-right: 4px solid rgb(255, 226, 184);
+    border-radius: 0 0 15px 0;
+   
+}
+
+/************bottom border********/
+
+.invoice-body .row:nth-child(n+2) .cell
+{ 
+  background-color: white;
+  border-bottom: 4px solid lightgray !important;
+    border-radius: 15px;
+    
+}
+/************** Search**************************/
+.search
+{
+    text-align: center;
+    padding: 100px;
+    border: 4px solid rgba(255, 226, 184,0.5);
+    border-radius: 15px;
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+   
+    
+}
+
+.search h2
+{
+   font-weight:lighter;
+   color: lightgray;
+}
+
+/********Payment buttons**********/
+.payment button
+{
+    height: 30px;
+   width: 200px;
+   display: inline-block;
+   background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%);
+    border-style:solid;
+    border: 2 px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.payment
+{
+    margin-top: 10px;
+    margin-right: 50px;
+    float: right;
+}
+
+.invoice-body .cell input
+{
+    position: relative;
+    top: 2.4px;
+    background-color: white;
+}
+
+/******************Job No. Buttons***********/
+.invoice-body button
+{
+   height: 30px;
+   width: 100px;
+   display: inline-block;
+   background: linear-gradient( 180deg, rgb(255,255,255) 5%, rgb(224,224,224) 100%);
+    border-style:solid;
+    border: 2 px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+/*******************************************************Profile*****************************************************/
+
+
+.profileSection header h2
+{
+   margin: 0 auto !important;
+    
+}
+
+.profileTable
+{
+    margin: 0 auto;
+    display: table;
+    width: 95%;
+   
+}
+
+.coBill-body
+{
+     max-width: 900px;
+}
+.profileTable .row
+{
+    display: table-row;
+}
+
+.profileTable .cell
+{
+    display: table-cell;
+    width:20%;
+    padding: 20px 5px;
+}
+
+.profileTable .cell:first-child
+{
+    font-weight: bold;
+}
+
+.coBill-body .border:nth-child(4) .row:last-child input:last-child,
+.coBill-body .border:nth-child(5) .row:last-child input:last-child,
+.coBill-body .border:nth-child(6) .row:last-child input:last-child
+{
+   margin-top: 10px; 
+}
+
+.profileTable input
+{
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.profForm
+{
+    margin: 0 auto;
+    width: 100%;
+}
+.profileTable .border
+{
+    border: 4px solid lightgray;
+    border-radius: 15px;
+    margin:20px 0;
+}
+
+/*********Company Billing*********/
+
+.coBill-body
+{
+    width: 60%;
+}
+/*************Attorneys and Other Peronel**********/
+
+.attorney-body .row .cell, 
+.other-body .row .cell
+{
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 2px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.attorney-body .row:last-child  .cell, 
+.other-body .row:last-child .cell
+{
+    border-bottom: none;
+}
+
+.attorney-body .row:nth-child(1) .cell, 
+.other-body .row:nth-child(1) .cell
+{
+    font-weight: bold;
+    text-align: center;
+    color: #63b3dd;
+}
+
+.attorney-body, 
+.other-body
+{
+    width: 100%;
+}
+
+.attorney-body .row .cell:nth-child(8), 
+.other-body .row .cell:nth-child(7) 
+{
+    padding-right: 20px;
+}
+/*************Attorneys***************/
+.attorney-body .row .cell:nth-child(5), 
+.attorney-body .row .cell:nth-child(6) 
+{
+    text-align: center;
+}
+
+.attorney-body input
+{
+    width: 20px;
+    height: 20px;
+}
+.openAllProf
+{
+    margin-left: 15px;
+}
+
+/**************************************************************Log IN******************************************************/
+
+/**************Background Styling *****************/
+.loginScreen/*Html element with a class as to not affect the other pages*/
+{
+    overflow-y: hidden !important; /****removing the Scrollbar*/
+}
+
+.login/********Body element with a class as to not affect the other pages*/
+{
+    padding: 0;
+    margin: 0;
+}
+.BG/*Backgroud Wrapper*/
+{
+    background-image: url(../img/LoginBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:1800px;
+    padding: 0;
+    padding-top: 200px;
+    margin: 0;
+    
+}
+/*******************************Login Styles***********************/
+.Logcontainer /*contains all of login info*/
+{
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: skyblue;
+    height:400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0,0.7);
+    padding: 40px;
+    
+    background-image: -moz-linear-gradient( 90deg, rgb(0,121,194) 0%, rgb(133,171,194) 58%, rgb(255,255,255) 98%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,121,194) 0%, rgb(133,171,194) 58%, rgb(255,255,255) 98%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,121,194) 0%, rgb(133,171,194) 58%, rgb(255,255,255) 98%);
+  
+}
+
+.Logcontainer form > img /*Atkinson Baker logo*/
+{
+    width: 70%;
+}
+
+.Logcontainer input[type="text"],input[type="password"] /*user input and password*/
+{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border-style:solid;
+    border: none;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.Logcontainer input[type="submit"] /*Submit button*/
+{
+    width: 25%;
+    height: 35px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 4%;
+    border-radius: 5px;
+     background-color: rgb(255, 226, 184);
+    color: white;
+    border-style:solid;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Logcontainer label /*all Labels*/
+{
+    float: left;
+    margin-left: 4%;
+    font-size: 25px
+}
+
+.Logcontainer form div:nth-child(2) label /*User label specifically*/
+{
+  margin-bottom: 10px;  
+}
+.Logcontainer form div:nth-child(3) label /*Password label specifically*/
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.Logcontainer form div:nth-child(7) img /*datime image icon*/
+{
+ float: left;
+ margin-top: -5px;
+ margin-left: 4%;
+ width: 20px   
+}
+.Logcontainer form div:nth-child(7) h6 /*datetime Label*/
+{
+  text-align: left;
+  margin-left: 50px;
+    margin-top: 20px;
+}
+
+/**Request account | Can't access account*/
+.Logcontainer form div:nth-child(6) 
+{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;  
+}
+.Logcontainer a:nth-child(1),
+.Logcontainer a:nth-child(2) /*First 2 links*/
+{
+   text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    
+}
+/*****************************************/
+
+
+.Logcontainer form div:nth-child(5) label /*keep me logged in Label*/
+{
+    float: right;
+    font-size: 15px;
+    margin-right: 5%;
+    margin-top: 20px; 
+    padding: 0;
+}
+
+.Logcontainer form div:nth-child(5) input /*Keep me logged in Checkbox*/
+{
+   margin-top: 18px; 
+   margin-right: -38%;
+    padding: 0;
+    border-style:solid;
+    border: none;
+    width: 5%;
+    height: 20px;
+    
+}
+
+.Logcontainer form div:nth-child(4) a
+{
+    width: 20%;
+}
+
+/***************************************************************Menu*********************************************/
+
+
+/** Background and Logo **/
+.menuBG
+{
+    width: 100%;
+    height:100px;
+    background-color: rgb(14,121,191);
+    margin-bottom: 100px;
+    
+}
+#logo
+{
+  
+/*    top: -100px;*/
+/*    margin-top: 50px;*/
+    width: 500px;
+}
+/*************************/
+
+#menu
+{
+    font-family: 'Swiss 721 Light Condensed BT';
+    width: 60%;
+    margin: 0 auto;
+   
+    padding: 0;
+    margin-left: 25%;
+    list-style-type: none;
+}
+
+#menu li a
+{
+    margin-top: -15px;
+   
+    padding: 35px 5px 5px 5px; 
+    background-color: rgb(14,121,191);
+    text-decoration: none;
+    height: 60px;
+    color: white;
+    display: block;
+    transition: box-shadow .3s ease-in, background-color .25s ease-in;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
+}
+
+#menu li
+{
+    margin-top: 15px;
+    float: left;
+    width: 12%;
+    height: 75px;
+    background-color: rgb(14,121,191);
+/*    line-height: 75px;*/
+    font-size: 1.15vw;
+    text-align: center;
+    border-right:  4px solid #005b92;
+    
+   
+}
+
+#menu > li:first-child /* Note this is a;so affecting the the list item in the drop down menu because its also a first child*/
+{
+    border-left: 4px solid #005b92;
+}
+
+#menu li a:hover 
+{
+    background-color: #005b92;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0,0.5);
+}
+
+#menu li ul li
+{
+    
+    float: none;
+    margin: -90px 0 0 -40px;
+    padding-top: 5px;
+    width: inherit;
+    overflow: hidden;
+    transition:  margin .15s ease-in, box-shadow .3s ease-in, opacity .4s ease-in,height .25s ease;
+    border: none;
+    opacity: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
+/*     font-size: 1vw;*/
+}
+
+#menu li ul li a
+{ 
+    
+    padding: 10px 25px;
+    height: 75px;
+    padding-top: 30px;
+}
+#menu li:hover ul li
+{
+     margin: 0 0 0 -40px;
+     opacity: 1;
+     box-shadow: 1px 10px 10px rgba(0, 0, 0,0.5)
+}
+
+
+.buttons
+{
+    left: 80%;
+    position: relative;
+    
+}
+
+.topB
+{
+    
+    display: inline-block;
+    background: rgb(14,121,191);
+    padding:5px 10px;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.topB a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/****************************************Media Queries***********************************/
+/*
+@media screen and (max-width: 880px)
+{
+    .burger-nav
+    {
+        display: block;
+        width: 100%;
+        background: url("../img/rMenu_icon.png") no-repeat 98% center;
+        cursor: pointer;
+        padding-top: 100px;
+    }
+    
+    #menu
+    {
+        width: 100%;
+     overflow: hidden;
+    }
+    
+    #menu.open
+    {
+        height: auto;
+    }
+    
+    #menu li
+    {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #menu li a
+    {
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        display: block;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 2340px) 
+{
+    #menu li, 
+    {
+        font-size: 1.50vm; 
+    }
+}
+
+@media only screen and (max-width: 2060px) 
+{
+    #menu li, 
+    #menu li ul li
+    {
+        font-size: 1.40em; 
+    }
+}
+
+@media only screen and (max-width: 1920px) 
+{
+    #menu li, 
+    #menu li ul li
+    {
+        font-size: 1.25em; 
+    }
+}
+*/
+
+/*******************************************************Font*****************************************/
+@font-face {
+font-family: 'Swiss 721 Light Condensed BT';
+font-stretch: ultra-condensed;
+src: local('Swiss 721 Light Condensed BT'), url('swiss 721 LT CN BTl.woff') format('woff');
+}
+
+
+/********************************************************Upcoming Modal**************/
+.modalDialog 
+{
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target 
+{
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .modalDialog > div 
+{
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #fff;
+        background: -moz-linear-gradient(#fff, #999);
+        background: -webkit-linear-gradient(#fff, #999);
+        background: -o-linear-gradient(#fff, #999);
+    }
+
+    .close 
+{
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+    .close:hover 
+{
+    background: #00d9ff; 
+}
 
 
 
-/* Insert Media Query for width size of 1099 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
