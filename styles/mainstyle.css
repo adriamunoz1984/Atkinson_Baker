@@ -18,20 +18,20 @@
 /*
     Page                    Line#
 _____________________________________
-   * General styling        37
+   * General styling        39
         - Gradient Wrapper  106
         - Accordions        120
     *Upcoming Jobs          260
     *Job List               559
-    *Job Details            698
+    *Job Details            707
     *Calendar               1108
-    *Schedule               1277
+    *Schedule               1284
     *Files                  1405
     *Reports                1644
     *Invoices               1692
     *Profile                1880
     *LogIn                  2005
-    *Menu                   2658
+    *Menu                   2189
     *Font                   2354
     *Upcoming Modal         2363
     
@@ -100,7 +100,7 @@ footer p
    top: 125px;
 }
 
-#wrapper > div h2
+#wrapper > div h2 /* Title information for Accordion Header, affects Files and upcoming jobs only*/
 {
      font-size: 2em;
      color: #63b3dd;
@@ -108,7 +108,7 @@ footer p
      display: inline;
 }
 
-.header-title h2
+.header-title h2 /* Keeps Accordion headers centered vertically*/
 {
    margin: 0;
     padding: 0;
@@ -175,7 +175,6 @@ footer p
     width: 800px;
     display: table-cell;
 }
-/*******************************************/
 header div
 {
     text-align: center;
@@ -279,6 +278,174 @@ section
   cursor: pointer;
 }
 /******************************************END Modal*****************************************************/
+
+/*****************************************************Dashboard*****************************************/
+
+/*******************************Upcoming Jobs Cell***********/
+/*********************Accordion********************/
+
+.dashWrap .accordion 
+{
+    
+    padding: 0;
+    background: #333;
+    height: 40px;
+    line-height:40px;
+    width: 98%;
+    font-size: 16px;
+    font-weight: bold;
+/*    text-align: left;*/
+    border: 1px solid rgb(169, 169, 169);
+    margin: 20px auto 0 auto;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    
+}
+.dash-table tr:first-child td:first-child > div /* Finds first cell and allows it to expand without stretching the other cells*/
+{
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.dash-table .accContainer
+{
+    border: none;
+}
+
+.title-uc
+{
+   display: table;
+   width: 100%;
+}
+.uc-row h2
+{
+    color: #63b3dd;
+    font-size: 35px;
+}
+.dashWrap .head 
+{
+    text-align: center;
+    margin: 0 auto;
+    color: #63b3dd;
+    text-decoration: none;
+    display: block;
+    font-family: myriad pro, helvetica, arial;
+    width: 98%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+
+
+.title-uc div
+{
+   display: table-row;
+}
+
+.title-uc .cell
+{
+   display: table-cell;
+   vertical-align: middle;
+    
+}
+
+.title-uc .cell:first-child
+{
+   padding-left: 10px;
+   width: 5%;
+}
+
+.title-uc .cell:last-child
+{
+   text-align: center;
+   padding-right: 30px;
+}
+
+.dashWrap header img
+{
+  position: relative;
+  top: -17px;
+}
+
+.dashWrap header div
+{
+    text-align: center;
+    width: 100%;
+    display: table-cell;
+    position: relative;
+    top: -20px;
+}
+/****************All other Cells********/
+
+.dash-table tr td
+{
+    padding: 20px;
+    background-color: white;
+}
+
+
+.dash-table tr:nth-child(1) td:nth-child(2), .dash-table tr:nth-child(2) td:nth-child(1), .dash-table tr:nth-child(3) td
+{
+    text-align: center;
+    width: 10%;
+}
+
+
+.dash-table .title
+{
+  text-align: center;
+}
+
+.dash-table
+{
+   margin: 0 auto;
+   margin: 20px;
+   border-collapse: separate;  
+}
+
+.dash-table tr td
+{
+ border-top-left-radius: 15px;
+ border-top-right-radius: 15px;
+ border-bottom-left-radius: 15px;
+ border-bottom-right-radius: 15px;
+ border: 5px solid rgb(255, 226, 184);
+}
+
+/*****************Sub Accordion*******************/
+
+.subAcc
+{
+    float: right; 
+    background: #333;
+    height: 35px;
+    width: 75%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid rgb(169, 169, 169);
+    margin: 20px auto 0 auto;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    cursor: pointer;
+}
+
+.subAcc div
+{
+    padding-top: 8px;
+    text-align: center;
+    height: 30px;
+    
+}
+
+.dash-table tr:nth-child(1) td:last-child img, .dash-table tr:nth-child(2) td img, .dash-table tr:nth-child(3) td img
+{
+    width:90%;
+}
 
 /****************************************************************Upcoming Jobs********************************************/
 /****************Accordion Table Styles**************/
@@ -1288,7 +1455,12 @@ up-modalDialog table, .Mtable
     margin: 0 auto;
     display: table;
 }
-
+/****************Individual Tables***********/
+.services-body .cell
+{
+   
+}
+/********************************************/
 .schedTable .row
 {
     display: table-row;
@@ -1297,7 +1469,7 @@ up-modalDialog table, .Mtable
 .schedTable .cell
 {
     display: table-cell;
-    width:5%px;
+    width: 200px;
     padding: 20px 50px;
 }
 
@@ -1457,7 +1629,7 @@ n
     border-radius: 20px;
 }
 /*********************************************************************Exhibits Modal****************************************/
-.modalDialog 
+.FmodalDialog 
 {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
@@ -1474,12 +1646,12 @@ n
     pointer-events: none;
 }
 
-.modalDialog:target 
+.FmodalDialog:target 
 {
     opacity:1;
     pointer-events: auto;
 }
-.modal-content 
+.Fmodal-content 
 {
     overflow-y: hidden;
     background-color: #fefefe;
@@ -1492,7 +1664,7 @@ n
     box-shadow: 15px 30px 50px rgba(0, 0, 0,0.7);
 }
 
-.mContent
+.FmContent
 {
     width: 100%;
     height: 400px;
@@ -1508,7 +1680,7 @@ n
 }
 */
 
-.mContent thead tr
+.FmContent thead tr
 {
     font-size: 2em;
     height: 60px;
@@ -1517,7 +1689,7 @@ n
     background-image: -ms-linear-gradient( 90deg, rgb(234,234,234) 0%, rgb(242,242,242) 47%, rgb(234,234,234) 99%);
 }
 
-.mContent thead tr th
+.FmContent thead tr th
 {
     color: gray;
     text-align: center;
@@ -1530,25 +1702,25 @@ table, .Mtable
 }
 /*****************************Sorrounding table border**********/
 /****td border radius*****/
-.Mtable
+.FMtable
 {
  width: 100%;   
 }
-.Mtable tr:first-child th:first-child
+.FMtable tr:first-child th:first-child
 {
    border-radius: 10px 0 0 0; 
 }
 
-.Mtable tr:first-child th:last-child
+.FMtable tr:first-child th:last-child
 {
    border-radius: 0 10px 0 0; 
 }
-.Mtable tr:last-child td:first-child
+.FMtable tr:last-child td:first-child
 {
    border-radius: 0 0 0 10px;  
 }
 
-.Mtable tr:last-child td:last-child
+.FMtable tr:last-child td:last-child
 {
    border-radius: 0 0 10px 0;  
 }
@@ -1562,7 +1734,7 @@ table, .Mtable
  margin: 0;
 }
 /*****************************END Sorrounding table border**********/
-.mContent table tbody tr td
+.FmContent table tbody tr td
 {   
     text-align: center;
     vertical-align: middle;
@@ -1570,17 +1742,17 @@ table, .Mtable
 }
 
 
-.mContent table tbody tr td:nth-child(even) /* All td's containing inputs, chose even to select every 'td' to the right*/
+.FmContent table tbody tr td:nth-child(even) /* All td's containing inputs, chose even to select every 'td' to the right*/
 {
     border-right: 2px solid #cccccc;
 }
 
-.mContent table tbody tr td:last-child/* remove the last column border*/
+.FmContent table tbody tr td:last-child/* remove the last column border*/
 {
    border: none; 
 }
 
-.Mtable tr td input[type=checkbox]
+.FMtable tr td input[type=checkbox]
 {
     
     transform: scale(2);
@@ -1624,12 +1796,12 @@ table, .Mtable
     background: #00d9ff; 
 }
 /**************************************END Exhibits Modal******************************/
-.mContent form > input[type=checkbox]
+.FmContent form > input[type=checkbox]
 {
   display:none;  
 }
 
-.mContent form > input[type=checkbox] + label span
+.FmContent form > input[type=checkbox] + label span
 {
     display:inline-block;
     width:30px;
@@ -1642,7 +1814,7 @@ table, .Mtable
     cursor:pointer;
 }
 
-.mContent form > input[type=checkbox] + label
+.FmContent form > input[type=checkbox] + label
 {
     color: lightgray;
 }
@@ -1922,7 +2094,7 @@ table, .Mtable
 .coBill-body .border:nth-child(5) .row:last-child input:last-child,
 .coBill-body .border:nth-child(6) .row:last-child input:last-child
 {
-   margin-top: 10px; 
+/*   margin-top: 10px; */
 }
 
 .profileTable input
@@ -1944,6 +2116,29 @@ table, .Mtable
     margin:20px 0;
 }
 
+/****************State Zip Input************/
+
+
+.profileTable .border:nth-child(4) .row:nth-child(5) .cell:last-child input,
+.profileTable .border:nth-child(5) .row:nth-child(5) .cell:last-child input,
+.profileTable .border:nth-child(6) .row:nth-child(5) .cell:last-child input
+{
+   width: 100px; 
+}
+
+.profileTable .border:nth-child(4) .row:nth-child(5) .cell:last-child input:first-child,
+.profileTable .border:nth-child(5) .row:nth-child(5) .cell:last-child input:first-child,
+.profileTable .border:nth-child(6) .row:nth-child(5) .cell:last-child input:first-child
+{
+   width: 50px;  
+   margin-right: 10px;
+}
+/**************************************/
+.profileTable .cell
+{
+   width: 300px; 
+    padding: 20px;
+}
 /*********Company Billing*********/
 
 .coBill-body
@@ -2247,11 +2442,10 @@ table, .Mtable
 
 #menu li ul li a
 { 
-    
-    padding: 10px 25px;
     height: 75px;
     padding-top: 30px;
 }
+
 #menu li:hover ul li
 {
      margin: 0 0 0 -40px;
@@ -2264,12 +2458,10 @@ table, .Mtable
 {
     left: 80%;
     position: relative;
-    
 }
 
 .topB
 {
-    
     display: inline-block;
     background: rgb(14,121,191);
     padding:5px 10px;
@@ -2422,7 +2614,6 @@ src: local('Swiss 721 Light Condensed BT'), url('swiss 721 LT CN BTl.woff') form
 {
     background: #00d9ff; 
 }
-
 
 
 
