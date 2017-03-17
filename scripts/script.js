@@ -19,13 +19,16 @@ $(function()
     
     openA.on('click', function() //Stupid non functioning function
    {
-      if ($('.accContainer').is(':visible')) {
+      if ($('.accContainer').is(':visible')) 
+      {
 
           accordion.find('.accContainer').slideUp();
           accordion.find("img").removeClass('minus', 'true');
 
       }
-      else {
+        
+      else 
+      {
           accordion.find('.accContainer').slideDown();
           accordion.find("img").toggleClass('minus', 20000,'easeInQuart');
 

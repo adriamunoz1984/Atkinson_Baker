@@ -22,16 +22,17 @@ _____________________________________
         - Gradient Wrapper  106
         - Accordions        120
     *Upcoming Jobs          260
+    *Dashboard              287
     *Job List               559
-    *Job Details            707
+    *Job Details            894
     *Calendar               1108
     *Schedule               1284
     *Files                  1405
     *Reports                1644
     *Invoices               1692
     *Profile                1880
-    *LogIn                  2005
-    *Menu                   2189
+    *LogIn                  2202
+    *Menu                   2367
     *Font                   2354
     *Upcoming Modal         2363
     
@@ -39,9 +40,9 @@ _____________________________________
 /**************************************General html page info****************/
 html
 {
-    overflow-y: scroll;
     height: 100%;
     box-sizing: border-box;
+    
 }
 
 body
@@ -53,8 +54,9 @@ body
     padding-top: 50px;
     padding-bottom: 60px;
     min-height: 100%;
-    overflow-x: hidden;
+/*    overflow-x: hidden;*/
     position: relative;
+    max-width: 2560px;
 }
 
 
@@ -119,15 +121,16 @@ footer p
 {
     margin: 0 auto;
     width:70%;
+    min-width: 900px;
     padding: 20px 0 20px 0;
     border-radius: 20px;
     background-image: -moz-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(220,237,244) 0%, rgb(255,255,255) 100%);
     margin-bottom: 50px;
-}
+} 
 
-/***************************************************************************Accordions***************************************************/
+/***************************Accordions**********************************/
 /*********************Accordion Header********************/
 .accordion 
 {
@@ -136,6 +139,7 @@ footer p
     background: #333;
     height: 60px;
     line-height:60px;
+    min-width: 900px;
     width: 98%;
     font-size: 16px;
     font-weight: bold;
@@ -172,7 +176,7 @@ footer p
 .file-wrapp header div
 {
     text-align: center;
-    width: 800px;
+    min-width: 150px;
     display: table-cell;
 }
 header div
@@ -215,6 +219,7 @@ header
   font-size: 1.2em;
   color: #666;
   width: 95%;
+    min-width: 900px;
   clear: both;
   background: #f6f6f6;
   border: 2px solid rgb(255, 226, 184);
@@ -301,6 +306,7 @@ section
     background-image: -moz-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(241,241,241) 1%, rgb(224,224,224) 100%);
+    min-width: 200px !important;
     
 }
 .dash-table tr:first-child td:first-child > div /* Finds first cell and allows it to expand without stretching the other cells*/
@@ -312,6 +318,7 @@ section
 .dash-table .accContainer
 {
     border: none;
+    min-width: 150px;
 }
 
 .title-uc
@@ -345,14 +352,14 @@ section
    display: table-row;
 }
 
-.title-uc .cell
+.title-uc .cell /*Open all and Upcoming Jobs Header*/
 {
    display: table-cell;
    vertical-align: middle;
     
 }
 
-.title-uc .cell:first-child
+.title-uc .cell:first-child /*Open All*/
 {
    padding-left: 10px;
    width: 5%;
@@ -364,7 +371,7 @@ section
    padding-right: 30px;
 }
 
-.dashWrap header img
+.dashWrap header img/*Animated Arrows*/
 {
   position: relative;
   top: -17px;
@@ -391,6 +398,7 @@ section
 {
     text-align: center;
     width: 10%;
+    min-width: 150px;
 }
 
 
@@ -423,6 +431,7 @@ section
     background: #333;
     height: 35px;
     width: 75%;
+    min-width: 100px;
     font-size: 16px;
     font-weight: bold;
     border: 1px solid rgb(169, 169, 169);
@@ -472,6 +481,20 @@ section
     margin: 0;
 }
 
+.hUpcoming
+{
+   margin: 0 auto;
+}
+.hUpcoming div
+{
+  
+   width: 20%; 
+}
+.hUpcoming div a /*Position pdf icon under export header*/
+{
+    margin-right: 40%;
+    text-align: center;
+}
 /************************* Table Border Styles**********/
 .upcomingWrapper thead tr th:nth-child(odd)
 {
@@ -517,7 +540,16 @@ section
 {
    border-left: 2px solid #d9d9d9; 
 }
+
+.upcomingWrapper tbody tr td:nth-child(1) div,
+.upcomingWrapper tbody tr td:nth-child(3) div
+{
+  overflow-y: scroll;
+  height: 250px;
+    padding-top: 40px;
+}
 /******************End Table Border Styles*******/
+
 
 .upcomingWrapper .accordion header div img/* pdf image */
 {
@@ -525,38 +557,26 @@ section
     width: 50px;
     margin: -8px;
     top: 10px;
-/*    z-index: 2;*/
+
 }
 /*********Modal Activation divs************/
-.modalFunc3, .modalFunc2, .modalFunc1
+
+.modalFunc1 img,
+.modalFunc2 img,
+.modalFunc3 img
 {
-  position: absolute;
-    width: 40px;
+   position: relative;
+    width: 50px;
     height: 50px;
-    left: 76.70%; 
-    z-index: 2;
-}
-
-.modalFunc3
-{
-    top: 710px;
-}
-
-.modalFunc2
-{ 
-    top: 627px;
-}
-
-.modalFunc1
-{
-    top: 545px;
+    left: 25%; 
+    z-index: ;
     
 }
 /*********End Modal Activation divs************/
 
 .upcomingWrapper .accContainer tbody tr td:nth-child(odd)
 {
-    padding: 15px;
+    padding: 15px; 
     text-align: left;
 }
 
@@ -2456,8 +2476,9 @@ table, .Mtable
 
 .buttons
 {
-    left: 80%;
+    left: 77.75%;
     position: relative;
+    width: 175px;
 }
 
 .topB
