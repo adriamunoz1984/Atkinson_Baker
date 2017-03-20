@@ -18,23 +18,23 @@
 /*
     Page                    Line#
 _____________________________________
-   * General styling        40
-        - Gradient Wrapper  107
-        - Accordions        122
+   * General styling        39
+        - Gradient Wrapper  106
+        - Accordions        120
     *Upcoming Jobs          260
-    *Dashboard              299
-    *Job List               782
-    *Job Details            943
-    *Calendar               1317
-    *Schedule               1546
-    *Files                  1680
-    *Reports                1937
-    *Invoices               1986
-    *Profile                2205
-    *LogIn                  2354
-    *Menu                   2514
-    *Font                   2709
-    *Upcoming Modal         2717
+    *Dashboard              287
+    *Job List               559
+    *Job Details            894
+    *Calendar               1108
+    *Schedule               1284
+    *Files                  1405
+    *Reports                1644
+    *Invoices               1692
+    *Profile                1880
+    *LogIn                  2202
+    *Menu                   2367
+    *Font                   2354
+    *Upcoming Modal         2363
     
 */
 /**************************************General html page info****************/
@@ -79,7 +79,7 @@ footer p
 {
     
   color: white;
-  font-size: 20px;
+  font-size: 1.60vw;
 }
 /************************************** END General html page info****************/
 
@@ -2086,10 +2086,6 @@ table, .Mtable
     border-right: 4px solid rgb(255, 226, 184);
 }
 
-.invoice-body .row .cell:last-child
-{
-   width: 5%; 
-}
 /******************************Last row*****************/
 
 .invoice-body .row:last-child .cell:first-child
@@ -2637,10 +2633,10 @@ table, .Mtable
 }
 
 /****************************************Media Queries***********************************/
-
-@media screen and (max-width: 1025px)
+/*
+@media screen and (max-width: 880px)
 {
-   /* .burger-nav
+    .burger-nav
     {
         display: block;
         width: 100%;
@@ -2648,10 +2644,10 @@ table, .Mtable
         cursor: pointer;
         padding-top: 100px;
     }
-    */
+    
     #menu
     {
-        width: 120%;
+        width: 100%;
      overflow: hidden;
     }
     
@@ -2659,7 +2655,7 @@ table, .Mtable
     {
         height: auto;
     }
-   /*
+    
     #menu li
     {
         float: none;
@@ -2677,6 +2673,7 @@ table, .Mtable
         margin: 0;
     }
 }
+
 
 @media only screen and (max-width: 2340px) 
 {
