@@ -2638,9 +2638,18 @@ table, .Mtable
 
 /****************************************Media Queries***********************************/
 
+@media screen and (max-width: 1240px)
+{
+     footer p
+    {
+        color: white;
+        font-size: 1.65vw;
+    } 
+}
+/*
 @media screen and (max-width: 1025px)
 {
-   /* .burger-nav
+    .burger-nav
     {
         display: block;
         width: 100%;
@@ -2648,7 +2657,7 @@ table, .Mtable
         cursor: pointer;
         padding-top: 100px;
     }
-    */
+
     #menu
     {
         width: 120%;
@@ -2659,7 +2668,8 @@ table, .Mtable
     {
         height: auto;
     }
-   /*
+  
+   
     #menu li
     {
         float: none;
