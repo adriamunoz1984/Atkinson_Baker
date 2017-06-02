@@ -10,6 +10,7 @@
 /*@import "invoices.css";*/
 /*@import "profile.css";*/
 /*@import "login.css";*/
+@import "querie.css";
 
 
 /* CSS FILE */
@@ -21,7 +22,7 @@ _____________________________________
    * General styling        40
         - Gradient Wrapper  107
         - Accordions        122
-    *Upcoming Jobs          260
+    *Upcoming Jobs          479
     *Dashboard              299
     *Job List               782
     *Job Details            943
@@ -506,9 +507,10 @@ section
 }
 .hUpcoming div
 {
-  
-   width: 20%; 
+   width: 20%;
+    font-size: .55vw;
 }
+
 .hUpcoming div a /*Position pdf icon under export header*/
 {
     margin-right: 40%;
@@ -2515,14 +2517,7 @@ table, .Mtable
 
 
 /** Background and Logo **/
-.menuBG
-{
-    width: 100%;
-    height:100px;
-    background-color: rgb(14,121,191);
-    margin-bottom: 100px;
-    
-}
+
 #logo
 {
   
@@ -2531,87 +2526,6 @@ table, .Mtable
     width: 500px;
 }
 /*************************/
-
-#menu
-{
-    font-family: 'Swiss 721 Light Condensed BT';
-    width: 70%;
-    max-width:1330px; 
-    margin: 0 auto;
-   
-    padding: 0;
-    margin-left: 20%;
-    list-style-type: none;
-}
-
-#menu li a
-{
-    margin-top: -15px;
-   
-    padding: 35px 5px 5px 5px; 
-    background-color: rgb(14,121,191);
-    text-decoration: none;
-    height: 60px;
-    color: white;
-    display: block;
-    transition: box-shadow .3s ease-in, background-color .25s ease-in;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
-}
-
-#menu li
-{
-    margin-top: 15px;
-    float: left;
-    width: 12%;
-    height: 75px;
-    background-color: rgb(14,121,191);
-/*    line-height: 75px;*/
-    font-size: 1.15vw;
-    text-align: center;
-    border-right:  4px solid #005b92;
-    
-   
-}
-
-#menu > li:first-child /* Note this is a;so affecting the the list item in the drop down menu because its also a first child*/
-{
-    border-left: 4px solid #005b92;
-}
-
-#menu li a:hover 
-{
-    background-color: #005b92;
-    box-shadow: 1px 10px 10px rgba(0, 0, 0,0.5);
-}
-
-#menu li ul li
-{
-    
-    float: none;
-    margin: -90px 0 0 -40px;
-    padding-top: 5px;
-    width: inherit;
-    overflow: hidden;
-    transition:  margin .15s ease-in, box-shadow .3s ease-in, opacity .4s ease-in,height .25s ease;
-    border: none;
-    opacity: 0;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0,0);
-/*     font-size: 1vw;*/
-}
-
-#menu li ul li a
-{ 
-    height: 75px;
-    padding-top: 30px;
-}
-
-#menu li:hover ul li
-{
-     margin: 0 0 0 -40px;
-     opacity: 1;
-     box-shadow: 1px 10px 10px rgba(0, 0, 0,0.5)
-}
-
 
 .buttons
 {
@@ -2637,21 +2551,131 @@ table, .Mtable
     color: white;
 }
 
+/*************nav********/
+.menuBG
+{
+    width: 100%;
+    height: 75px;
+    background-color: cadetblue;
+}
+#menu
+{
+    background-color: cadetblue;
+    height: 75px;
+    text-align: center;
+}
+
+#menu li
+{
+   
+  list-style-type: none;
+  display: inline-block;
+    background-color: cadetblue;
+}
+
+#menu li a
+{
+     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+/*    padding: 16px 18px;*/
+    width: 150px;
+    height: 75px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 75px; /*Helps center the text vertically in the middle must be the sme height as the height property*/
+}
+
+#menu li a:hover, ul li.dropdwon:hover .btndown
+{
+    background-color: #111;
+    color: #aaa;
+}
+
+#menu li.active a
+{
+    background-color: royalblue;
+}
+
+#menu .dropdown
+{
+    display: inline-block;
+}
+
+#menu .dropdown .itemdown
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    width: auto;
+}
+
+#menu li.dropdown .itemdown li a
+{
+    clear: both;
+}
+
+#menu li.dropdown .itemdown li a
+{
+    text-decoration: none;
+    
+}
+
+#menu li.dropdown:hover .itemdown
+{
+    display: block;
+}
 /****************************************Media Queries***********************************/
+/************3 basic queries**************/
+@media screen and (max-width: 320px)
+{
+    
+}
+
+@media screen and (max-width: 720px)
+{
+    #menu li.dropdown
+    {
+        display: block;
+    }
+    
+    #menu li.dropdown .itemdown
+    {
+        width: 100%;
+        position: relative;
+    }
+    
+    #menu li.dropdown .itemdown li a
+    {
+        width: 100%;
+    }
+  
+}
+
+
+
+
+/****************************************/
 @media screen and (min-width: 1950px)
 {
-    #menu li
+   
+}
+
+@media screen and (max-width: 1510px)
+{
+  
+    .hUpcoming div
     {
-        margin-top: 15px;
-        float: left;
-        width: 12%;
-        height: 75px;
-        background-color: rgb(14,121,191);
-        font-size: 25px;
-        text-align: center;
-        border-right:  4px solid #005b92;
+        font-size: .7vw !important;
     }
 }
+@media screen and (max-width: 1245px)
+{
+}
+
 @media screen and (max-width: 1240px)
 {
      footer p
@@ -2660,51 +2684,7 @@ table, .Mtable
         font-size: 1.65vw;
     } 
 }
-@media screen and (max-width: 1510px)
-{
-  #menu
-    {
-        font-family: 'Swiss 721 Light Condensed BT';
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
-        margin-left: 12.5%;
-        list-style-type: none;
-    }  
-}
-@media screen and (max-width: 1245px)
-{
-     #menu li
-    {
-        margin-top: 15px;
-        float: left;
-        width: 12%;
-        height: 75px;
-        background-color: rgb(14,121,191);
-        font-size: 1.5vw;
-        text-align: center;
-        border-right:  4px solid #005b92;
-    }
-}
-/*
-@media screen and (max-width: 1025px)
-{
-    .burger-nav
-    {
-        display: block;
-        width: 100%;
-        background: url("../img/rMenu_icon.png") no-repeat 98% center;
-        cursor: pointer;
-        padding-top: 100px;
-    }
-    #menu
-    {
-     overflow: hidden;
-    }
-   
 
-}
-*/
 
 /*******************************************************Font*****************************************/
 @font-face {

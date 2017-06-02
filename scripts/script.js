@@ -1,7 +1,11 @@
 //***************************************Accordion Function******************************
 
+
 $(function()
 {
+    var wSize = $(window).width();
+    alert(wSize);
+    
     var accordion = $('section');//find what wraps around the accordion
     var openA = $('#openAll');
 
@@ -12,10 +16,7 @@ $(function()
       $(this).find("img").toggleClass('minus', 20000,'easeInQuart'); //Arrow Animation Here
        
     });
-//    openA.on('click', function() //Stupid non functioning function
-//    {
-//        accordion.find('.accContainer, .schedContainer').slideToggle();
-//    });
+
     
     openA.on('click', function() //Stupid non functioning function
    {
@@ -34,7 +35,7 @@ $(function()
 
      }
    });
-    
+   
 });//same as document.ready Function
 
 //**************************************End Accordion**********************************
