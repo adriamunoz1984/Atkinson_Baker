@@ -3,6 +3,37 @@
 
 $(function()
 {
+    //*******Sticky and rsponsive menu function*********
+    var menuBtn = $('#menuBtn');
+    var listAnchor = $('.list-anchor');
+    var navOffset = jQuery('.menuBG').offset().top;
+    jQuery(".menuBG").wrap('<div class="men-placeholder></div>');
+    jQuery(window).scroll(function()
+    {
+       var scrollPos = jQuery(window).scrollTop(); 
+        jQuery(".status").html(scrollPos);
+        
+        if(scrollPos >= navOffset)
+            {
+                jQuery(".menuBG").addClass("fixed");  
+                jQuery(".menuBG").addClass("fixed");
+                $("#menu").css('margin','0px');
+            }
+        else{
+                jQuery(".menuBG").removeClass("fixed");
+        }
+    });
+    
+    
+    menuBtn.click(function(){
+        $('#menu').slideToggle();
+    });
+    listAnchor.click(function(){
+        $('#menu').hide();
+    });
+    
+    //***************************************************** 
+    
     var wSize = $(window).width();
     alert(wSize);
     
@@ -35,6 +66,9 @@ $(function()
 
      }
    });
+    
+
+   
    
 });//same as document.ready Function
 

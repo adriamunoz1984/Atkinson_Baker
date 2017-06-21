@@ -13,7 +13,7 @@
     </head>
 
     <body>
-
+<!-- <div class="status" style="left: 100px; position: fixed; z-index:3"></div> to test page scroll position-->
              
 
         <a href="index.html"><img src="img/Atkinsonbaker_logo.png" alt="" id="logo"></a>
@@ -23,24 +23,36 @@
         </div>
         
         <!--**************************** Menu ***********************************-->
+        <a id="menuBtn" href="#" >
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
         <div class="menuBG">
+            
             <ul id="menu">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="upcoming.html">Upcoming Jobs</a></li>
+                <li><a class="list-anchor" href="index.html" >Home</a></li><span class="bar"></span>
+                
+                <li><a class="list-anchor" href="upcoming.html">Upcoming Jobs</a></li><span class="bar"></span>
+                
                 <li class="dropdown">
-                    <a href="jobList.html" class="btndown">Jobs List</a>
+                    <a class="list-anchor" href="jobList.html" class="btndown">Jobs List</a>
                     <ul class="itemdown">
-                        <li><a href="#">Job Details</a></li>
+                        <li><a class="list-anchor" href="#">Job Details</a></li>
                     </ul>
-                </li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="schedules.html">Schedule</a></li>
-                <li class="dropdown"><a href="files.html" class="btndown">Files</a>
+                </li><span class="bar"></span>
+                
+                <li><a class="list-anchor" href="calendar.html">Calendar</a></li><span class="bar"></span>
+                
+                <li><a class="list-anchor" href="schedules.html">Schedule</a></li><span class="bar"></span>
+                
+                <li class="dropdown"><a class="list-anchor" href="files.html" class="btndown">Files</a>
                     <ul class="itemdown">
-                        <li><a href="reports.html">Reports</a></li>
+                        <li><a class="list-anchor" href="reports.html">Reports</a></li>
                     </ul>
-                </li>
-                <li><a href="invoices.html">Invoices</a></li>
+                </li><span class="bar"></span>
+                
+                <li><a class="list-anchor" href="invoices.html">Invoices</a></li>
             </ul>
         </div>
         <!--*************************END Menu ************************************-->

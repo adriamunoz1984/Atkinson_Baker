@@ -20,23 +20,48 @@
         </div>
         
        <!--**************************** Menu ***********************************-->
-         <div class="menuBG">
+        <a id="menuBtn" href="#" >
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        <div class="menuBG">
+            
             <ul id="menu">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="upcoming.html">Upcoming Jobs</a></li>
-                <li><a href="#">Jobs List</a>
-                    <ul>
-                        <li id="details"><a href="jobDetails.html">Job Details</a></li>
+                <li><a class="list-anchor" href="index.html" >Home</a></li>
+                
+                    <span class="bar"></span>
+                
+                <li><a class="list-anchor" href="upcoming.html">Upcoming Jobs</a></li>
+                
+                    <span class="bar"></span>
+                
+                <li class="dropdown">
+                    <a class="list-anchor" href="jobList.html" class="btndown">Jobs List</a>
+                    <ul class="itemdown">
+                        <li><a class="list-anchor" href="#">Job Details</a></li>
                     </ul>
                 </li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="schedules.html">Schedule</a></li>
-                <li><a href="files.html">Files</a>
-                    <ul>
-                        <li id="reports"><a href="reports.html">Reports</a></li>
+                
+                    <span class="bar"></span>
+                
+                <li><a class="list-anchor" href="calendar.html">Calendar</a></li>
+                
+                    <span class="bar"></span>
+                
+                <li><a class="list-anchor" href="schedules.html">Schedule</a></li>
+                
+                    <span class="bar"></span>
+                
+                <li class="dropdown"><a class="list-anchor" href="files.html" class="btndown">Files</a>
+                    <ul class="itemdown">
+                        <li><a class="list-anchor" href="reports.html">Reports</a></li>
                     </ul>
                 </li>
-                <li><a href="invoices.html">Invoices</a></li>
+                
+                    <span class="bar"></span>
+                
+                <li><a class="list-anchor" href="invoices.html">Invoices</a></li>
             </ul>
         </div>
         <!--*************************END Menu ************************************-->
